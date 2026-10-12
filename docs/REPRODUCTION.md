@@ -10,6 +10,8 @@ Python 3.11下安装`requirements.txt`，运行README中的测试和公开文件
 
 ## 罗湖重估
 
+所需全市来源及罗湖派生文件可从[公开Release](https://github.com/sjkncs/shenzhen-housing-redevelopment/releases/tag/data-snapshot-20261012)下载。先按[校验清单](DATA_RELEASE_MANIFEST.json)核对哈希，再解压并配置输入。文件公开不改变坐标接受状态或因果识别结论。
+
 在独立工作副本中运行，避免覆盖封存结果：
 
 ```powershell

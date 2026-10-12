@@ -1,0 +1,107 @@
+{
+  "authorization": "Repository owner explicitly authorized public sharing on 2026-10-12",
+  "third_party_license": "No new license or independent rights verification claimed",
+  "tag": "data-snapshot-20261012",
+  "assets": [
+    {
+      "name": "shenzhen-transactions-source.zip",
+      "scope": "shenzhen",
+      "bytes": 7005161,
+      "sha256": "e3748a7f1f609da7347c4329165dc096eeb07e5f67f0dd4b84739c00da7eb11d",
+      "url": "https://github.com/sjkncs/shenzhen-housing-redevelopment/releases/download/data-snapshot-20261012/shenzhen-transactions-source.zip"
+    },
+    {
+      "name": "shenzhen-poi-source.zip",
+      "scope": "shenzhen",
+      "bytes": 99126935,
+      "sha256": "04479f50e248fb37db9625910cd5010ffbdcd74e34e2cd2df448ceac8aa525b9",
+      "url": "https://github.com/sjkncs/shenzhen-housing-redevelopment/releases/download/data-snapshot-20261012/shenzhen-poi-source.zip"
+    },
+    {
+      "name": "shenzhen-buildings-source.rar",
+      "scope": "shenzhen",
+      "bytes": 10988221,
+      "sha256": "954a89f550c7c938373b7194526f68d7e42f9a7055e467ef24348e99871565cb",
+      "url": "https://github.com/sjkncs/shenzhen-housing-redevelopment/releases/download/data-snapshot-20261012/shenzhen-buildings-source.rar"
+    },
+    {
+      "name": "luohu-derived-data.zip",
+      "scope": "luohu",
+      "bytes": 6556577,
+      "sha256": "9538bf11af83592b667bf008e0e4f621b4b098160f9cf9484d67b192b6f87bc7",
+      "url": "https://github.com/sjkncs/shenzhen-housing-redevelopment/releases/download/data-snapshot-20261012/luohu-derived-data.zip"
+    }
+  ],
+  "luohu_files": [
+    {
+      "path": "poi/20261012_luohu_residential_poi/621小区匹配覆盖.csv",
+      "bytes": 57247,
+      "sha256": "4656595875b9c8ddf0f274ba32a1a2e801d748733a1edb528d289d6c78f59769"
+    },
+    {
+      "path": "poi/20261012_luohu_residential_poi/BD09_GCJ02假设下超过100米_待核小区.csv",
+      "bytes": 1941,
+      "sha256": "efccef535c5370f0a65c746560e786bd8ecc43f0576edc9cc55a111db4c7a5c2"
+    },
+    {
+      "path": "poi/20261012_luohu_residential_poi/成交与POI_双端坐标口径诊断.csv",
+      "bytes": 274028,
+      "sha256": "38b27ca8fdb32a58374dafe9cf5862a6040fdbc78b36c49b3b41d34f381f49ed"
+    },
+    {
+      "path": "poi/20261012_luohu_residential_poi/成交小区_POI同名候选连接.csv",
+      "bytes": 81543,
+      "sha256": "63df4d4d45b6b2c874b236fe9cfd17fc4f684394a34488074a52462fa1f52275"
+    },
+    {
+      "path": "poi/20261012_luohu_residential_poi/罗湖住宅主体及楼区待核表.csv",
+      "bytes": 729506,
+      "sha256": "b5b69fd8e63e817ea7f7b7161580be48207d33925ec1d5d08847e9fde5264f18"
+    },
+    {
+      "path": "poi/20261012_luohu_residential_poi/罗湖住宅及出入口候选.csv",
+      "bytes": 1123272,
+      "sha256": "78d3030ddb206b132a10bd330d62d6b36b96d116f1c413720c25d4b6dbccac64"
+    },
+    {
+      "path": "poi/20261012_luohu_residential_poi/罗湖区POI与住宅定位候选_EPSG4547.gpkg",
+      "bytes": 33386496,
+      "sha256": "230c35612af81bd5be23b8011ce626c027e1200a75678de607cefef8cf40fdf7"
+    },
+    {
+      "path": "poi/20261012_luohu_residential_poi/重点项目住宅名称线索.csv",
+      "bytes": 10052,
+      "sha256": "f5ef504c651405aa6a8caf01637b70ca45148c49ecc589380eae53cc5b708e26"
+    },
+    {
+      "path": "poi/20261012_luohu_poi_identity_review/18小区_全部相关POI候选.csv",
+      "bytes": 5139,
+      "sha256": "d738f592d181aabf0b8ffc1d04b98626836c9ed6250c55d50c48e47bb07d7d5f"
+    },
+    {
+      "path": "poi/20261012_luohu_poi_identity_review/18小区_问题分流.csv",
+      "bytes": 1838,
+      "sha256": "e27e5b65ece1b07e75e57eb888d1a806b9f082b63a808945957c0d37d07070fc"
+    },
+    {
+      "path": "poi/20261012_luohu_poi_identity_review/未匹配小区_地址限定名补充候选.csv",
+      "bytes": 3112,
+      "sha256": "20fc0a55dd878dab8055aa4f1afc0de49d3981e8612ac61a6f14f456c76d712a"
+    },
+    {
+      "path": "poi/20261012_luohu_poi_identity_review/重点项目住宅_主体与出入口关联.csv",
+      "bytes": 9440,
+      "sha256": "5188a01177570512d4cd2a787f756356a4ba3f31604525c3cd39996ff9f8df54"
+    },
+    {
+      "path": "transactions/analysis_sample.csv",
+      "bytes": 2224323,
+      "sha256": "ebb25accd2ee3c971fbf6c19d83818ffdcfae1893dbdd8555300c06d90b7c065"
+    },
+    {
+      "path": "transactions/community_pre_post_support.csv",
+      "bytes": 15692,
+      "sha256": "cfb3748955efd1a10ebc7e791cbcd93a62b852c4c5018aacc99173dcc4df3427"
+    }
+  ]
+}

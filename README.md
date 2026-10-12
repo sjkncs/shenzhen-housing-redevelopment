@@ -82,7 +82,7 @@ scripts/                    公开文件和结果一致性核验
 .github/workflows/          数据无关测试与公开内容检查
 ```
 
-原始交易、POI明细、空间数据库、报告和PPT已在私有研究档案中管理。公开版当前不再分发这些文件，原因是数据授权和个人材料需要单独处理，而不是将它们视为不重要。可访问范围与访问方式见[数据访问说明](docs/DATA_ACCESS.md)。
+经仓库所有者明确授权，原始交易、全市POI与建筑数据，以及罗湖分析样本、POI明细和GPKG已通过[公开数据Release](https://github.com/sjkncs/shenzhen-housing-redevelopment/releases/tag/data-snapshot-20261012)发布。全市与罗湖分包下载，校验值和字段说明见[数据下载说明](docs/DATA_ACCESS.md)。含个人身份信息的报告、PPT和任务书仍在私有档案保留。
 
 ## Roadmap
 
