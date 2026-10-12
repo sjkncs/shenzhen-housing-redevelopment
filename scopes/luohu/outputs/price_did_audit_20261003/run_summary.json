@@ -1,0 +1,73 @@
+{
+  "status": "AREA_PROXY_DID_EXECUTED_PROJECT_BOUNDARY_DID_PENDING",
+  "source": "User-supplied Shenzhen transaction CSV; not redistributed",
+  "source_sha256": "b56310294f8b0288eba66c9852353c0339d4e9ba10fc0dadbcfa17ffad63bd22",
+  "luohu_clean_n": 16199,
+  "window": [
+    "2017-01-01",
+    "2023-12-31"
+  ],
+  "event_source": "https://www.sz.gov.cn/szzt2010/wgkzl/jggk/lsqkgk/content/post_8875889.html",
+  "event_precision": "2020-03; first full post quarter 2020Q2; transition quarter 2020Q1",
+  "treatment": "source market label 翠竹",
+  "comparison": "all other observed Luohu market labels",
+  "excluded_transition_main": true,
+  "event_reference": "2019Q4",
+  "event_quarters_without_treated_transactions": [
+    6
+  ],
+  "covariance": "community clustered CR1 with absorbed FE rank and t(G-1) intervals",
+  "model_info": {
+    "baseline": {
+      "n": 10867,
+      "communities": 607,
+      "treated_communities": 42,
+      "quarters": 27,
+      "fe_rank": 633,
+      "design_rank": 634,
+      "components": 1,
+      "cluster_correction": 1.0636109345323275,
+      "iterations": 13,
+      "delta": 3.02433780693842e-11
+    },
+    "housing_adjusted": {
+      "n": 10867,
+      "communities": 607,
+      "treated_communities": 42,
+      "quarters": 27,
+      "fe_rank": 633,
+      "design_rank": 636,
+      "components": 1,
+      "cluster_correction": 1.0638188537845086,
+      "iterations": 13,
+      "delta": 3.02433780693842e-11
+    }
+  },
+  "event_model": {
+    "n": 11231,
+    "communities": 610,
+    "treated_communities": 43,
+    "quarters": 28,
+    "fe_rank": 637,
+    "design_rank": 665,
+    "components": 1,
+    "cluster_correction": 1.0645883083173808,
+    "iterations": 13,
+    "delta": 2.1259425084549675e-11
+  },
+  "pretrend_joint_test": {
+    "quarters": "2017Q1-2019Q3 relative to 2019Q4",
+    "f": 12.324967633604723,
+    "p": 3.9374845821273136e-21,
+    "restrictions": 11
+  },
+  "inference_scope": "one treated market; community clustering does not address a shared treated-market shock",
+  "unresolved": [
+    "verified project-boundary distance",
+    "other-project exposure in comparisons",
+    "COVID and area-specific concurrent shocks",
+    "construction anticipation",
+    "project-level inference"
+  ],
+  "python": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]"
+}

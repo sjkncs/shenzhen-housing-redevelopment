@@ -1,0 +1,12 @@
+{
+  "upstream": "https://github.com/googollee/eviltransform",
+  "commit": "03ba58d92dfda57f8a1635f3805483c8fc10bd77",
+  "license": "Original BSD-style terms retained in LICENSE",
+  "source_files": [
+    {
+      "file": "implementation.py",
+      "sha256": "9fa83f46294f9e5616942d8cfec74825f2ecf4b6716418bc7d0208f46c6aa84f"
+    }
+  ],
+  "scope": "Coordinate hypotheses only; no accepted map-frame claim"
+}

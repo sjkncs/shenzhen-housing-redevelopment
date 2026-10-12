@@ -1,0 +1,26 @@
+# 复现指南
+
+## 无原始数据核验
+
+Python 3.11下安装`requirements.txt`，运行README中的测试和公开文件检查。依赖表不是封存环境锁文件；测试验证筛选逻辑与文件口径，不证明因果识别成立。
+
+## 全市覆盖
+
+将有权限使用的交易CSV传入`scopes/shenzhen/scripts/build_citywide_summary.py --input`。该脚本只输出行政区覆盖与来源哈希，不输出交易明细。源SHA-256为`b56310294f8b0288eba66c9852353c0339d4e9ba10fc0dadbcfa17ffad63bd22`。
+
+## 罗湖重估
+
+在独立工作副本中运行，避免覆盖封存结果：
+
+```powershell
+$env:SHENZHEN_TRANSACTION_CSV = 'D:/authorized-data/transactions.csv'
+python scopes/luohu/scripts/run_price_did_audit_20261003.py
+python scopes/luohu/scripts/check_price_did_support_20261003.py
+python scopes/luohu/scripts/check_price_did_influence_20261003.py
+```
+
+输出写入`scopes/luohu/outputs/price_did_audit_20261003/`。主脚本会生成`analysis_sample.csv`，它被Git忽略，不应随提交公开。
+
+POI流程需设置`SHENZHEN_POI_ZIP`并将源组件按脚本所需路径放入`scopes/luohu/data/supplied_gdata_intake/20261011/poi_luohu/source_components/`。运行顺序为筛选、双端坐标诊断、身份歧义复核。坐标数学实现仅用于假设比较，不直接接受转换规则。第三方代码按固定提交和SHA核验，原许可保留。
+
+GitHub Actions仅安装依赖、运行数据无关测试与公开文件/口径检查，不访问私有交易数据，不重估模型，也不宣称通过因果识别测试。

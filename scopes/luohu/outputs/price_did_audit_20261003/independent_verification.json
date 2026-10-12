@@ -1,0 +1,8 @@
+{
+  "independent_sparse_dummy_did": 0.16055882294026438,
+  "absorbed_did": 0.160558822805231,
+  "absolute_difference": 1.3503337337184007e-10,
+  "lsqr_stop": 2,
+  "lsqr_iterations": 314,
+  "main_n": 10867
+}

@@ -1,0 +1,11 @@
+{
+  "scope": "SHENZHEN_SOURCE_COVERAGE_NOT_CITYWIDE_CAUSAL_ESTIMATE",
+  "source_sha256": "b56310294f8b0288eba66c9852353c0339d4e9ba10fc0dadbcfa17ffad63bd22",
+  "raw_n": 139514,
+  "clean_n": 132774,
+  "excluded_n": 6740,
+  "first_date": "2010-01-01",
+  "last_date": "2024-04-25",
+  "price_type": "Source-reported transaction prices; platform sample, not official census",
+  "raw_data_redistributed": false
+}
