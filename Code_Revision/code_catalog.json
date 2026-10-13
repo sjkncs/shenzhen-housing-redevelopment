@@ -98,6 +98,14 @@
     },
     {
       "category": "02_空间与住宅身份",
+      "path": "scopes/luohu/scripts/collect_building_identity_evidence.py",
+      "purpose_zh": "取得官方楼栋标识线索并记录来源哈希，不推断楼栋与年代对应",
+      "inputs_zh": "--archive本地原页目录、--output新的公开摘要目录",
+      "outputs_zh": "楼栋线索CSV及JSON；原HTML仅存本地",
+      "run_status_zh": "需联网curl；记录失败；不认证住宅、不拆样本"
+    },
+    {
+      "category": "02_空间与住宅身份",
       "path": "scopes/luohu/scripts/diagnose_poi_coordinate_frames_20261012.py",
       "purpose_zh": "比较住宅与POI的九种坐标口径组合",
       "inputs_zh": "成交CSV、同名候选连接、固定版本坐标实现",

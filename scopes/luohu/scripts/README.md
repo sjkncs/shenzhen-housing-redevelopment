@@ -57,6 +57,16 @@
 
 运行条件：在主回归之后运行；会更新结果目录
 
+### [collect_building_identity_evidence.py](collect_building_identity_evidence.py)
+
+用途：取得官方楼栋标识线索并记录来源哈希，不推断楼栋与年代对应
+
+输入：--archive本地原页目录、--output新的公开摘要目录
+
+输出：楼栋线索CSV及JSON；原HTML仅存本地
+
+运行条件：需联网curl；记录失败；不认证住宅、不拆样本
+
 ### [diagnose_poi_coordinate_frames_20261012.py](diagnose_poi_coordinate_frames_20261012.py)
 
 用途：比较住宅与POI的九种坐标口径组合

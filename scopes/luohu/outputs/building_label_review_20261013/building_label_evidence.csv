@@ -1,0 +1,4 @@
+﻿building_label_lead,bytes,candidate_name,evidence_scope,residential_identity_accepted,sha256,source_id,status,treatment_assigned,url,year_building_mapping_verified
+A、B、C栋；裙楼酒店记录,67677,泰宁花园,官方公示含2019年检查记录，不认证住宅竣工,False,d68ff6203418ec0db005fa1ad8e545662e573c3241fcc81ecf6c085a8fcaef6c,taining_2019,archived_labels_checked,False,https://www.szlh.gov.cn/qgbmxxgkml/qwsjkj/ywgz/ssjgk/content/post_5057633.html,False
+4号大厦,82854,华丽西村,2026年托育评估页面，不倒推基期用途,False,6edce872984e46d2fe3b79dc301fc0a6be76832065096ab777c2ff190278e448,hualiwest_2026,archived_labels_checked,False,https://www.szlh.gov.cn/lhqwsjkj/gkmlpt/content/12/12627/post_12627024.html,False
+大厦四楼,173619,京基东方华都,2021年公共场所记录，无竣工或分期信息,False,445c43ff94081b084ed9543393144d002b2b9112e077c5f6bea0b07c9e2eeda1,jingji_2021,archived_labels_checked,False,https://www.szlh.gov.cn/zwfw/yljk/tzgg/content/post_10111558.html,False
