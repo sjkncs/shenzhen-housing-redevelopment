@@ -8,6 +8,7 @@ ROOT = Path(__file__).resolve().parents[1]
 START = '<!-- generated-file-guide:start -->'
 END = '<!-- generated-file-guide:end -->'
 PURPOSE = {
+    'official_address_evidence.csv': '三个重点候选的官方地址证据、来源哈希与尚未确认的住宅/坐标状态。',
     'checks.yml': 'GitHub自动检查配置：安装依赖、运行测试并核验公开目录。',
     'code_catalog.json': '全部Python代码的分类、用途、输入、输出和运行条件，供完整性检查读取。',
     '代码用途索引.csv': '供Excel/GitHub查看的逐脚本中文用途索引。',

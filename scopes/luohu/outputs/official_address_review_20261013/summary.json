@@ -1,0 +1,57 @@
+{
+  "reviewed_candidates_n": 3,
+  "official_address_corroborated_n": 3,
+  "residential_identity_accepted_n": 0,
+  "coordinate_accepted_n": 0,
+  "treatment_assigned_n": 0,
+  "sources": [
+    {
+      "source_id": "jingji",
+      "community_id": "2411048934069",
+      "candidate_name": "京基东方华都",
+      "address_to_check": "文锦中路2063号",
+      "source_url": "https://www.szlh.gov.cn/lhjyjdds/gkmlpt/content/11/11008/post_11008298.html",
+      "status": "archived_address_tokens_checked",
+      "check_date": "2026-10-13",
+      "official_address_corroborated": true,
+      "residential_building_identity_verified": false,
+      "historical_residential_status_verified": false,
+      "coordinate_verified": false,
+      "project_treatment_assigned": false,
+      "source_sha256": "c66d7d9e940b2b27c5928df36853ec08e4ee88a1213e1c30f8c82ea5735b5b54",
+      "source_bytes": 30083
+    },
+    {
+      "source_id": "huali",
+      "community_id": "2411063436012",
+      "candidate_name": "华丽花园",
+      "address_to_check": "华丽路1041号",
+      "source_url": "https://www.szlh.gov.cn/dzfwdt/zfjg/sqgzz/content/post_12627081.html",
+      "status": "archived_address_tokens_checked",
+      "check_date": "2026-10-13",
+      "official_address_corroborated": true,
+      "residential_building_identity_verified": false,
+      "historical_residential_status_verified": false,
+      "coordinate_verified": false,
+      "project_treatment_assigned": false,
+      "source_sha256": "5d1a92a65f4a3ee343ea9f4179451dbff768155c431aab9f478749db67bea2d6",
+      "source_bytes": 43023
+    },
+    {
+      "source_id": "taining",
+      "community_id": "2411064002494",
+      "candidate_name": "泰宁花园",
+      "address_to_check": "爱国路3033号",
+      "source_url": "https://www.szlh.gov.cn/zwfw/yljk/tzgg/content/post_10111549.html",
+      "status": "archived_address_tokens_checked",
+      "check_date": "2026-10-13",
+      "official_address_corroborated": true,
+      "residential_building_identity_verified": false,
+      "historical_residential_status_verified": false,
+      "coordinate_verified": false,
+      "project_treatment_assigned": false,
+      "source_sha256": "ae5676c61aacc64f1f9d2255317e327ea5c864c076d059ac7d9edc8de2ee1bc7",
+      "source_bytes": 112671
+    }
+  ]
+}
