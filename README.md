@@ -69,6 +69,16 @@ python -m unittest discover -s scopes/luohu/tests -p "test_luohu_*.py"
 python scripts/validate_public_repository.py
 ```
 
+下载并核验罗湖公开数据（不自动解压）：
+
+```bash
+python scripts/download_data.py --scope luohu
+python scripts/download_data.py --scope shenzhen
+python scripts/download_data.py --scope all --verify-only
+```
+
+全市包含较大POI数据库，按需下载；已有文件不覆盖。附件与罗湖包内14份文件逐项核对SHA-256。详见[下载说明](docs/DATA_ACCESS.md)。
+
 测试与汇总核验不需要原始数据。重估模型需要有权使用的交易文件；POI筛选还需要相应源组件。运行路径通过环境变量配置，详见[复现指南](docs/REPRODUCTION.md)。
 
 ## Repository Map

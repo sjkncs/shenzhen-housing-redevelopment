@@ -6,6 +6,8 @@ Python 3.11下安装`requirements.txt`，运行README中的测试和公开文件
 
 ## 全市覆盖
 
+`python scripts/download_data.py --scope luohu`下载并核验罗湖包，`--scope shenzhen`下载三份全市来源。默认写入被Git忽略的`data/raw/downloads/`，可用`--directory`指定位置。`--verify-only`仅检查已有文件，不联网。已有文件校验失败会报错而不是覆盖；工具不自动解压，避免原POI约2.15 GB的DBF意外占用空间。RAR只核验整个附件哈希，不宣称检查了内部文件。
+
 将有权限使用的交易CSV传入`scopes/shenzhen/scripts/build_citywide_summary.py --input`。该脚本只输出行政区覆盖与来源哈希，不输出交易明细。源SHA-256为`b56310294f8b0288eba66c9852353c0339d4e9ba10fc0dadbcfa17ffad63bd22`。
 
 ## 罗湖重估
