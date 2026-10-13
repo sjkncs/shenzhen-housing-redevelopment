@@ -9,6 +9,10 @@
 
 文件说明以当前跟踪版本为准；代码仅说明用途，不导入或执行。
 
+### [area_reading_correction.md](area_reading_correction.md)
+
+研究说明或分类导航文档；打开查看该主题用途和执行条件。
+
 ### [coordinate_evidence_followup.md](coordinate_evidence_followup.md)
 
 官方坐标材料检索结论、已下载原件及缺口。
