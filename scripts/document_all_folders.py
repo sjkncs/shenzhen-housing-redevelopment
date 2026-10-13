@@ -8,6 +8,8 @@ ROOT = Path(__file__).resolve().parents[1]
 START = '<!-- generated-file-guide:start -->'
 END = '<!-- generated-file-guide:end -->'
 PURPOSE = {
+    'luohu_daily_residential_market.csv': '罗湖住宅按日成交套数与面积汇总，补充市场背景但不是小区价格面板。',
+    'district_use_coverage.csv': '行政区—用途的日期、成交套数和面积覆盖统计。',
     'court_project_scope.csv': '法院平台管理人公告所列三个建设宗地及面积版本冲突，不是测绘验收成果。',
     'registration_status_evidence.csv': '官方首次登记状态答复，保留月份与楼栋范围缺口，不替代交付事件。',
     'parcel_name_crosswalk.csv': '官方项目名称与建设宗地一对多连接，完整拆除几何仍未接受。',

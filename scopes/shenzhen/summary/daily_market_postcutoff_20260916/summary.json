@@ -1,0 +1,14 @@
+{
+  "scope": "DAILY_ADMINISTRATIVE_MARKET_TOTALS_NOT_COMMUNITY_PANEL",
+  "source_sha256": "abbe3a0ee4b455cb3a2197c22f4e2af47a58d564fc6866c67b3c7867d20945e3",
+  "csv_rows": 10000,
+  "luohu_residential_rows": 276,
+  "first_date": "2025-12-05",
+  "last_date": "2026-09-14",
+  "luohu_residential_first_date": "2025-12-06",
+  "luohu_residential_last_date": "2026-09-14",
+  "has_community_id": false,
+  "has_price": false,
+  "has_coordinates": false,
+  "usable_for_project_did": false
+}

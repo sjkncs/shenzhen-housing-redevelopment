@@ -16,6 +16,18 @@
 
 路径：`scopes/shenzhen/scripts/build_citywide_summary.py`
 
+## [summarize_daily_market.py](../../scopes/shenzhen/scripts/summarize_daily_market.py)
+
+**用途：**从按日行政区汇总中提取罗湖住宅成交套数和面积，补足市场背景截止日后的总量走势
+
+**输入：**--zip用户提供的日汇总ZIP，必须含所属区/用途/日期/套数/面积字段
+
+**输出：**罗湖日汇总、区—用途覆盖和摘要
+
+**运行条件：**不含小区ID、价格、坐标，不能用于项目DID或价格回归
+
+路径：`scopes/shenzhen/scripts/summarize_daily_market.py`
+
 ## [download_data.py](../../scripts/download_data.py)
 
 **用途：**按全市或罗湖下载公开数据，核验SHA-256；不自动解压
