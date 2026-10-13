@@ -57,6 +57,14 @@
       "run_status_zh": "第三方BSD许可随附；不是深圳地方测量坐标转换"
     },
     {
+      "category": "03_价格回归与诊断",
+      "path": "scopes/luohu/scripts/audit_candidate_composition.py",
+      "purpose_zh": "按候选小区和时期检查面积、电梯、建成年代及楼层成交构成",
+      "inputs_zh": "--sample、--transactions、--baseline输入；原成交哈希校验",
+      "outputs_zh": "--output新目录的四份构成CSV与摘要",
+      "run_status_zh": "不估计政策效应，不自动判定楼栋或剔除样本"
+    },
+    {
       "category": "02_空间与住宅身份",
       "path": "scopes/luohu/scripts/audit_mutoulong_candidate_support.py",
       "purpose_zh": "统计三条道路地址线索小区的事件前后成交支持",
@@ -199,6 +207,14 @@
       "inputs_zh": "当前Git索引、来源清单与封存结果",
       "outputs_zh": "终端PASS或异常",
       "run_status_zh": "在git add之后运行；不重估模型"
+    },
+    {
+      "category": "05_测试与核验",
+      "path": "tests/test_candidate_composition.py",
+      "purpose_zh": "验证前段、过渡和后段正确分离",
+      "inputs_zh": "季度样例",
+      "outputs_zh": "unittest结果",
+      "run_status_zh": "无需真实数据"
     },
     {
       "category": "05_测试与核验",

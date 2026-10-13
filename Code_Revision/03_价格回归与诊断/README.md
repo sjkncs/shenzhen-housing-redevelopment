@@ -4,6 +4,18 @@
 
 这里按用途导航到真实代码，不复制或移动当前执行文件。
 
+## [audit_candidate_composition.py](../../scopes/luohu/scripts/audit_candidate_composition.py)
+
+**用途：**按候选小区和时期检查面积、电梯、建成年代及楼层成交构成
+
+**输入：**--sample、--transactions、--baseline输入；原成交哈希校验
+
+**输出：**--output新目录的四份构成CSV与摘要
+
+**运行条件：**不估计政策效应，不自动判定楼栋或剔除样本
+
+路径：`scopes/luohu/scripts/audit_candidate_composition.py`
+
 ## [check_price_did_influence_20261003.py](../../scopes/luohu/scripts/check_price_did_influence_20261003.py)
 
 **用途：**逐小区、逐比较商圈留出及差异线性趋势敏感性

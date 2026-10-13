@@ -7,6 +7,16 @@
 
 文件说明以当前跟踪版本为准；代码仅说明用途，不导入或执行。
 
+### [audit_candidate_composition.py](audit_candidate_composition.py)
+
+用途：按候选小区和时期检查面积、电梯、建成年代及楼层成交构成
+
+输入：--sample、--transactions、--baseline输入；原成交哈希校验
+
+输出：--output新目录的四份构成CSV与摘要
+
+运行条件：不估计政策效应，不自动判定楼栋或剔除样本
+
 ### [audit_mutoulong_candidate_support.py](audit_mutoulong_candidate_support.py)
 
 用途：统计三条道路地址线索小区的事件前后成交支持

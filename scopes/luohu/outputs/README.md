@@ -9,6 +9,7 @@
 
 ## 子目录导航
 
+- [candidate_composition_20261013](candidate_composition_20261013/README.md)：详见子目录中文说明。
 - [mutoulong_address_support_20261013](mutoulong_address_support_20261013/README.md)：详见子目录中文说明。
 - [mutoulong_baseline_review_20261013](mutoulong_baseline_review_20261013/README.md)：详见子目录中文说明。
 - [official_address_review_20261013](official_address_review_20261013/README.md)：详见子目录中文说明。

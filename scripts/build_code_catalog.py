@@ -14,6 +14,8 @@ GROUPS = {
     '06_原始代码与第三方': '原执行快照和固定版本第三方数学实现。',
 }
 SPECS = {
+    'audit_candidate_composition.py': ('03', '按候选小区和时期检查面积、电梯、建成年代及楼层成交构成', '--sample、--transactions、--baseline输入；原成交哈希校验', '--output新目录的四份构成CSV与摘要', '不估计政策效应，不自动判定楼栋或剔除样本'),
+    'test_candidate_composition.py': ('05', '验证前段、过渡和后段正确分离', '季度样例', 'unittest结果', '无需真实数据'),
     'document_all_folders.py': ('05', '为所有Git跟踪目录补齐中文README及逐文件用途，保留已有说明', 'Git索引、中文代码分类JSON及文件用途映射', '每个目录的README.md和子目录导航', '先更新代码分类，再生成目录说明；未知文件用途会失败'),
     'download_data.py': ('01', '按全市或罗湖下载公开数据，核验SHA-256；不自动解压', 'Release清单；可选已有下载文件', 'data/raw/downloads/中的已核验附件', '可直接运行；默认联网下载'),
     'build_citywide_summary.py': ('01', '清洗全市平台交易，统计行政区覆盖', '--input指定原始成交CSV', 'scopes/shenzhen/summary/区级CSV和JSON', '需先下载交易包并解压；不会输出逐套记录'),

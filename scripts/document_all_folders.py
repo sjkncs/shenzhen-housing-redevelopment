@@ -8,6 +8,10 @@ ROOT = Path(__file__).resolve().parents[1]
 START = '<!-- generated-file-guide:start -->'
 END = '<!-- generated-file-guide:end -->'
 PURPOSE = {
+    'period_composition.csv': '逐候选逐时期的成交笔数、面积、电梯、年代和价格描述统计。',
+    'reported_year_composition.csv': '逐候选逐时期的建成年代计数与占比，不能代替楼栋识别。',
+    'floor_band_composition.csv': '逐候选逐时期的原楼层标签频率，不代表统一实际高度。',
+    'pre_post_composition.csv': '双段有成交者的属性构成差异，不是价格因果效应。',
     'official_address_evidence.csv': '三个重点候选的官方地址证据、来源哈希与尚未确认的住宅/坐标状态。',
     'checks.yml': 'GitHub自动检查配置：安装依赖、运行测试并核验公开目录。',
     'code_catalog.json': '全部Python代码的分类、用途、输入、输出和运行条件，供完整性检查读取。',

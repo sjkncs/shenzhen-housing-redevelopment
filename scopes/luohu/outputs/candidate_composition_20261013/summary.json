@@ -1,0 +1,20 @@
+{
+  "scope": "SOURCE_REPORTED_TRANSACTION_COMPOSITION_NOT_CAUSAL_EFFECT",
+  "candidate_n": 20,
+  "transactions_n": 366,
+  "conflicting_reported_years_n": 7,
+  "both_periods_candidates_n": 13,
+  "period_counts": {
+    "pre": 202,
+    "post": 145,
+    "transition": 19
+  },
+  "floor_band_unknown_n": 0,
+  "identity_confirmed": false,
+  "building_phase_assigned": false,
+  "source_sha256": {
+    "sample": "ebb25accd2ee3c971fbf6c19d83818ffdcfae1893dbdd8555300c06d90b7c065",
+    "transactions": "b56310294f8b0288eba66c9852353c0339d4e9ba10fc0dadbcfa17ffad63bd22",
+    "baseline": "272232f8e6951fb165d5024cb0bdc10a7b21e85863cf9e56868454320e1c59a9"
+  }
+}

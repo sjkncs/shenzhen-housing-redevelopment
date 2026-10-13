@@ -64,6 +64,18 @@
 
 路径：`scripts/validate_public_repository.py`
 
+## [test_candidate_composition.py](../../tests/test_candidate_composition.py)
+
+**用途：**验证前段、过渡和后段正确分离
+
+**输入：**季度样例
+
+**输出：**unittest结果
+
+**运行条件：**无需真实数据
+
+路径：`tests/test_candidate_composition.py`
+
 ## [test_candidate_support.py](../../tests/test_candidate_support.py)
 
 **用途：**测试过渡季度分离、无成交小区保留和重复交易拒绝
