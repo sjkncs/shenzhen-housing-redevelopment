@@ -27,4 +27,6 @@ python scopes/luohu/scripts/check_price_did_influence_20261003.py
 
 POI流程需设置`SHENZHEN_POI_ZIP`并将源组件按脚本所需路径放入`scopes/luohu/data/supplied_gdata_intake/20261011/poi_luohu/source_components/`。运行顺序为筛选、双端坐标诊断、身份歧义复核。坐标数学实现仅用于假设比较，不直接接受转换规则。第三方代码按固定提交和SHA核验，原许可保留。
 
+用户提供的桌面坐标转换程序已做[静态核查](COORDINATE_CONVERTER_REVIEW.md)，资源中显示六项互联网地图坐标转换，尚未运行或验证精度；不要直接用来处理木头龙原测量坐标。EXE/DLL不在公开仓库分发。
+
 GitHub Actions仅安装依赖、运行数据无关测试与公开文件/口径检查，不访问私有交易数据，不重估模型，也不宣称通过因果识别测试。
