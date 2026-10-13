@@ -1,0 +1,31 @@
+{
+  "source_url": "https://www.szlh.gov.cn/lhqwbgs/img/1/1142/1142605/7649730.jpg",
+  "source_sha256": "f7df2be5174f367706b739b4244a052c79a8d50d5c35d517cba479fac2e49d21",
+  "coordinate_table_sha256": "ef39db30c7685a801387a4a44d6628687a2dccb0fae35ed049abbf2146fac3a9",
+  "point_count": 45,
+  "ring_checks": [
+    {
+      "ring_id": "main",
+      "point_count": 32,
+      "valid": true,
+      "source_grid_area_units_squared": 77033.59499999945,
+      "source_grid_perimeter_units": 1444.977230223081
+    },
+    {
+      "ring_id": "triangle",
+      "point_count": 13,
+      "valid": true,
+      "source_grid_area_units_squared": 6211.81999999979,
+      "source_grid_perimeter_units": 378.1439722345356
+    }
+  ],
+  "ring_grouping": "J1-J32 and J33-J45, visually inferred from blue outline; not official ring identifiers",
+  "transcription": "Manual reading followed by a second same-reviewer visual comparison of all 45 rows with the high-resolution crop",
+  "independent_transcription_check": false,
+  "crs_confirmed": false,
+  "axis_convention_confirmed": false,
+  "units_confirmed": false,
+  "whole_demolition_boundary_equivalence_verified": false,
+  "georeferenced": false,
+  "housing_distances_computed": false
+}
