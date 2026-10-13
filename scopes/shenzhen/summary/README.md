@@ -18,6 +18,5 @@
 ## 子目录导航
 
 - [daily_market_postcutoff_20260916](daily_market_postcutoff_20260916/README.md)：详见子目录中文说明。
-- [daily_market_postcutoff_20260916_run](daily_market_postcutoff_20260916_run/README.md)：详见子目录中文说明。
 
 <!-- generated-file-guide:end -->
