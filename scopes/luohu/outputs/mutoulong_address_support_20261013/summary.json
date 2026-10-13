@@ -1,0 +1,36 @@
+{
+  "scope": "ADDRESS_LEADS_AND_OBSERVATION_SUPPORT_NOT_PROJECT_SAMPLE",
+  "roads": [
+    "华丽路",
+    "爱国路",
+    "文锦中路"
+  ],
+  "analysis_window": [
+    "2017Q1",
+    "2023Q4"
+  ],
+  "pre_period": [
+    "2017Q1",
+    "2019Q4"
+  ],
+  "transition": "2020Q1",
+  "post_period": [
+    "2020Q2",
+    "2023Q4"
+  ],
+  "coverage_community_n": 621,
+  "window_transaction_n": 11231,
+  "road_lead_link_n": 20,
+  "road_lead_community_n": 20,
+  "road_lead_window_transaction_n": 366,
+  "road_leads_both_periods_n": 13,
+  "road_leads_no_window_transactions_n": 0,
+  "project_treatment_assigned": false,
+  "boundary_distances_computed": false,
+  "source_sha256": {
+    "sample": "ebb25accd2ee3c971fbf6c19d83818ffdcfae1893dbdd8555300c06d90b7c065",
+    "coverage": "4656595875b9c8ddf0f274ba32a1a2e801d748733a1edb528d289d6c78f59769",
+    "matches": "63df4d4d45b6b2c874b236fe9cfd17fc4f684394a34488074a52462fa1f52275",
+    "supplement": "20fc0a55dd878dab8055aa4f1afc0de49d3981e8612ac61a6f14f456c76d712a"
+  }
+}

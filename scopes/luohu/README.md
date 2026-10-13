@@ -10,6 +10,7 @@
 | POI筛选与限定词保护 | `scripts/`与`tests/` | 类别、名称逻辑已测试 |
 | 六个指定候选项目 | [project_registry](project_registry/README.md) | 每个项目的阶段须分别核定 |
 | 木头龙J1—J45转录及原坐标网拓扑 | [45点资料](project_registry/mutoulong/native_grid_2019/README.md) | 已转录、检查，尚未地理配准 |
+| 相关道路住宅线索与成交支持 | [20个地址线索](outputs/mutoulong_address_support_20261013/README.md) | 366笔窗口内成交；不是项目处理样本 |
 | 红线归属、正式项目效应与机制 | 尚无对应结果表 | 待完成 |
 
 清洗交易16,199条、621个小区；主回归10,867条、607个小区，动态模型11,231条、610个小区。不同数量由时间窗口与过渡季度处理产生，不是数据冲突。
