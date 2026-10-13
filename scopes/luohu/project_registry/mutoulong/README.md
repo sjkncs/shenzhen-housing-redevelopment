@@ -17,6 +17,14 @@
 
 尚未发送的官方边界成果与坐标依据申请草稿。
 
+### [court_project_scope.csv](court_project_scope.csv)
+
+法院平台管理人公告所列三个建设宗地及面积版本冲突，不是测绘验收成果。
+
+### [court_scope_followup.md](court_scope_followup.md)
+
+研究说明或分类导航文档；打开查看该主题用途和执行条件。
+
 ### [parcel_name_crosswalk.csv](parcel_name_crosswalk.csv)
 
 官方项目名称与建设宗地一对多连接，完整拆除几何仍未接受。

@@ -8,6 +8,7 @@ ROOT = Path(__file__).resolve().parents[1]
 START = '<!-- generated-file-guide:start -->'
 END = '<!-- generated-file-guide:end -->'
 PURPOSE = {
+    'court_project_scope.csv': '法院平台管理人公告所列三个建设宗地及面积版本冲突，不是测绘验收成果。',
     'registration_status_evidence.csv': '官方首次登记状态答复，保留月份与楼栋范围缺口，不替代交付事件。',
     'parcel_name_crosswalk.csv': '官方项目名称与建设宗地一对多连接，完整拆除几何仍未接受。',
     'phased_event_timeline.csv': '木头龙行政许可、施工阶段、回迁和配套计划分开的事件证据区间。',
