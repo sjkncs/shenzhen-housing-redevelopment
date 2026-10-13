@@ -33,6 +33,14 @@
 
 研究说明或分类导航文档；打开查看该主题用途和执行条件。
 
+### [registration_followup.md](registration_followup.md)
+
+研究说明或分类导航文档；打开查看该主题用途和执行条件。
+
+### [registration_status_evidence.csv](registration_status_evidence.csv)
+
+官方首次登记状态答复，保留月份与楼栋范围缺口，不替代交付事件。
+
 ### [service_handover_followup.md](service_handover_followup.md)
 
 研究说明或分类导航文档；打开查看该主题用途和执行条件。
