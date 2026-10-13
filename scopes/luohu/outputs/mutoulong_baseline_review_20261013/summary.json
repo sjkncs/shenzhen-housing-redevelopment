@@ -1,0 +1,17 @@
+{
+  "candidate_n": 20,
+  "reference_cutoff": "2020-01-01",
+  "reference_is_not_earliest_anticipation_date": true,
+  "baseline_evidence_counts": {
+    "platform_transaction_observed_before_2020": 17,
+    "pre2020_construction_reported_without_pre2020_transaction": 3
+  },
+  "conflicting_reported_years_n": 7,
+  "identity_accepted_n": 0,
+  "treatment_assigned_n": 0,
+  "inputs_sha256": {
+    "sample": "ebb25accd2ee3c971fbf6c19d83818ffdcfae1893dbdd8555300c06d90b7c065",
+    "coverage": "4656595875b9c8ddf0f274ba32a1a2e801d748733a1edb528d289d6c78f59769",
+    "leads": "bfafd5335236acfc314171c75cac1e2b94790ae7341e516f52dbb28d4b682681"
+  }
+}

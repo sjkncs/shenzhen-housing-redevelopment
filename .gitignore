@@ -20,4 +20,7 @@ scopes/**/data/supplied_gdata_intake/20261012*/
 *.docx
 *.pptx
 *.pdf
+!Draft/*.docx
+!Draft/*.pdf
+!PPT/*.pptx
 ~$*

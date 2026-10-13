@@ -3,6 +3,7 @@ import hashlib
 import json
 import re
 import subprocess
+import zipfile
 from pathlib import Path
 
 import pandas as pd
@@ -11,14 +12,26 @@ ROOT = Path(__file__).resolve().parents[1]
 files = subprocess.check_output(['git', 'ls-files', '-z'], cwd=ROOT).decode('utf-8').split('\0')
 files = list(filter(None, files))
 secrets = re.compile(rb'(?:ghp_|gho_|github_pat_|sk-proj-)[A-Za-z0-9_]{20,}|-----BEGIN (?:RSA |EC |OPENSSH )?PRIVATE KEY-----')
+artifacts = json.loads((ROOT / 'Logfiles/artifact_manifest.json').read_text(encoding='utf-8')) if (ROOT / 'Logfiles/artifact_manifest.json').exists() else {'files': []}
+sealed = {r['path']: r for r in artifacts['files']}
+office_allowed = {'Draft/开题报告_评委意见修订版.docx', 'Draft/开题报告_评委意见修订版.pdf', 'PPT/10.7开题报告.pptx'}
 for name in files:
     path = ROOT / name
-    assert path.suffix.lower() not in {'.doc', '.docx', '.pptx', '.pdf', '.zip', '.rar', '.gpkg', '.exe', '.dll'}, name
+    assert path.suffix.lower() not in {'.doc', '.docx', '.pptx', '.pdf', '.zip', '.rar', '.gpkg', '.exe', '.dll'} or name in office_allowed, name
     assert path.name not in {'analysis_sample.csv', 'community_pre_post_support.csv'}, name
     assert not secrets.search(path.read_bytes()), 'Potential credential: ' + name
+    if name in sealed:
+        assert path.stat().st_size == sealed[name]['bytes']
+        assert hashlib.sha256(path.read_bytes()).hexdigest() == sealed[name]['sha256']
+    if path.suffix in {'.docx', '.pptx'}:
+        with zipfile.ZipFile(path) as archive:
+            assert archive.testzip() is None
+            for item in archive.namelist():
+                if item.endswith('.xml'):
+                    assert not secrets.search(archive.read(item)), 'Potential credential in Office XML'
     if path.suffix in {'.md', '.py', '.json', '.csv'}:
         text = path.read_text(encoding='utf-8-sig')
-        if name != 'scripts/validate_public_repository.py':
+        if name != 'scripts/validate_public_repository.py' and not name.startswith('Code_Original/'):
             assert not re.search(r'(?<![\d.])20\d{8}(?!\d)|[A-Z]:[/\\]Users[/\\]|wxid_', text), 'Personal identifier: ' + name
         if path.suffix == '.md':
             for link in re.findall(r'\]\(([^)]+)\)', text):

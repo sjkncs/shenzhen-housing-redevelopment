@@ -83,6 +83,18 @@ python scripts/download_data.py --scope all --verify-only
 
 ## Repository Map
 
+| 研究归档入口 | 内容 |
+| --- | --- |
+| [Code_Original](Code_Original/README.md) | 原执行代码快照 |
+| [Code_Revision](Code_Revision/README.md) | 当前代码导航 |
+| [Dataset](Dataset/README.md) | 全市与罗湖数据 |
+| [Draft](Draft/README.md) | 开题报告DOCX/PDF |
+| [Logfiles](Logfiles/README.md) | 文件哈希及核验记录 |
+| [PPT](PPT/README.md) | 10.7开题报告原PPT |
+| [References](References/README.md) | 文献与官方来源索引 |
+
+[研究复现说明](README_replication.md) · [HTML说明](README_replication.html) · [AGENTS.md](AGENTS.md) · [CLAUDE.md](CLAUDE.md)
+
 ```text
 scopes/
   shenzhen/                 全市清洗汇总、分区覆盖及汇总代码
@@ -92,7 +104,7 @@ scripts/                    公开文件和结果一致性核验
 .github/workflows/          数据无关测试与公开内容检查
 ```
 
-经仓库所有者明确授权，原始交易、全市POI与建筑数据，以及罗湖分析样本、POI明细和GPKG已通过[公开数据Release](https://github.com/sjkncs/shenzhen-housing-redevelopment/releases/tag/data-snapshot-20261012)发布。全市与罗湖分包下载，校验值和字段说明见[数据下载说明](docs/DATA_ACCESS.md)。含个人身份信息的报告、PPT和任务书仍在私有档案保留。
+经所有者授权，研究数据通过[公开Release](https://github.com/sjkncs/shenzhen-housing-redevelopment/releases/tag/data-snapshot-20261012)发布，全市与罗湖分包。此次进一步按用户要求在Draft和PPT公开现有报告及PPT原件，保留作者封面与备注；它们是开题阶段版本，尚未全部同步为木头龙单案例范围。任务书和导师反馈仍不公开。
 
 ## Roadmap
 

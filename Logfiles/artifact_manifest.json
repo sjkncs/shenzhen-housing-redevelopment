@@ -1,0 +1,51 @@
+{
+  "scope": "Original code and owner-requested academic materials",
+  "source_artifacts_rewritten": false,
+  "files": [
+    {
+      "path": "PPT/10.7开题报告.pptx",
+      "bytes": 10804582,
+      "sha256": "86aa4fce5ef4b9395c69d92c7373a3ef8b35a585fa98afd6999607efc0435a4e"
+    },
+    {
+      "path": "Draft/开题报告_评委意见修订版.docx",
+      "bytes": 5048043,
+      "sha256": "d06bc369b1effd4da4369607185f4d67581312f1fe1d9dbc775078ba20cc30ad"
+    },
+    {
+      "path": "Draft/开题报告_评委意见修订版.pdf",
+      "bytes": 2069347,
+      "sha256": "2b501cf5da64006d9133d280131ed31d1d9ed7b5f243caa7871314975d027aad"
+    },
+    {
+      "path": "Code_Original/20261012_snapshot/run_price_did_audit_20261003.py",
+      "bytes": 9405,
+      "sha256": "99aa9bfffdb31d920b47af0668c58c4b40828df679f4804809313698189a8ed8"
+    },
+    {
+      "path": "Code_Original/20261012_snapshot/check_price_did_support_20261003.py",
+      "bytes": 3131,
+      "sha256": "53bb53600ed05db5714a55f85879ddafc0f846e3c171218371e1778334ee8d62"
+    },
+    {
+      "path": "Code_Original/20261012_snapshot/check_price_did_influence_20261003.py",
+      "bytes": 2984,
+      "sha256": "1cb1bfc16a7e9fe91c49c49fb11f39b848c4405e414d9932bc54d70cdd545cb6"
+    },
+    {
+      "path": "Code_Original/20261012_snapshot/build_luohu_residential_poi_20261012.py",
+      "bytes": 16613,
+      "sha256": "e9660870cfca61d1872b67d47172077b9b50d3df7f02320f409a3a5aad3bd2db"
+    },
+    {
+      "path": "Code_Original/20261012_snapshot/diagnose_poi_coordinate_frames_20261012.py",
+      "bytes": 5879,
+      "sha256": "4a40e4926d3932d521ed9c0dd30e6be28e111f7c142bdc4a3f028f753d3a26ba"
+    },
+    {
+      "path": "Code_Original/20261012_snapshot/review_luohu_poi_ambiguity_20261012.py",
+      "bytes": 11654,
+      "sha256": "e16532ea3cab2f6acc12a5ba1f756352525c435bf71fe9afb321480f0acfcc6a"
+    }
+  ]
+}

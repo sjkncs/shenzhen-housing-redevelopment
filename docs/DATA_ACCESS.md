@@ -23,4 +23,4 @@ Get-FileHash ./luohu-derived-data.zip -Algorithm SHA256
 
 原始成交CSV哈希为`b56310294f8b0288eba66c9852353c0339d4e9ba10fc0dadbcfa17ffad63bd22`。下载后按清单核验，运行见[复现指南](REPRODUCTION.md)。
 
-正式项目红线DID、ATT及机制结果仍待完成，公开下载不改变识别结论。含姓名学号的报告、PPT和任务书不属于本次数据Release，仍保留私有档案。来源方如提出权利或隐私问题，可通过Issue联系维护者，请勿再次贴出逐条房源或个人信息。
+正式项目红线DID、ATT及机制结果仍待完成，公开下载不改变识别结论。按用户追加明确要求，现有报告及PPT另在Draft和PPT目录公开，保留原作者信息；它们不是数据Release附件或最终论文。任务书和反馈仍私有。来源方如提出权利或隐私问题，可通过Issue联系维护者。

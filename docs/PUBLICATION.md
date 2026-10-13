@@ -4,7 +4,7 @@
 
 公开适配保留实际回归数值，只调整文件层级、输入路径和必要建目录逻辑。汇总中的本地源路径已去除，第三方坐标实现保留固定版本及原LICENSE。项目整体暂不附统一开源许可；公开阅读不能被解释为第三方资料或代码获得新的许可。
 
-2026年10月12日所有者追加明确授权后，研究数据经Release公开，分全市原始来源和罗湖派生包。个人身份材料仍未公开；供应来源的独立许可不被伪称为已核实，见[下载说明](DATA_ACCESS.md)。
+2026年10月12日所有者授权后，研究数据经Release公开；后续按用户明确要求，现有报告与PPT原件另纳入Draft和PPT，保留原作者信息。任务书和反馈仍私有，供应来源的独立许可不被伪称为已核实，见[下载说明](DATA_ACCESS.md)。
 
 README结构参考[PyWhy EconML](https://github.com/py-why/EconML/blob/main/README.md)的项目定位、结果、使用方式及文档入口；Stars入口参考[Star History官方项目](https://github.com/star-history/star-history)。只借鉴组织方式，不复制其研究结论或展示统计。
 
