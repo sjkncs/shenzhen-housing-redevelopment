@@ -11,6 +11,13 @@ import pandas as pd
 ROOT = Path(__file__).resolve().parents[1]
 files = subprocess.check_output(['git', 'ls-files', '-z'], cwd=ROOT).decode('utf-8').split('\0')
 files = list(filter(None, files))
+catalog_path = ROOT / 'Code_Revision/code_catalog.json'
+if catalog_path.exists():
+    catalog = json.loads(catalog_path.read_text(encoding='utf-8'))['files']
+    python_paths = {name for name in files if name.endswith('.py')}
+    assert {row['path'] for row in catalog} == python_paths, 'Python code classification incomplete'
+    assert len({row['path'] for row in catalog}) == len(catalog), 'Duplicate code entries'
+    assert all(row['purpose_zh'] and row['inputs_zh'] and row['outputs_zh'] and row['run_status_zh'] for row in catalog)
 secrets = re.compile(rb'(?:ghp_|gho_|github_pat_|sk-proj-)[A-Za-z0-9_]{20,}|-----BEGIN (?:RSA |EC |OPENSSH )?PRIVATE KEY-----')
 artifacts = json.loads((ROOT / 'Logfiles/artifact_manifest.json').read_text(encoding='utf-8')) if (ROOT / 'Logfiles/artifact_manifest.json').exists() else {'files': []}
 sealed = {r['path']: r for r in artifacts['files']}

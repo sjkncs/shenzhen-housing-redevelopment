@@ -87,6 +87,7 @@ python scripts/download_data.py --scope all --verify-only
 | --- | --- |
 | [Code_Original](Code_Original/README.md) | 原执行代码快照 |
 | [Code_Revision](Code_Revision/README.md) | 当前代码导航 |
+| [完整代码中文分类](Code_Revision/代码用途索引.csv) | 每份脚本的用途、输入、输出与运行条件 |
 | [Dataset](Dataset/README.md) | 全市与罗湖数据 |
 | [Draft](Draft/README.md) | 开题报告DOCX/PDF |
 | [Logfiles](Logfiles/README.md) | 文件哈希及核验记录 |

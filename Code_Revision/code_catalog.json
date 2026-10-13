@@ -1,0 +1,236 @@
+{
+  "files": [
+    {
+      "category": "06_原始代码与第三方",
+      "path": "Code_Original/20261012_snapshot/build_luohu_residential_poi_20261012.py",
+      "purpose_zh": "按行政代码440303筛选POI，区分住宅主体、楼栋与出入口并连接同名小区",
+      "inputs_zh": "原成交CSV、POI ZIP、解压SHP组件及既有回归摘要",
+      "outputs_zh": "20261012_luohu_residential_poi/CSV、GPKG和摘要",
+      "run_status_zh": "原字节封存；有历史工作站路径，不是当前可移植入口"
+    },
+    {
+      "category": "06_原始代码与第三方",
+      "path": "Code_Original/20261012_snapshot/check_price_did_influence_20261003.py",
+      "purpose_zh": "逐小区、逐比较商圈留出及差异线性趋势敏感性",
+      "inputs_zh": "analysis_sample.csv及主回归估计函数",
+      "outputs_zh": "影响点CSV、趋势表、动态比较和影响图",
+      "run_status_zh": "原字节封存；有历史工作站路径，不是当前可移植入口"
+    },
+    {
+      "category": "06_原始代码与第三方",
+      "path": "Code_Original/20261012_snapshot/check_price_did_support_20261003.py",
+      "purpose_zh": "检查前后交易支持，重估支持样本和伪事件诊断",
+      "inputs_zh": "主回归生成的analysis_sample.csv及估计函数",
+      "outputs_zh": "支持表、敏感性表、季度协方差及诊断摘要",
+      "run_status_zh": "原字节封存；有历史工作站路径，不是当前可移植入口"
+    },
+    {
+      "category": "06_原始代码与第三方",
+      "path": "Code_Original/20261012_snapshot/diagnose_poi_coordinate_frames_20261012.py",
+      "purpose_zh": "比较住宅与POI的九种坐标口径组合",
+      "inputs_zh": "成交CSV、同名候选连接、固定版本坐标实现",
+      "outputs_zh": "双端诊断CSV及摘要",
+      "run_status_zh": "原字节封存；有历史工作站路径，不是当前可移植入口"
+    },
+    {
+      "category": "06_原始代码与第三方",
+      "path": "Code_Original/20261012_snapshot/review_luohu_poi_ambiguity_20261012.py",
+      "purpose_zh": "复核同名位置歧义、地址限定词、门点与主体线索",
+      "inputs_zh": "POI候选、覆盖、18个异常诊断及小区原始坐标登记表",
+      "outputs_zh": "20261012_luohu_poi_identity_review/线索与来源记录",
+      "run_status_zh": "原字节封存；有历史工作站路径，不是当前可移植入口"
+    },
+    {
+      "category": "06_原始代码与第三方",
+      "path": "Code_Original/20261012_snapshot/run_price_did_audit_20261003.py",
+      "purpose_zh": "运行罗湖商圈代理双向固定效应DID和季度动态模型",
+      "inputs_zh": "SHENZHEN_TRANSACTION_CSV环境变量指定成交CSV",
+      "outputs_zh": "outputs/price_did_audit_20261003/样本、回归、图和摘要",
+      "run_status_zh": "原字节封存；有历史工作站路径，不是当前可移植入口"
+    },
+    {
+      "category": "06_原始代码与第三方",
+      "path": "scopes/luohu/data/supplied_gdata_intake/20261011/building_rar/coordinate_hypotheses/implementation.py",
+      "purpose_zh": "固定版本eviltransform地图坐标数学实现",
+      "inputs_zh": "经纬度测试点；注意函数纬度/经度参数顺序",
+      "outputs_zh": "转换候选点",
+      "run_status_zh": "第三方BSD许可随附；不是深圳地方测量坐标转换"
+    },
+    {
+      "category": "02_空间与住宅身份",
+      "path": "scopes/luohu/scripts/audit_mutoulong_candidate_support.py",
+      "purpose_zh": "统计三条道路地址线索小区的事件前后成交支持",
+      "inputs_zh": "--sample、--coverage、--matches、--supplement四个CSV",
+      "outputs_zh": "--output指定的新目录；621小区表及道路线索支持",
+      "run_status_zh": "所有参数显式传入；拒绝覆盖已有输出；不定义项目处理组"
+    },
+    {
+      "category": "02_空间与住宅身份",
+      "path": "scopes/luohu/scripts/build_luohu_residential_poi_20261012.py",
+      "purpose_zh": "按行政代码440303筛选POI，区分住宅主体、楼栋与出入口并连接同名小区",
+      "inputs_zh": "原成交CSV、POI ZIP、解压SHP组件及既有回归摘要",
+      "outputs_zh": "20261012_luohu_residential_poi/CSV、GPKG和摘要",
+      "run_status_zh": "需配置环境变量与原组件目录；不接受坐标系"
+    },
+    {
+      "category": "03_价格回归与诊断",
+      "path": "scopes/luohu/scripts/check_price_did_influence_20261003.py",
+      "purpose_zh": "逐小区、逐比较商圈留出及差异线性趋势敏感性",
+      "inputs_zh": "analysis_sample.csv及主回归估计函数",
+      "outputs_zh": "影响点CSV、趋势表、动态比较和影响图",
+      "run_status_zh": "在主回归之后运行；不是正式项目ATT"
+    },
+    {
+      "category": "03_价格回归与诊断",
+      "path": "scopes/luohu/scripts/check_price_did_support_20261003.py",
+      "purpose_zh": "检查前后交易支持，重估支持样本和伪事件诊断",
+      "inputs_zh": "主回归生成的analysis_sample.csv及估计函数",
+      "outputs_zh": "支持表、敏感性表、季度协方差及诊断摘要",
+      "run_status_zh": "在主回归之后运行；会更新结果目录"
+    },
+    {
+      "category": "02_空间与住宅身份",
+      "path": "scopes/luohu/scripts/diagnose_poi_coordinate_frames_20261012.py",
+      "purpose_zh": "比较住宅与POI的九种坐标口径组合",
+      "inputs_zh": "成交CSV、同名候选连接、固定版本坐标实现",
+      "outputs_zh": "双端诊断CSV及摘要",
+      "run_status_zh": "先运行POI筛选；一致性不是测量精度"
+    },
+    {
+      "category": "02_空间与住宅身份",
+      "path": "scopes/luohu/scripts/review_luohu_poi_ambiguity_20261012.py",
+      "purpose_zh": "复核同名位置歧义、地址限定词、门点与主体线索",
+      "inputs_zh": "POI候选、覆盖、18个异常诊断及小区原始坐标登记表",
+      "outputs_zh": "20261012_luohu_poi_identity_review/线索与来源记录",
+      "run_status_zh": "依赖额外登记表data/acquisition/community_matching/20260926T081831338704Z/深圳小区身份与原始坐标.csv，当前Release未含该表；不能直接全量复现"
+    },
+    {
+      "category": "02_空间与住宅身份",
+      "path": "scopes/luohu/scripts/review_residential_baseline.py",
+      "purpose_zh": "按最早成交及平台建成年代分流基期存在证据",
+      "inputs_zh": "--sample、--coverage、--leads三个CSV",
+      "outputs_zh": "--output指定的新目录；基期证据CSV与摘要",
+      "run_status_zh": "先完成地址支持核查；不是官方竣工认证"
+    },
+    {
+      "category": "03_价格回归与诊断",
+      "path": "scopes/luohu/scripts/run_price_did_audit_20261003.py",
+      "purpose_zh": "运行罗湖商圈代理双向固定效应DID和季度动态模型",
+      "inputs_zh": "SHENZHEN_TRANSACTION_CSV环境变量指定成交CSV",
+      "outputs_zh": "outputs/price_did_audit_20261003/样本、回归、图和摘要",
+      "run_status_zh": "需原交易数据；写入既有结果目录，先备份或用独立克隆运行"
+    },
+    {
+      "category": "05_测试与核验",
+      "path": "scopes/luohu/tests/test_luohu_poi_identity_review.py",
+      "purpose_zh": "测试地址限定词处理并保护分期、楼栋和院区",
+      "inputs_zh": "名称样例",
+      "outputs_zh": "unittest结果",
+      "run_status_zh": "不读取真实POI"
+    },
+    {
+      "category": "05_测试与核验",
+      "path": "scopes/luohu/tests/test_luohu_residential_poi.py",
+      "purpose_zh": "测试住宅类别、商业混合与入口分类",
+      "inputs_zh": "名称/类别样例",
+      "outputs_zh": "unittest结果",
+      "run_status_zh": "不验证坐标或行政区数据质量"
+    },
+    {
+      "category": "01_数据获取与清洗",
+      "path": "scopes/shenzhen/scripts/build_citywide_summary.py",
+      "purpose_zh": "清洗全市平台交易，统计行政区覆盖",
+      "inputs_zh": "--input指定原始成交CSV",
+      "outputs_zh": "scopes/shenzhen/summary/区级CSV和JSON",
+      "run_status_zh": "需先下载交易包并解压；不会输出逐套记录"
+    },
+    {
+      "category": "04_材料归档与文献",
+      "path": "scripts/archive_report_references.py",
+      "purpose_zh": "存档指定报告，提取28条参考文献和DOI入口",
+      "inputs_zh": "--report DOCX与--ppt PPTX",
+      "outputs_zh": "Draft原件、References Markdown/CSV和来源JSON",
+      "run_status_zh": "维护者工具；当前期待28条，不是文献真实性核验"
+    },
+    {
+      "category": "05_测试与核验",
+      "path": "scripts/build_code_catalog.py",
+      "purpose_zh": "为全部Git跟踪Python文件生成中文分类说明与完整索引",
+      "inputs_zh": "Git索引及本脚本用途映射",
+      "outputs_zh": "Code_Revision六类README、CSV和JSON",
+      "run_status_zh": "在git add之后运行；新脚本未登记会明确失败"
+    },
+    {
+      "category": "01_数据获取与清洗",
+      "path": "scripts/download_data.py",
+      "purpose_zh": "按全市或罗湖下载公开数据，核验SHA-256；不自动解压",
+      "inputs_zh": "Release清单；可选已有下载文件",
+      "outputs_zh": "data/raw/downloads/中的已核验附件",
+      "run_status_zh": "可直接运行；默认联网下载"
+    },
+    {
+      "category": "04_材料归档与文献",
+      "path": "scripts/organize_research_archive.py",
+      "purpose_zh": "复制PPT、历史报告及六份原执行代码，生成归档清单与复现HTML",
+      "inputs_zh": "--private-archive指定已有私有整理目录",
+      "outputs_zh": "Draft、PPT、Code_Original及归档JSON、HTML",
+      "run_status_zh": "维护者工具；保留已有副本字节；会重建初始归档清单，新增版本后不能盲目重跑"
+    },
+    {
+      "category": "04_材料归档与文献",
+      "path": "scripts/prepare_authorized_data_release.py",
+      "purpose_zh": "打包全市来源与14份罗湖派生文件并校验包内哈希",
+      "inputs_zh": "--private-tree及三份源附件、--output",
+      "outputs_zh": "罗湖ZIP及docs/DATA_RELEASE_MANIFEST.json",
+      "run_status_zh": "维护者归档工具；需要完整输入；会重写指定输出包和清单"
+    },
+    {
+      "category": "05_测试与核验",
+      "path": "scripts/validate_public_repository.py",
+      "purpose_zh": "检查Git跟踪文件、原件哈希、链接、聚合数值和代码分类覆盖",
+      "inputs_zh": "当前Git索引、来源清单与封存结果",
+      "outputs_zh": "终端PASS或异常",
+      "run_status_zh": "在git add之后运行；不重估模型"
+    },
+    {
+      "category": "05_测试与核验",
+      "path": "tests/test_candidate_support.py",
+      "purpose_zh": "测试过渡季度分离、无成交小区保留和重复交易拒绝",
+      "inputs_zh": "程序内小型测试表",
+      "outputs_zh": "unittest结果",
+      "run_status_zh": "数据无关测试"
+    },
+    {
+      "category": "05_测试与核验",
+      "path": "tests/test_download_data.py",
+      "purpose_zh": "测试下载哈希、已有文件保护、路径限制与包内核验",
+      "inputs_zh": "临时测试文件",
+      "outputs_zh": "unittest结果",
+      "run_status_zh": "无需真实数据或网络"
+    },
+    {
+      "category": "05_测试与核验",
+      "path": "tests/test_mutoulong_image_comparison.py",
+      "purpose_zh": "核对图像拟合与留出点分离、保存的像素误差",
+      "inputs_zh": "已归档图纸比对CSV/JSON",
+      "outputs_zh": "unittest结果",
+      "run_status_zh": "不验证地理配准"
+    },
+    {
+      "category": "05_测试与核验",
+      "path": "tests/test_mutoulong_native_grid.py",
+      "purpose_zh": "校验45点编号、哈希、鞋带面积与未配准状态",
+      "inputs_zh": "已归档原坐标网CSV/JSON",
+      "outputs_zh": "unittest结果",
+      "run_status_zh": "不确认CRS、轴序或真实单位"
+    },
+    {
+      "category": "05_测试与核验",
+      "path": "tests/test_residential_baseline.py",
+      "purpose_zh": "测试平台成交与建成年代的证据分流逻辑",
+      "inputs_zh": "程序内日期与年份样例",
+      "outputs_zh": "unittest结果",
+      "run_status_zh": "不证明住宅身份"
+    }
+  ]
+}
