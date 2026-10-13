@@ -28,6 +28,18 @@
 
 路径：`scopes/luohu/scripts/build_luohu_residential_poi_20261012.py`
 
+## [build_project_readiness.py](../../scopes/luohu/scripts/build_project_readiness.py)
+
+**用途：**将已核定事件区间与交易截止日比较，整理17个项目准备状态
+
+**输入：**项目线索、事件证据CSV与全市覆盖摘要
+
+**输出：**--output新目录的准备表及摘要
+
+**运行条件：**不补日期、不接受项目处理组，区分年度区间与具体事件
+
+路径：`scopes/luohu/scripts/build_project_readiness.py`
+
 ## [collect_building_identity_evidence.py](../../scopes/luohu/scripts/collect_building_identity_evidence.py)
 
 **用途：**取得官方楼栋标识线索并记录来源哈希，不推断楼栋与年代对应

@@ -29,6 +29,10 @@
 
 文件说明以当前跟踪版本为准；代码仅说明用途，不导入或执行。
 
+### [event_evidence.csv](event_evidence.csv)
+
+有来源的实际或行政事件区间，明确精度和分期用途，不填预测回迁日。
+
 ### [project_claims.csv](project_claims.csv)
 
 用户AI项目线索逐条复核，对象类型、已有证据和未核实预测分开记录。

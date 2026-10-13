@@ -1,0 +1,9 @@
+project_name,event_type,date_lower,date_upper,date_precision,source_scope,source_url
+木头龙,首批收房回迁,2024-01-01,2024-12-31,年度区间,2025报告回顾2024不表示所有分期交付,https://www.szlh.gov.cn/zwgk/zcjd/2025/jd2025nzfgzbg/zcyw/content/post_12083256.html
+三九花园,计划公告,2026-01-09,2026-01-09,日,计划纳入不是开工,https://www.szlh.gov.cn/lhqzfhjsj/gkmlpt/content/12/12593/post_12593231.html
+螺岭片区,签约阶段报告,,,具体日待核,上半年工作总结不是首次签约日期,https://www.sz.gov.cn/szzt2010/wgkzl/jggk/lsqkgk/content/post_12916257.html
+第一幼儿园宿舍楼,实际开工,2026-05-23,2026-05-23,日,自主更新独立制度类型,https://www.sz.gov.cn/szzt2010/wgkzl/jggk/lsqkgk/content/post_12916257.html
+罗芳村,调整公告,2026-07-24,2026-07-24,日,拟拆范围调整不是施工重启日期,https://www.szlh.gov.cn/lhqzfhjsj/gkmlpt/content/12/12906/post_12906896.html
+鹤塘小区（深业鹤塘岭）,配建保障房交付使用,2022-05-01,2022-05-31,月,仅配建保障房不能替代全项目回迁,https://audit.sz.gov.cn/zxbs/gqgzbg/content/post_11099921.html
+庆宜华苑,建设宗地用地批复,2025-05-23,2025-05-23,日,供地宗地不是整体拆除边界,https://www.sz.gov.cn/szzt2010/wgkzl/glgk/jgxxgk/gtzy/content/post_12213096.html
+华富北01-01,规划许可公布,2026-03-02,2026-03-02,日,公布日期不替代实际施工日期,https://www.sz.gov.cn/szzt2010/wgkzl/glgk/jgxxgk/gtzy/content/post_12661761.html

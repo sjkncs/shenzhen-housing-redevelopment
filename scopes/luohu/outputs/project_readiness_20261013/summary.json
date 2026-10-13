@@ -1,0 +1,13 @@
+{
+  "candidate_n": 17,
+  "event_evidence_rows": 8,
+  "source_cutoff": "2024-04-25",
+  "observation_status_counts": {
+    "事件日期待核": 10,
+    "事件在交易截止后，无现有事后观测": 5,
+    "事件区间跨交易截止，不能确认事后观测": 1,
+    "全市来源时间覆盖事件后，仍需项目附近成交支持": 1
+  },
+  "accepted_project_samples": 0,
+  "event_dates_not_imputed": true
+}

@@ -124,6 +124,18 @@
 
 路径：`tests/test_mutoulong_native_grid.py`
 
+## [test_project_readiness.py](../../tests/test_project_readiness.py)
+
+**用途：**测试事件晚于截止、区间跨截止及日期缺失等情况
+
+**输入：**日期区间样例
+
+**输出：**unittest结果
+
+**运行条件：**无需真实数据
+
+路径：`tests/test_project_readiness.py`
+
 ## [test_residential_baseline.py](../../tests/test_residential_baseline.py)
 
 **用途：**测试平台成交与建成年代的证据分流逻辑

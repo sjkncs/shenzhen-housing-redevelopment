@@ -81,6 +81,14 @@
       "run_status_zh": "需配置环境变量与原组件目录；不接受坐标系"
     },
     {
+      "category": "02_空间与住宅身份",
+      "path": "scopes/luohu/scripts/build_project_readiness.py",
+      "purpose_zh": "将已核定事件区间与交易截止日比较，整理17个项目准备状态",
+      "inputs_zh": "项目线索、事件证据CSV与全市覆盖摘要",
+      "outputs_zh": "--output新目录的准备表及摘要",
+      "run_status_zh": "不补日期、不接受项目处理组，区分年度区间与具体事件"
+    },
+    {
       "category": "03_价格回归与诊断",
       "path": "scopes/luohu/scripts/check_price_did_influence_20261003.py",
       "purpose_zh": "逐小区、逐比较商圈留出及差异线性趋势敏感性",
@@ -263,6 +271,14 @@
       "inputs_zh": "已归档原坐标网CSV/JSON",
       "outputs_zh": "unittest结果",
       "run_status_zh": "不确认CRS、轴序或真实单位"
+    },
+    {
+      "category": "05_测试与核验",
+      "path": "tests/test_project_readiness.py",
+      "purpose_zh": "测试事件晚于截止、区间跨截止及日期缺失等情况",
+      "inputs_zh": "日期区间样例",
+      "outputs_zh": "unittest结果",
+      "run_status_zh": "无需真实数据"
     },
     {
       "category": "05_测试与核验",

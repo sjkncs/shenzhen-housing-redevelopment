@@ -37,6 +37,16 @@
 
 运行条件：需配置环境变量与原组件目录；不接受坐标系
 
+### [build_project_readiness.py](build_project_readiness.py)
+
+用途：将已核定事件区间与交易截止日比较，整理17个项目准备状态
+
+输入：项目线索、事件证据CSV与全市覆盖摘要
+
+输出：--output新目录的准备表及摘要
+
+运行条件：不补日期、不接受项目处理组，区分年度区间与具体事件
+
 ### [check_price_did_influence_20261003.py](check_price_did_influence_20261003.py)
 
 用途：逐小区、逐比较商圈留出及差异线性趋势敏感性
