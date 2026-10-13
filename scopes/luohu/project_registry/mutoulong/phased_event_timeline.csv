@@ -1,0 +1,10 @@
+event_id,event_name,date_lower,date_upper,date_precision,evidence_type,scope_limit,source_url
+demolition_report,报告记载全部拆除,,,具体拆除日待核,2020政府报告回顾2019,不能以报告日期代替拆除日也未核定各分期,https://www.szlh.gov.cn/zwgk/zcjd/2020/jdlhq2020nzfgzbg/zcyw/content/post_10669644.html
+ceremony_20200304,集中开工活动,2020-03-04,2020-03-04,日,官方大事记,现场举办12个项目活动不等于每个分期实际施工日,https://www.szlh.gov.cn/lhqwbgs/gkmlpt/content/7/7681/post_7681836.html
+land_publication,用地批复公告发布,2020-03-05,2020-03-05,日,行政公告,发布日期不是批复签发或动工日期,https://www.szlh.gov.cn/tzgg/content/post_6882519.html
+construction_halfyear,上半年报告记载正式开工,2020-01-01,2020-06-30,半年区间,官方执行情况报告,支持上半年施工阶段不确定具体日和分期边界,https://www.szlh.gov.cn/zwfw/yshj/cyghhbj/content/post_8127793.html
+permit_phase1,01-02一期工程规划许可,2020-09-01,2020-09-30,月,2024变更公示回溯,行政许可不是首次实际施工且限01-02一期,https://www.sz.gov.cn/szzt2010/wgkzl/jcgk/jcygk/zdzcjc/content/mpost_11699189.html
+survey_record,验线报告被修改许可证引用,2020-11-19,2020-11-19,日,本地原许可证文本,验线不是开工或交付日期,https://www.szlh.gov.cn/attachment/1/1218/1218402/10259049.pdf
+first_return,2024首批业主收房回迁,2024-01-01,2024-12-31,年度区间,2025政府报告回顾2024,没有具体交付日和楼栋不代替全部回迁,https://www.szlh.gov.cn/zwgk/zcjd/2025/jd2025nzfgzbg/zcyw/content/post_12083256.html
+community_service_plan,社区服务场所搬迁安排,,,实际开放日待核,2026工作计划,安排搬迁到益田御龙天地3栋3楼不是设施已经开放,https://www.szlh.gov.cn/zwgk/ghjh/jhzj/gzjh/content/post_12643001.html
+kindergarten_proposal,御荣分园改造建议书公示,2026-05-21,2026-05-29,公示区间,教育局项目建议书,拟提供360学位不是已开放容量或实际服务改善,https://www.szlh.gov.cn/lhqjyj/gkmlpt/content/12/12800/post_12800276.html

@@ -8,6 +8,7 @@ ROOT = Path(__file__).resolve().parents[1]
 START = '<!-- generated-file-guide:start -->'
 END = '<!-- generated-file-guide:end -->'
 PURPOSE = {
+    'phased_event_timeline.csv': '木头龙行政许可、施工阶段、回迁和配套计划分开的事件证据区间。',
     'event_evidence.csv': '有来源的实际或行政事件区间，明确精度和分期用途，不填预测回迁日。',
     'project_readiness.csv': '17个候选项目的事件、交易窗口、类型与空间身份准备状态。',
     'project_claims.csv': '用户AI项目线索逐条复核，对象类型、已有证据和未核实预测分开记录。',
