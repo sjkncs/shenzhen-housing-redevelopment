@@ -14,7 +14,8 @@ files = list(filter(None, files))
 secrets = re.compile(rb'(?:ghp_|gho_|github_pat_|sk-proj-)[A-Za-z0-9_]{20,}|-----BEGIN (?:RSA |EC |OPENSSH )?PRIVATE KEY-----')
 artifacts = json.loads((ROOT / 'Logfiles/artifact_manifest.json').read_text(encoding='utf-8')) if (ROOT / 'Logfiles/artifact_manifest.json').exists() else {'files': []}
 sealed = {r['path']: r for r in artifacts['files']}
-office_allowed = {'Draft/开题报告_评委意见修订版.docx', 'Draft/开题报告_评委意见修订版.pdf', 'PPT/10.7开题报告.pptx'}
+office_allowed = {'Draft/开题报告_评委意见修订版.docx', 'Draft/开题报告_评委意见修订版.pdf', 'PPT/10.7开题报告.pptx',
+                  'Draft/深圳市老旧住宅区拆除重建项目对周边住宅价格的动态影响.docx'}
 for name in files:
     path = ROOT / name
     assert path.suffix.lower() not in {'.doc', '.docx', '.pptx', '.pdf', '.zip', '.rar', '.gpkg', '.exe', '.dll'} or name in office_allowed, name
