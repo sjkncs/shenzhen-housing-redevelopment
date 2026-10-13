@@ -100,6 +100,18 @@
 
 路径：`tests/test_daily_market_coverage.py`
 
+## [test_district_collisions.py](../../tests/test_district_collisions.py)
+
+**用途：**测试相同数值、面积不同和双字段不同的冲突分类
+
+**输入：**两行数值样例
+
+**输出：**unittest结果
+
+**运行条件：**无需真实数据
+
+路径：`tests/test_district_collisions.py`
+
 ## [test_download_data.py](../../tests/test_download_data.py)
 
 **用途：**测试下载哈希、已有文件保护、路径限制与包内核验

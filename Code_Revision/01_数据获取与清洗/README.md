@@ -40,6 +40,18 @@
 
 路径：`scopes/shenzhen/scripts/build_citywide_summary.py`
 
+## [classify_district_collisions.py](../../scopes/shenzhen/scripts/classify_district_collisions.py)
+
+**用途：**逐组比较标准化区名冲突的套数、面积与来源ID
+
+**输入：**--input区名冲突CSV、--output新目录
+
+**输出：**逐组分类、区级汇总与摘要
+
+**运行条件：**不选择版本、不合并原行、不更新原月度统计
+
+路径：`scopes/shenzhen/scripts/classify_district_collisions.py`
+
 ## [summarize_daily_market.py](../../scopes/shenzhen/scripts/summarize_daily_market.py)
 
 **用途：**从按日行政区汇总中提取罗湖住宅成交套数和面积，补足市场背景截止日后的总量走势
