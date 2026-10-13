@@ -1,0 +1,48 @@
+{
+  "sources": [
+    {
+      "file": "phase1_change_2024.html",
+      "url": "https://www.sz.gov.cn/szzt2010/wgkzl/jcgk/jcygk/zdzcjc/content/post_11699189.html",
+      "status": "failed",
+      "error": "curl: (22) The requested URL returned error: 404\r\n"
+    },
+    {
+      "file": "crs_service_2026.html",
+      "url": "https://pnr.sz.gov.cn/xxgk/ztzl/zfcg/content/post_12671078.html",
+      "status": "failed",
+      "error": "curl: (22) The requested URL returned error: 412\r\n"
+    },
+    {
+      "file": "cgcs_notice_2021.pdf",
+      "url": "https://pnr.sz.gov.cn/attachment/0/866/866119/9303472.pdf",
+      "status": "failed",
+      "error": "curl: (22) The requested URL returned error: 404\r\n"
+    },
+    {
+      "file": "coordinate_service_reply.html",
+      "url": "https://www.sz.gov.cn/hdjlpt/detail?pid=3223837&via=pc",
+      "status": "archived",
+      "bytes": 15157,
+      "sha256": "c1fe3653802fdf612bd90c51a5e4d4f7e51815a4b862d96d356c1c7ce11404b5",
+      "attachments": []
+    },
+    {
+      "file": "bim_coordinate_standard.pdf",
+      "url": "https://zjj.sz.gov.cn/attachment/1/1381/1381418/10961538.pdf",
+      "status": "archived",
+      "bytes": 1729789,
+      "sha256": "27922365b320593700a22a7fb0ee8d56e5aff859a575e15bf5d08f5e7ac70a2f",
+      "page_count": 63
+    },
+    {
+      "file": "coordinate_transition_example.html",
+      "url": "https://www.szpsq.gov.cn/zwgk/wygd/tzgg/content/post_10999073.html",
+      "status": "archived",
+      "bytes": 61965,
+      "sha256": "6171434270d803d3dd1f67f01c3e556f14f817200757a2fa06a77f88dfb2dd44",
+      "attachments": []
+    }
+  ],
+  "crs_confirmed": false,
+  "official_conversion_obtained": false
+}

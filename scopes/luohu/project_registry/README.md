@@ -16,3 +16,5 @@
 2026年10月13日新增[木头龙2019年原坐标网转录](mutoulong/native_grid_2019/README.md)：45个界址点、两个未地理配准的工作环及检查图。图件对象是零星征收范围，坐标系和整体拆除范围等价性尚未确认；不得直接据此计算处理住宅距离。
 
 同日新增[官方图纸像素空间比对](mutoulong/image_comparison_2019/README.md)：主环与整体拆除图有较强形态对应，三角地不在该图蓝色主边界内。6点拟合、6点留出检查，不构成官方坐标转换或地理配准。
+
+同日完成[官方坐标依据检索](mutoulong/coordinate_evidence_followup.md)与[边界成果申请草稿](mutoulong/coordinate_records_request.md)。已取回三份官方材料，分别记录原件与下载失败状态；申请尚未发送，项目坐标系及转换成果仍未确认。
