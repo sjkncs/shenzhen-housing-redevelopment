@@ -1,0 +1,43 @@
+{
+  "demolition_image_sha256": "54756aadee9a888e1b84a9256d2b487880f4180826630a6bdd2745537e0fe697",
+  "native_coordinates_sha256": "ef39db30c7685a801387a4a44d6628687a2dccb0fae35ed049abbf2146fac3a9",
+  "original_image_size": [
+    4967,
+    3508
+  ],
+  "pick_reference_display_size": [
+    1888,
+    1333
+  ],
+  "pick_method": "Same-reviewer visual correspondence by outline shape; no official control labels on target",
+  "fit_point_n": 6,
+  "held_out_point_n": 6,
+  "fit_rmse_display_pixels": 1.461961830222035,
+  "held_out_rmse_display_pixels": 3.0739822578251492,
+  "held_out_max_display_pixels": 4.357692174270551,
+  "model": "Affine native-grid coordinates to resized raster pixels only",
+  "affine_origin": [
+    122147.17111111114,
+    20653.97333333333
+  ],
+  "affine_matrix": [
+    [
+      739.670378170955,
+      554.4282925362746
+    ],
+    [
+      1.5011562588740655,
+      -0.006103883232336765
+    ],
+    [
+      -0.00628361863365795,
+      -1.492578267083007
+    ]
+  ],
+  "geographic_accuracy_verified": false,
+  "independent_reviewer_verified": false,
+  "crs_confirmed": false,
+  "boundary_equivalence_accepted": false,
+  "housing_distances_computed": false,
+  "scope_observation": "The main outline has visually corresponding corners; the triangle ring lies outside the main demolition outline. Scope documents must remain separate."
+}
