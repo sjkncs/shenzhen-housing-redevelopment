@@ -1,0 +1,11 @@
+﻿month,calendar_days,observed_days,missing_days,calendar_coverage_complete,reported_transaction_n,reported_area_m2,missing_days_filled_with_zero
+2025-12,31,26,5,False,646,51146.759999999995,False
+2026-01,31,31,0,True,834,69978.70999999999,False
+2026-02,28,24,4,False,476,35746.76,False
+2026-03,31,31,0,True,866,66086.93,False
+2026-04,30,28,2,False,880,71462.76,False
+2026-05,31,31,0,True,812,67019.18,False
+2026-06,30,29,1,False,813,69474.73000000001,False
+2026-07,31,31,0,True,784,67580.73,False
+2026-08,31,31,0,True,729,60633.259999999995,False
+2026-09,30,14,16,False,372,29926.8,False

@@ -7,6 +7,16 @@
 
 文件说明以当前跟踪版本为准；代码仅说明用途，不导入或执行。
 
+### [audit_daily_market_coverage.py](audit_daily_market_coverage.py)
+
+用途：检查日汇总重复键、缺失日期、月度覆盖与全市区级合计一致性
+
+输入：--zip日成交ZIP、--output新目录
+
+输出：罗湖月度覆盖、缺失日期、区级对账及摘要
+
+运行条件：不补零、不把区级成交面积当价格；完整日覆盖不证明官方普查完整
+
 ### [build_citywide_summary.py](build_citywide_summary.py)
 
 用途：清洗全市平台交易，统计行政区覆盖

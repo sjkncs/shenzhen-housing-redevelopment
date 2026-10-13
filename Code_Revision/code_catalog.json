@@ -170,6 +170,14 @@
     },
     {
       "category": "01_数据获取与清洗",
+      "path": "scopes/shenzhen/scripts/audit_daily_market_coverage.py",
+      "purpose_zh": "检查日汇总重复键、缺失日期、月度覆盖与全市区级合计一致性",
+      "inputs_zh": "--zip日成交ZIP、--output新目录",
+      "outputs_zh": "罗湖月度覆盖、缺失日期、区级对账及摘要",
+      "run_status_zh": "不补零、不把区级成交面积当价格；完整日覆盖不证明官方普查完整"
+    },
+    {
+      "category": "01_数据获取与清洗",
       "path": "scopes/shenzhen/scripts/build_citywide_summary.py",
       "purpose_zh": "清洗全市平台交易，统计行政区覆盖",
       "inputs_zh": "--input指定原始成交CSV",
@@ -255,6 +263,14 @@
       "inputs_zh": "程序内小型测试表",
       "outputs_zh": "unittest结果",
       "run_status_zh": "数据无关测试"
+    },
+    {
+      "category": "05_测试与核验",
+      "path": "tests/test_daily_market_coverage.py",
+      "purpose_zh": "测试缺月保留为空与重复日期拒绝",
+      "inputs_zh": "临时日汇总样例",
+      "outputs_zh": "unittest结果",
+      "run_status_zh": "不读取真实数据"
     },
     {
       "category": "05_测试与核验",

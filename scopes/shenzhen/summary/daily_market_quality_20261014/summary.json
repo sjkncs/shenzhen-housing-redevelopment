@@ -1,0 +1,23 @@
+{
+  "source_sha256": "abbe3a0ee4b455cb3a2197c22f4e2af47a58d564fc6866c67b3c7867d20945e3",
+  "raw_rows": 10000,
+  "duplicate_key_rows": 0,
+  "raw_first_date": "2025-12-05",
+  "raw_last_date": "2026-09-14",
+  "luohu_observed_days": 276,
+  "luohu_absent_days_within_source_range": 8,
+  "fully_covered_calendar_months": [
+    "2026-01",
+    "2026-03",
+    "2026-05",
+    "2026-07",
+    "2026-08"
+  ],
+  "city_dates_checked": 280,
+  "reported_district_sum_mismatch_days": 0,
+  "city_dates_with_missing_district_rows": 163,
+  "raw_exactly_10000_rows_is_truncation_proof": false,
+  "missing_row_is_zero_transaction": false,
+  "official_market_census_verified": false,
+  "usable_for_project_price_did": false
+}

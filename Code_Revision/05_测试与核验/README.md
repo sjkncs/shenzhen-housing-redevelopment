@@ -88,6 +88,18 @@
 
 路径：`tests/test_candidate_support.py`
 
+## [test_daily_market_coverage.py](../../tests/test_daily_market_coverage.py)
+
+**用途：**测试缺月保留为空与重复日期拒绝
+
+**输入：**临时日汇总样例
+
+**输出：**unittest结果
+
+**运行条件：**不读取真实数据
+
+路径：`tests/test_daily_market_coverage.py`
+
 ## [test_download_data.py](../../tests/test_download_data.py)
 
 **用途：**测试下载哈希、已有文件保护、路径限制与包内核验
