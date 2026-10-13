@@ -17,6 +17,14 @@
 
 尚未发送的官方边界成果与坐标依据申请草稿。
 
+### [parcel_name_crosswalk.csv](parcel_name_crosswalk.csv)
+
+官方项目名称与建设宗地一对多连接，完整拆除几何仍未接受。
+
+### [parcel_name_crosswalk.md](parcel_name_crosswalk.md)
+
+研究说明或分类导航文档；打开查看该主题用途和执行条件。
+
 ### [phased_event_timeline.csv](phased_event_timeline.csv)
 
 木头龙行政许可、施工阶段、回迁和配套计划分开的事件证据区间。

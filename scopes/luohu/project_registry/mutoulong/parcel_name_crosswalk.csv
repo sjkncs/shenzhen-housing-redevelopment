@@ -1,0 +1,5 @@
+parcel_id,source_name,evidence_type,source_url,mapping_scope,whole_demolition_geometry_verified
+H218-0049,木头龙城市更新单元01-02地块,2022工程规划许可证,https://www.szlh.gov.cn/attachment/1/1218/1218402/10259049.pdf,建设宗地01-02不是全部拆除范围,False
+H218-0049,益田御龙华府,2025规自局办证答复,https://www.sz.gov.cn/hdjlpt/detail?pid=3289061&via=pc,答复明确宗地及2025年9月首次登记不是交付日,False
+H218-0049,益田御龙天地,官方住宅用地库存表第4页,https://pnr.sz.gov.cn/attachment/1/1362/1362393/10871175.pdf,普通商品住房宗地记录不是当前全项目状态,False
+H218-0050,益田御龙天地,官方住宅用地库存表第4页,https://pnr.sz.gov.cn/attachment/1/1362/1362393/10871175.pdf,公租房宗地另列不得与H218-0049无条件合并,False
