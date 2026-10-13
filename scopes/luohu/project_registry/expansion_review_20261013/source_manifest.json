@@ -1,0 +1,71 @@
+{
+  "sources": [
+    {
+      "source_id": "sanjiu_plan",
+      "url": "https://www.szlh.gov.cn/lhqzfhjsj/gkmlpt/content/12/12593/post_12593231.html",
+      "status": "archived",
+      "bytes": 32389,
+      "sha256": "a194a35bd7a19e43af7b984dd163a12d26504f13f7109cac598a3c7d60469f09",
+      "attachments": [
+        {
+          "title": "附件1：《2026年深圳市罗湖区城市更新单元计划第一批计划》一览表.pdf",
+          "url": "https://www.szlh.gov.cn/lhqzfhjsj/attachment/1/1736/1736537/12593231.pdf"
+        },
+        {
+          "title": "附件2：罗湖区清水河街道三九花园城市更新单元拟拆除范围示意图.pdf",
+          "url": "https://www.szlh.gov.cn/lhqzfhjsj/attachment/1/1736/1736538/12593231.pdf"
+        }
+      ]
+    },
+    {
+      "source_id": "sanjiu_attachment_1",
+      "url": "https://www.szlh.gov.cn/lhqzfhjsj/attachment/1/1736/1736537/12593231.pdf",
+      "status": "archived",
+      "bytes": 107966,
+      "sha256": "1a2ca12f6f7908a5568758d0a77e05a921ab355e2d9853376d6d849a2773f902"
+    },
+    {
+      "source_id": "sanjiu_attachment_2",
+      "url": "https://www.szlh.gov.cn/lhqzfhjsj/attachment/1/1736/1736538/12593231.pdf",
+      "status": "archived",
+      "bytes": 74225,
+      "sha256": "9c588fc326f9f32ccbeda879c60255d1f597e2a8c9a7d090051215f83472cca5"
+    },
+    {
+      "source_id": "mutoulong_return",
+      "url": "https://www.szlh.gov.cn/zwgk/zcjd/2025/jd2025nzfgzbg/zcyw/content/post_12083256.html",
+      "status": "archived",
+      "bytes": 119824,
+      "sha256": "7fe0bcf422371c82cad25a091678b1450789e8e48c18aa9d31fc0472f04243f7"
+    },
+    {
+      "source_id": "luohu_2026_half",
+      "url": "https://www.sz.gov.cn/szzt2010/wgkzl/jggk/lsqkgk/content/post_12916257.html",
+      "status": "archived",
+      "bytes": 51172,
+      "sha256": "a9db6eca03f8b7ddd3ec803985914b1b845d1dacebaa99a543769a36f8bab4c8"
+    },
+    {
+      "source_id": "luofang_adjustment",
+      "url": "https://www.szlh.gov.cn/lhqzfhjsj/gkmlpt/content/12/12906/post_12906896.html",
+      "status": "archived",
+      "bytes": 32797,
+      "sha256": "f5f1b63ec70b0376b473939ffa1640cab8acc93418e397d00c08ced856420dd7"
+    },
+    {
+      "source_id": "huafubei_permit",
+      "url": "https://www.sz.gov.cn/szzt2010/wgkzl/glgk/jgxxgk/gtzy/content/post_12661761.html",
+      "status": "archived",
+      "bytes": 36295,
+      "sha256": "2f37bafcc6ff008bad0a827097d274c65acef591f5e20b032ba2ddff5c8560bb"
+    },
+    {
+      "source_id": "qingyi_land",
+      "url": "https://www.sz.gov.cn/szzt2010/wgkzl/glgk/jgxxgk/gtzy/content/post_12213096.html",
+      "status": "archived",
+      "bytes": 46795,
+      "sha256": "153c0e53c49aa276700ee039e898fbf9c9d6e3327f44034d0ce96ecabd5f1f03"
+    }
+  ],
+  "original_pages_not_republished": true
+}

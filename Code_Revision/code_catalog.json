@@ -106,6 +106,14 @@
     },
     {
       "category": "02_空间与住宅身份",
+      "path": "scopes/luohu/scripts/collect_redevelopment_plan_sources.py",
+      "purpose_zh": "获取拆除重建项目官方计划与进展原件，三九计划附件单独归档",
+      "inputs_zh": "--archive本地原件目录、--manifest公开来源清单",
+      "outputs_zh": "六份正文与两附件下载记录、哈希和失败状态",
+      "run_status_zh": "需联网curl；不自动认定开工或未来回迁"
+    },
+    {
+      "category": "02_空间与住宅身份",
       "path": "scopes/luohu/scripts/diagnose_poi_coordinate_frames_20261012.py",
       "purpose_zh": "比较住宅与POI的九种坐标口径组合",
       "inputs_zh": "成交CSV、同名候选连接、固定版本坐标实现",

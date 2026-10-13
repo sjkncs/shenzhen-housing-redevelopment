@@ -14,6 +14,7 @@ GROUPS = {
     '06_原始代码与第三方': '原执行快照和固定版本第三方数学实现。',
 }
 SPECS = {
+    'collect_redevelopment_plan_sources.py': ('02', '获取拆除重建项目官方计划与进展原件，三九计划附件单独归档', '--archive本地原件目录、--manifest公开来源清单', '六份正文与两附件下载记录、哈希和失败状态', '需联网curl；不自动认定开工或未来回迁'),
     'collect_building_identity_evidence.py': ('02', '取得官方楼栋标识线索并记录来源哈希，不推断楼栋与年代对应', '--archive本地原页目录、--output新的公开摘要目录', '楼栋线索CSV及JSON；原HTML仅存本地', '需联网curl；记录失败；不认证住宅、不拆样本'),
     'audit_candidate_composition.py': ('03', '按候选小区和时期检查面积、电梯、建成年代及楼层成交构成', '--sample、--transactions、--baseline输入；原成交哈希校验', '--output新目录的四份构成CSV与摘要', '不估计政策效应，不自动判定楼栋或剔除样本'),
     'test_candidate_composition.py': ('05', '验证前段、过渡和后段正确分离', '季度样例', 'unittest结果', '无需真实数据'),

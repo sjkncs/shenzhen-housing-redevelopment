@@ -67,6 +67,16 @@
 
 运行条件：需联网curl；记录失败；不认证住宅、不拆样本
 
+### [collect_redevelopment_plan_sources.py](collect_redevelopment_plan_sources.py)
+
+用途：获取拆除重建项目官方计划与进展原件，三九计划附件单独归档
+
+输入：--archive本地原件目录、--manifest公开来源清单
+
+输出：六份正文与两附件下载记录、哈希和失败状态
+
+运行条件：需联网curl；不自动认定开工或未来回迁
+
 ### [diagnose_poi_coordinate_frames_20261012.py](diagnose_poi_coordinate_frames_20261012.py)
 
 用途：比较住宅与POI的九种坐标口径组合

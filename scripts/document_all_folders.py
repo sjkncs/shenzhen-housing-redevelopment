@@ -8,6 +8,7 @@ ROOT = Path(__file__).resolve().parents[1]
 START = '<!-- generated-file-guide:start -->'
 END = '<!-- generated-file-guide:end -->'
 PURPOSE = {
+    'project_claims.csv': '用户AI项目线索逐条复核，对象类型、已有证据和未核实预测分开记录。',
     'building_label_evidence.csv': '官方楼栋或大厦标识线索、原页哈希及未接受的年代对应状态。',
     'period_composition.csv': '逐候选逐时期的成交笔数、面积、电梯、年代和价格描述统计。',
     'reported_year_composition.csv': '逐候选逐时期的建成年代计数与占比，不能代替楼栋识别。',
