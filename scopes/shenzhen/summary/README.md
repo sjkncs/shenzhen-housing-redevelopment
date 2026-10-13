@@ -19,5 +19,6 @@
 
 - [daily_market_postcutoff_20260916](daily_market_postcutoff_20260916/README.md)：详见子目录中文说明。
 - [daily_market_quality_20261014](daily_market_quality_20261014/README.md)：详见子目录中文说明。
+- [paged_open_data_20260916](paged_open_data_20260916/README.md)：详见子目录中文说明。
 
 <!-- generated-file-guide:end -->

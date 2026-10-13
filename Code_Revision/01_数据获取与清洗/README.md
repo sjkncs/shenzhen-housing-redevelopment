@@ -16,6 +16,18 @@
 
 路径：`scopes/shenzhen/scripts/audit_daily_market_coverage.py`
 
+## [audit_paged_open_data.py](../../scopes/shenzhen/scripts/audit_paged_open_data.py)
+
+**用途：**核验政府开放平台分页JSON哈希，合并并标准化行政区，生成深圳/罗湖月度住宅市场总量
+
+**输入：**--pages分页JSON目录、--audit原分页哈希审计
+
+**输出：**--output罗湖日度与区月度CSV及摘要
+
+**运行条件：**只处理行政区总量，不含价格/小区/坐标，不用于项目DID
+
+路径：`scopes/shenzhen/scripts/audit_paged_open_data.py`
+
 ## [build_citywide_summary.py](../../scopes/shenzhen/scripts/build_citywide_summary.py)
 
 **用途：**清洗全市平台交易，统计行政区覆盖

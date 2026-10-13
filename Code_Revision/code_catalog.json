@@ -178,6 +178,14 @@
     },
     {
       "category": "01_数据获取与清洗",
+      "path": "scopes/shenzhen/scripts/audit_paged_open_data.py",
+      "purpose_zh": "核验政府开放平台分页JSON哈希，合并并标准化行政区，生成深圳/罗湖月度住宅市场总量",
+      "inputs_zh": "--pages分页JSON目录、--audit原分页哈希审计",
+      "outputs_zh": "--output罗湖日度与区月度CSV及摘要",
+      "run_status_zh": "只处理行政区总量，不含价格/小区/坐标，不用于项目DID"
+    },
+    {
+      "category": "01_数据获取与清洗",
       "path": "scopes/shenzhen/scripts/build_citywide_summary.py",
       "purpose_zh": "清洗全市平台交易，统计行政区覆盖",
       "inputs_zh": "--input指定原始成交CSV",

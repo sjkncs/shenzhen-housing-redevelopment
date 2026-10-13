@@ -1,0 +1,79 @@
+{
+  "scope": "PAGED_SHENZHEN_OPEN_DATA_ADMINISTRATIVE_TOTALS_NOT_COMMUNITY_PRICES",
+  "endpoint": "https://opendata.sz.gov.cn/api/29200_01903513/1/service.xhtml",
+  "page_n": 10,
+  "row_n": 96078,
+  "first_date": "2017-01-03",
+  "last_date": "2026-09-15",
+  "luohu_housing_rows": 2833,
+  "luohu_first_date": "2017-01-03",
+  "luohu_last_date": "2026-09-15",
+  "pages": [
+    {
+      "page": 1,
+      "rows": 10000,
+      "sha256": "323CF1D0034B306DE83E2B8C5C9686D5B61A52D440EE124E53B98356A44E7E75",
+      "verified": true
+    },
+    {
+      "page": 2,
+      "rows": 10000,
+      "sha256": "660699D56E823D2B0A2F09A13CF3086EDEC851B01A16F8BEB730EC79ACAA5DDA",
+      "verified": true
+    },
+    {
+      "page": 3,
+      "rows": 10000,
+      "sha256": "E947BA8FD3155A3FFAB672CBDAB755D61F7D6200A9B7D81D1EC4F9251CCBD66B",
+      "verified": true
+    },
+    {
+      "page": 4,
+      "rows": 10000,
+      "sha256": "ECF9EB9F06A2755AFD5C44EBBBB12018384FF1ABAB436B9714F6236B111E9B51",
+      "verified": true
+    },
+    {
+      "page": 5,
+      "rows": 10000,
+      "sha256": "9A3BA4408AA0514DC74260CC9BF480A0F91513DB090BA345C66577748761B7A4",
+      "verified": true
+    },
+    {
+      "page": 6,
+      "rows": 10000,
+      "sha256": "174983DB89ABE033BAE0D7A5A52E644847D879683A56938D3C96419B74BD0D0D",
+      "verified": true
+    },
+    {
+      "page": 7,
+      "rows": 10000,
+      "sha256": "EDE034A2898AAC2E0E1352F5295C09ED5F33A39AE85768195896E6438CAD4828",
+      "verified": true
+    },
+    {
+      "page": 8,
+      "rows": 10000,
+      "sha256": "C8B50DE0A13ECF559FBFEA74FEA568AF6B4589BB7D8DBD16F83D8AC65A74A27C",
+      "verified": true
+    },
+    {
+      "page": 9,
+      "rows": 10000,
+      "sha256": "A5002B6D9A303CB8F7CD7C723C8BD204573A23A4C82FC91A6AE49886B6BCAFAD",
+      "verified": true
+    },
+    {
+      "page": 10,
+      "rows": 6078,
+      "sha256": "7681F089F1CF4AA49942D5833E5AFC7462D6D524591E8F018E9BCF7A802E0CE5",
+      "verified": true
+    }
+  ],
+  "normalized_collision_rows": 198,
+  "collision_rows_excluded_from_summaries": true,
+  "has_community_id": false,
+  "has_price": false,
+  "has_coordinates": false,
+  "usable_for_project_price_did": false
+}

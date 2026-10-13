@@ -8,6 +8,9 @@ ROOT = Path(__file__).resolve().parents[1]
 START = '<!-- generated-file-guide:start -->'
 END = '<!-- generated-file-guide:end -->'
 PURPOSE = {
+    'normalized_name_collision_rows.csv': '行政区名称标准化后同日同用途发生冲突的原行，隔离不择一或重复加总。',
+    'luohu_daily_residential_open_data.csv': '由分页开放平台快照核验出的罗湖住宅日度套数面积，保留原字段和标准化区名。',
+    'district_monthly_residential_open_data.csv': '分页开放平台快照的各区月度住宅成交套数与面积，不是价格数据。',
     'luohu_monthly_reported_coverage.csv': '罗湖住宅各月已报告套数面积与日覆盖，不把缺报日补零。',
     'luohu_absent_calendar_dates.csv': '整个来源日期区间内没有罗湖住宅行的日期，不代表零成交。',
     'residential_district_reconciliation.csv': '全市住宅与已报告各区合计比较，标出未出现的行政区。',
