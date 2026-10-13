@@ -30,3 +30,13 @@ POI流程需设置`SHENZHEN_POI_ZIP`并将源组件按脚本所需路径放入`s
 用户提供的桌面坐标转换程序已做[静态核查](COORDINATE_CONVERTER_REVIEW.md)，资源中显示六项互联网地图坐标转换，尚未运行或验证精度；不要直接用来处理木头龙原测量坐标。EXE/DLL不在公开仓库分发。
 
 GitHub Actions仅安装依赖、运行数据无关测试与公开文件/口径检查，不访问私有交易数据，不重估模型，也不宣称通过因果识别测试。
+
+## POI身份复核的离线复现
+
+公开罗湖ZIP解压后，`poi/20261012_luohu_residential_poi/`可作`--base`；全市交易ZIP解压所得CSV用于`--transactions`：
+
+```powershell
+python scopes/luohu/scripts/review_luohu_poi_ambiguity_20261012.py --base data/raw/luohu/poi/20261012_luohu_residential_poi --transactions data/raw/shenzhen-transactions.csv --output scopes/luohu/data/raw/identity_review_run --skip-official-fetch
+```
+
+输出必须是新目录。原成交源按封存SHA-256校验，所需18个小区原坐标登记直接从原交易表构建，多坐标和缺失值保留。四份主要CSV与原批次数据逐表一致；官方网页获取显式跳过，摘要记录归档来源为0，不把历史来源视为本轮已下载。公开路径可自行调整，不能把缺省相对路径当作已下载文件。

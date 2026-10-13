@@ -61,11 +61,11 @@
 
 用途：复核同名位置歧义、地址限定词、门点与主体线索
 
-输入：POI候选、覆盖、18个异常诊断及小区原始坐标登记表
+输入：--base指定公开派生POI目录，--transactions指定原成交CSV；按封存哈希校验并重建坐标登记
 
-输出：20261012_luohu_poi_identity_review/线索与来源记录
+输出：--output指定新目录；身份候选、分流与摘要
 
-运行条件：依赖额外登记表data/acquisition/community_matching/20260926T081831338704Z/深圳小区身份与原始坐标.csv，当前Release未含该表；不能直接全量复现
+运行条件：拒绝覆盖既有目录；--skip-official-fetch可离线复现，官方来源另行核验；不接受住宅位置
 
 ### [review_residential_baseline.py](review_residential_baseline.py)
 

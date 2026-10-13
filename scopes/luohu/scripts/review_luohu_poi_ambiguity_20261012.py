@@ -1,8 +1,10 @@
 """Review homonyms and focal addresses without adopting coordinates or spatial treatment."""
 import ast
+import argparse
 import csv
 import hashlib
 import json
+import os
 import re
 import subprocess
 import unicodedata
@@ -35,6 +37,22 @@ def sha(path):
     return hashlib.sha256(path.read_bytes()).hexdigest()
 
 
+def registry_from_transactions(path, community_ids):
+    raw = pd.read_csv(path, usecols=['小区详情url', '小区经度(百度)', '小区纬度(百度)'], low_memory=False)
+    raw['community_id'] = raw['小区详情url'].str.extract(r'(\d+)/?$', expand=False)
+    raw = raw[raw.community_id.isin(community_ids)]
+    rows = []
+    for cid, group in raw.groupby('community_id', sort=True):
+        pairs = []
+        for lon, lat in group[['小区经度(百度)', '小区纬度(百度)']].drop_duplicates().itertuples(index=False, name=None):
+            pairs.append([float(lon) if pd.notna(lon) else None, float(lat) if pd.notna(lat) else None])
+        rows.append({'贝壳小区URL标识': cid, '原始百度标签坐标对集合': json.dumps(pairs, allow_nan=False)})
+    registry = pd.DataFrame(rows, columns=['贝壳小区URL标识', '原始百度标签坐标对集合']).set_index('贝壳小区URL标识')
+    if not set(community_ids) <= set(registry.index):
+        raise ValueError('Required community missing from transaction source')
+    return registry
+
+
 def download(sid, url, concept):
     folder = OUT / 'official_sources'
     folder.mkdir(exist_ok=True)
@@ -62,6 +80,16 @@ def download(sid, url, concept):
 
 
 def main():
+    global BASE, OUT
+    parser = argparse.ArgumentParser()
+    parser.add_argument('--base', type=Path, default=BASE)
+    parser.add_argument('--output', type=Path, default=OUT)
+    parser.add_argument('--transactions', type=Path)
+    parser.add_argument('--skip-official-fetch', action='store_true')
+    args = parser.parse_args()
+    BASE, OUT = args.base, args.output
+    if OUT.exists():
+        raise FileExistsError('Preserve existing review; select a new --output directory')
     OUT.mkdir(parents=True, exist_ok=True)
     files = [BASE / n for n in ['罗湖住宅及出入口候选.csv', '成交小区_POI同名候选连接.csv',
                                 'BD09_GCJ02假设下超过100米_待核小区.csv', '621小区匹配覆盖.csv']]
@@ -76,7 +104,17 @@ def main():
     for _, row in core.iterrows():
         by_key.setdefault(qualified_key(row.Name_CHN), []).append(row)
     input_registry = ROOT / 'data/acquisition/community_matching/20260926T081831338704Z/深圳小区身份与原始坐标.csv'
-    registry = pd.read_csv(input_registry, dtype=str, keep_default_na=False).set_index('贝壳小区URL标识')
+    if args.transactions is not None or not input_registry.exists():
+        source = args.transactions or Path(os.environ.get('SHENZHEN_TRANSACTION_CSV', 'data/raw/shenzhen_transactions.csv'))
+        expected = json.loads((ROOT / 'outputs/price_did_audit_20261003/run_summary.json').read_text(encoding='utf-8'))['source_sha256']
+        if sha(source) != expected:
+            raise ValueError('Transaction source differs from frozen research input')
+        registry = registry_from_transactions(source, set(outliers.community_id))
+        registry_origin = {'method': 'rebuilt_from_public_transaction_source', 'sha256': expected,
+                           'needed_community_n': len(registry), 'coordinate_system_accepted': False}
+    else:
+        registry = pd.read_csv(input_registry, dtype=str, keep_default_na=False).set_index('贝壳小区URL标识')
+        registry_origin = {'method': 'legacy_registry', 'sha256': sha(input_registry)}
     provenance = json.loads((PINNED / '核验摘要.json').read_text(encoding='utf-8'))
     assert sha(PINNED / 'implementation.py') == next(x['sha256'] for x in provenance['source_files'] if x['file'] == 'implementation.py')
     tree = ast.parse((PINNED / 'implementation.py').read_text(encoding='utf-8'))
@@ -89,7 +127,7 @@ def main():
     geod = Geod(ellps='WGS84')
     def candidate_distance(cid, row):
         pairs = json.loads(registry.loc[cid, '原始百度标签坐标对集合'])
-        if len(pairs) != 1:
+        if len(pairs) != 1 or any(v is None for v in pairs[0]):
             return None
         lon, lat = map(float, pairs[0])
         a, b = env['gcj2wgs_exact'](*env['bd2gcj'](lat, lon))
@@ -144,7 +182,7 @@ def main():
     focal = poi[poi.Name_CHN.str.contains('畔山花园|景福|鹿丹|中海天钻|都市名园|海关草埔|置富|绿茵庭苑', regex=True)].copy()
     focal['gate_public_access_verified'] = False
     focal.to_csv(OUT / '重点项目住宅_主体与出入口关联.csv', index=False, encoding='utf-8-sig')
-    sources = [download('cuido_renewal_2021', 'https://www.szlh.gov.cn/lhczjdbsc/gkmlpt/content/8/8739/post_8739732.html',
+    sources = [{'status': 'not_fetched', 'reason': 'explicit --skip-official-fetch'}] if args.skip_official_fetch else [download('cuido_renewal_2021', 'https://www.szlh.gov.cn/lhczjdbsc/gkmlpt/content/8/8739/post_8739732.html',
                         '翠都花园翠竹路地址及裙楼商业物业更新；不能推定整个住宅已拆')]
     source_text = OUT / 'official_sources/cuido_renewal_2021.txt'
     if sources[0]['status'] == 'archived':
@@ -161,6 +199,7 @@ def main():
                'project_distance_computed': False, 'price_models_run': False,
                'coordinate_hypothesis_note': 'BD09 transaction / GCJ02 POI; diagnostic only',
                'input_hashes': input_hashes}
+    summary['coordinate_registry_origin'] = registry_origin
     assert all(sha(Path(path)) == checksum for path, checksum in input_hashes.items())
     (OUT / '核验摘要.json').write_text(json.dumps(summary, ensure_ascii=False, indent=2, allow_nan=False), encoding='utf-8')
     lines = ['# 罗湖住宅POI身份与异常排查', '',
@@ -168,7 +207,7 @@ def main():
              f'其中{len(ambiguous_exact)}个小区有多个相关名称候选。两份源点按BD09/GCJ02解释后的距离仅作排查，不作为住宅到项目距离，也不证明最近点是真实身份。',
              f'对原303个未匹配小区，仅忽略可选且不含分期、院区、栋座等身份要素的末尾括号，补出{extended_df.community_id.nunique()}个小区的{len(extended_df)}条候选。所有新线索仍未验收。',
              '重点项目主体、门点和BELID原关系另表保存。门点可能是停车或内部通道，未取得公众准入依据前不能直接算步行服务可达性。',
-             '官方翠都花园通告证明裙楼商业物业参与市人民医院周边片区更新，不能据此认定整栋住宅已经拆除，也不能把它默认当作无其他项目暴露的对照。',
+             ('官方来源已取回，本地原文核查仅用于解释同期更新线索，不认证住宅身份。' if sources[0]['status'] == 'archived' else '本轮未取回官方来源；历史通告线索需另行核验，未将其算作本轮已归档证据。'),
              '原始ZIP、CSV和上轮POI图层保持不变，未新增交易或运行价格模型。后续逐候选核对地址、院区、用途与独立位置，不把近距离筛选当身份确认。']
     (OUT / '本轮结论与待核事项.md').write_text('\n\n'.join(lines) + '\n', encoding='utf-8')
     print(json.dumps(summary, ensure_ascii=False), flush=True)

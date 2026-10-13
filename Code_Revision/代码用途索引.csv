@@ -3,7 +3,7 @@
 06_原始代码与第三方,Code_Original/20261012_snapshot/check_price_did_influence_20261003.py,逐小区、逐比较商圈留出及差异线性趋势敏感性,analysis_sample.csv及主回归估计函数,影响点CSV、趋势表、动态比较和影响图,原字节封存；有历史工作站路径，不是当前可移植入口
 06_原始代码与第三方,Code_Original/20261012_snapshot/check_price_did_support_20261003.py,检查前后交易支持，重估支持样本和伪事件诊断,主回归生成的analysis_sample.csv及估计函数,支持表、敏感性表、季度协方差及诊断摘要,原字节封存；有历史工作站路径，不是当前可移植入口
 06_原始代码与第三方,Code_Original/20261012_snapshot/diagnose_poi_coordinate_frames_20261012.py,比较住宅与POI的九种坐标口径组合,成交CSV、同名候选连接、固定版本坐标实现,双端诊断CSV及摘要,原字节封存；有历史工作站路径，不是当前可移植入口
-06_原始代码与第三方,Code_Original/20261012_snapshot/review_luohu_poi_ambiguity_20261012.py,复核同名位置歧义、地址限定词、门点与主体线索,POI候选、覆盖、18个异常诊断及小区原始坐标登记表,20261012_luohu_poi_identity_review/线索与来源记录,原字节封存；有历史工作站路径，不是当前可移植入口
+06_原始代码与第三方,Code_Original/20261012_snapshot/review_luohu_poi_ambiguity_20261012.py,复核同名位置歧义、地址限定词、门点与主体线索,--base指定公开派生POI目录，--transactions指定原成交CSV；按封存哈希校验并重建坐标登记,--output指定新目录；身份候选、分流与摘要,原字节封存；有历史工作站路径，不是当前可移植入口
 06_原始代码与第三方,Code_Original/20261012_snapshot/run_price_did_audit_20261003.py,运行罗湖商圈代理双向固定效应DID和季度动态模型,SHENZHEN_TRANSACTION_CSV环境变量指定成交CSV,outputs/price_did_audit_20261003/样本、回归、图和摘要,原字节封存；有历史工作站路径，不是当前可移植入口
 06_原始代码与第三方,scopes/luohu/data/supplied_gdata_intake/20261011/building_rar/coordinate_hypotheses/implementation.py,固定版本eviltransform地图坐标数学实现,经纬度测试点；注意函数纬度/经度参数顺序,转换候选点,第三方BSD许可随附；不是深圳地方测量坐标转换
 02_空间与住宅身份,scopes/luohu/scripts/audit_mutoulong_candidate_support.py,统计三条道路地址线索小区的事件前后成交支持,--sample、--coverage、--matches、--supplement四个CSV,--output指定的新目录；621小区表及道路线索支持,所有参数显式传入；拒绝覆盖已有输出；不定义项目处理组
@@ -11,7 +11,7 @@
 03_价格回归与诊断,scopes/luohu/scripts/check_price_did_influence_20261003.py,逐小区、逐比较商圈留出及差异线性趋势敏感性,analysis_sample.csv及主回归估计函数,影响点CSV、趋势表、动态比较和影响图,在主回归之后运行；不是正式项目ATT
 03_价格回归与诊断,scopes/luohu/scripts/check_price_did_support_20261003.py,检查前后交易支持，重估支持样本和伪事件诊断,主回归生成的analysis_sample.csv及估计函数,支持表、敏感性表、季度协方差及诊断摘要,在主回归之后运行；会更新结果目录
 02_空间与住宅身份,scopes/luohu/scripts/diagnose_poi_coordinate_frames_20261012.py,比较住宅与POI的九种坐标口径组合,成交CSV、同名候选连接、固定版本坐标实现,双端诊断CSV及摘要,先运行POI筛选；一致性不是测量精度
-02_空间与住宅身份,scopes/luohu/scripts/review_luohu_poi_ambiguity_20261012.py,复核同名位置歧义、地址限定词、门点与主体线索,POI候选、覆盖、18个异常诊断及小区原始坐标登记表,20261012_luohu_poi_identity_review/线索与来源记录,依赖额外登记表data/acquisition/community_matching/20260926T081831338704Z/深圳小区身份与原始坐标.csv，当前Release未含该表；不能直接全量复现
+02_空间与住宅身份,scopes/luohu/scripts/review_luohu_poi_ambiguity_20261012.py,复核同名位置歧义、地址限定词、门点与主体线索,--base指定公开派生POI目录，--transactions指定原成交CSV；按封存哈希校验并重建坐标登记,--output指定新目录；身份候选、分流与摘要,拒绝覆盖既有目录；--skip-official-fetch可离线复现，官方来源另行核验；不接受住宅位置
 02_空间与住宅身份,scopes/luohu/scripts/review_residential_baseline.py,按最早成交及平台建成年代分流基期存在证据,--sample、--coverage、--leads三个CSV,--output指定的新目录；基期证据CSV与摘要,先完成地址支持核查；不是官方竣工认证
 03_价格回归与诊断,scopes/luohu/scripts/run_price_did_audit_20261003.py,运行罗湖商圈代理双向固定效应DID和季度动态模型,SHENZHEN_TRANSACTION_CSV环境变量指定成交CSV,outputs/price_did_audit_20261003/样本、回归、图和摘要,需原交易数据；写入既有结果目录，先备份或用独立克隆运行
 05_测试与核验,scopes/luohu/tests/test_luohu_poi_identity_review.py,测试地址限定词处理并保护分期、楼栋和院区,名称样例,unittest结果,不读取真实POI

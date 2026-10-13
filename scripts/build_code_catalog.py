@@ -19,7 +19,7 @@ SPECS = {
     'build_citywide_summary.py': ('01', '清洗全市平台交易，统计行政区覆盖', '--input指定原始成交CSV', 'scopes/shenzhen/summary/区级CSV和JSON', '需先下载交易包并解压；不会输出逐套记录'),
     'build_luohu_residential_poi_20261012.py': ('02', '按行政代码440303筛选POI，区分住宅主体、楼栋与出入口并连接同名小区', '原成交CSV、POI ZIP、解压SHP组件及既有回归摘要', '20261012_luohu_residential_poi/CSV、GPKG和摘要', '需配置环境变量与原组件目录；不接受坐标系'),
     'diagnose_poi_coordinate_frames_20261012.py': ('02', '比较住宅与POI的九种坐标口径组合', '成交CSV、同名候选连接、固定版本坐标实现', '双端诊断CSV及摘要', '先运行POI筛选；一致性不是测量精度'),
-    'review_luohu_poi_ambiguity_20261012.py': ('02', '复核同名位置歧义、地址限定词、门点与主体线索', 'POI候选、覆盖、18个异常诊断及小区原始坐标登记表', '20261012_luohu_poi_identity_review/线索与来源记录', '依赖额外登记表data/acquisition/community_matching/20260926T081831338704Z/深圳小区身份与原始坐标.csv，当前Release未含该表；不能直接全量复现'),
+    'review_luohu_poi_ambiguity_20261012.py': ('02', '复核同名位置歧义、地址限定词、门点与主体线索', '--base指定公开派生POI目录，--transactions指定原成交CSV；按封存哈希校验并重建坐标登记', '--output指定新目录；身份候选、分流与摘要', '拒绝覆盖既有目录；--skip-official-fetch可离线复现，官方来源另行核验；不接受住宅位置'),
     'audit_mutoulong_candidate_support.py': ('02', '统计三条道路地址线索小区的事件前后成交支持', '--sample、--coverage、--matches、--supplement四个CSV', '--output指定的新目录；621小区表及道路线索支持', '所有参数显式传入；拒绝覆盖已有输出；不定义项目处理组'),
     'review_residential_baseline.py': ('02', '按最早成交及平台建成年代分流基期存在证据', '--sample、--coverage、--leads三个CSV', '--output指定的新目录；基期证据CSV与摘要', '先完成地址支持核查；不是官方竣工认证'),
     'run_price_did_audit_20261003.py': ('03', '运行罗湖商圈代理双向固定效应DID和季度动态模型', 'SHENZHEN_TRANSACTION_CSV环境变量指定成交CSV', 'outputs/price_did_audit_20261003/样本、回归、图和摘要', '需原交易数据；写入既有结果目录，先备份或用独立克隆运行'),

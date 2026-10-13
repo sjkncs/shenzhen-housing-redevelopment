@@ -36,8 +36,8 @@
       "category": "06_原始代码与第三方",
       "path": "Code_Original/20261012_snapshot/review_luohu_poi_ambiguity_20261012.py",
       "purpose_zh": "复核同名位置歧义、地址限定词、门点与主体线索",
-      "inputs_zh": "POI候选、覆盖、18个异常诊断及小区原始坐标登记表",
-      "outputs_zh": "20261012_luohu_poi_identity_review/线索与来源记录",
+      "inputs_zh": "--base指定公开派生POI目录，--transactions指定原成交CSV；按封存哈希校验并重建坐标登记",
+      "outputs_zh": "--output指定新目录；身份候选、分流与摘要",
       "run_status_zh": "原字节封存；有历史工作站路径，不是当前可移植入口"
     },
     {
@@ -100,9 +100,9 @@
       "category": "02_空间与住宅身份",
       "path": "scopes/luohu/scripts/review_luohu_poi_ambiguity_20261012.py",
       "purpose_zh": "复核同名位置歧义、地址限定词、门点与主体线索",
-      "inputs_zh": "POI候选、覆盖、18个异常诊断及小区原始坐标登记表",
-      "outputs_zh": "20261012_luohu_poi_identity_review/线索与来源记录",
-      "run_status_zh": "依赖额外登记表data/acquisition/community_matching/20260926T081831338704Z/深圳小区身份与原始坐标.csv，当前Release未含该表；不能直接全量复现"
+      "inputs_zh": "--base指定公开派生POI目录，--transactions指定原成交CSV；按封存哈希校验并重建坐标登记",
+      "outputs_zh": "--output指定新目录；身份候选、分流与摘要",
+      "run_status_zh": "拒绝覆盖既有目录；--skip-official-fetch可离线复现，官方来源另行核验；不接受住宅位置"
     },
     {
       "category": "02_空间与住宅身份",
