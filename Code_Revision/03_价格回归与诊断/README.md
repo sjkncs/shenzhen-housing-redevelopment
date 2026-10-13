@@ -39,3 +39,11 @@
 **运行条件：**需原交易数据；写入既有结果目录，先备份或用独立克隆运行
 
 路径：`scopes/luohu/scripts/run_price_did_audit_20261003.py`
+
+<!-- generated-file-guide:start -->
+## 逐文件中文说明
+
+文件说明以当前跟踪版本为准；代码仅说明用途，不导入或执行。
+
+
+<!-- generated-file-guide:end -->

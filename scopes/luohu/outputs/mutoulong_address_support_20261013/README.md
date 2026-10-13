@@ -31,3 +31,27 @@
 复现脚本为[候选支持核查](../../scripts/audit_mutoulong_candidate_support.py)。输入来自公开Release解压后的相应CSV，参数显式传入；脚本拒绝覆盖已有输出目录并检查来源小区、季度窗口与重复交易。
 
 下一步优先核定20个线索的住宅主体、基期存在状态和官方地址，再在获得项目坐标依据后计算边界距离。身份与距离未核定之前，不新增正式项目DID或ATT。
+
+<!-- generated-file-guide:start -->
+## 逐文件中文说明
+
+文件说明以当前跟踪版本为准；代码仅说明用途，不导入或执行。
+
+### [all_621_community_support.csv](all_621_community_support.csv)
+
+621个小区的前段、过渡、后段成交和缺失季度统计。
+
+### [road_address_leads_support.csv](road_address_leads_support.csv)
+
+三条道路的20个地址线索及成交支持，不是项目处理组。
+
+### [road_leads_quarter_support.csv](road_leads_quarter_support.csv)
+
+道路线索集合每季度成交笔数与小区数。
+
+### [summary.json](summary.json)
+
+所在分析批次的输入哈希、统计数量和研究状态。
+
+
+<!-- generated-file-guide:end -->

@@ -40,6 +40,18 @@
 
 路径：`scripts/build_code_catalog.py`
 
+## [document_all_folders.py](../../scripts/document_all_folders.py)
+
+**用途：**为所有Git跟踪目录补齐中文README及逐文件用途，保留已有说明
+
+**输入：**Git索引、中文代码分类JSON及文件用途映射
+
+**输出：**每个目录的README.md和子目录导航
+
+**运行条件：**先更新代码分类，再生成目录说明；未知文件用途会失败
+
+路径：`scripts/document_all_folders.py`
+
 ## [validate_public_repository.py](../../scripts/validate_public_repository.py)
 
 **用途：**检查Git跟踪文件、原件哈希、链接、聚合数值和代码分类覆盖
@@ -111,3 +123,11 @@
 **运行条件：**不证明住宅身份
 
 路径：`tests/test_residential_baseline.py`
+
+<!-- generated-file-guide:start -->
+## 逐文件中文说明
+
+文件说明以当前跟踪版本为准；代码仅说明用途，不导入或执行。
+
+
+<!-- generated-file-guide:end -->

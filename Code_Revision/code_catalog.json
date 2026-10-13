@@ -161,6 +161,14 @@
       "run_status_zh": "在git add之后运行；新脚本未登记会明确失败"
     },
     {
+      "category": "05_测试与核验",
+      "path": "scripts/document_all_folders.py",
+      "purpose_zh": "为所有Git跟踪目录补齐中文README及逐文件用途，保留已有说明",
+      "inputs_zh": "Git索引、中文代码分类JSON及文件用途映射",
+      "outputs_zh": "每个目录的README.md和子目录导航",
+      "run_status_zh": "先更新代码分类，再生成目录说明；未知文件用途会失败"
+    },
+    {
       "category": "01_数据获取与清洗",
       "path": "scripts/download_data.py",
       "purpose_zh": "按全市或罗湖下载公开数据，核验SHA-256；不自动解压",

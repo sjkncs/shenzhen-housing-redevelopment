@@ -19,3 +19,27 @@
 `image_points.csv`保留人工选点及fit/check分配；`pixel_correspondence_checks.csv`保留每点误差；`comparison.json`保留参数、来源SHA与未决状态；`official_image_overlay.png`为叠加图。源原图及高分辨率坐标表未被覆盖。
 
 下一步应针对J1—J32主环确认官方坐标依据，并取得相同坐标系统或有独立地理位置的对应控制资料。即使图像对应较好，也不能用七组出处未核定的示例点直接将红线放入现实地图。
+
+<!-- generated-file-guide:start -->
+## 逐文件中文说明
+
+文件说明以当前跟踪版本为准；代码仅说明用途，不导入或执行。
+
+### [comparison.json](comparison.json)
+
+图纸仿射比对参数、拟合/留出误差和来源哈希。
+
+### [image_points.csv](image_points.csv)
+
+人工目视角点与fit/check角色，在固定参考图像素空间内。
+
+### [official_image_overlay.png](official_image_overlay.png)
+
+官方拆除图与原坐标网叠加，仅为图纸形态比对。
+
+### [pixel_correspondence_checks.csv](pixel_correspondence_checks.csv)
+
+每个角点的图像比对误差，单位为参考图像素。
+
+
+<!-- generated-file-guide:end -->

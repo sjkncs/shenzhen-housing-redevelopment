@@ -8,3 +8,15 @@
 - [自动测试记录](https://github.com/sjkncs/shenzhen-housing-redevelopment/actions)：真实CI运行状态。
 
 哈希一致只证明文件相同，不能证明坐标正确、模型识别有效或结论成立。
+
+<!-- generated-file-guide:start -->
+## 逐文件中文说明
+
+文件说明以当前跟踪版本为准；代码仅说明用途，不导入或执行。
+
+### [artifact_manifest.json](artifact_manifest.json)
+
+报告、PPT和原代码快照的大小与SHA-256，用于证明副本未改写。
+
+
+<!-- generated-file-guide:end -->

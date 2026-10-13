@@ -18,3 +18,14 @@
 同日新增[官方图纸像素空间比对](mutoulong/image_comparison_2019/README.md)：主环与整体拆除图有较强形态对应，三角地不在该图蓝色主边界内。6点拟合、6点留出检查，不构成官方坐标转换或地理配准。
 
 同日完成[官方坐标依据检索](mutoulong/coordinate_evidence_followup.md)与[边界成果申请草稿](mutoulong/coordinate_records_request.md)。已取回三份官方材料，分别记录原件与下载失败状态；申请尚未发送，项目坐标系及转换成果仍未确认。
+
+<!-- generated-file-guide:start -->
+## 逐文件中文说明
+
+文件说明以当前跟踪版本为准；代码仅说明用途，不导入或执行。
+
+## 子目录导航
+
+- [mutoulong](mutoulong/README.md)：木头龙官方范围、坐标原表、图纸比对和资料请求记录。
+
+<!-- generated-file-guide:end -->

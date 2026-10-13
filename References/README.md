@@ -13,3 +13,23 @@
 | 开题报告文献表 | [现有报告](../Draft/README.md) |
 
 报告参考文献仍需逐条结合正文用途核验，归档与公开不等于整份文献表已重新认证。新增文献应保留作者、年份、期刊、DOI与支持的具体判断；不虚构引文。
+
+<!-- generated-file-guide:start -->
+## 逐文件中文说明
+
+文件说明以当前跟踪版本为准；代码仅说明用途，不导入或执行。
+
+### [extraction_manifest.json](extraction_manifest.json)
+
+参考文献提取来源、报告哈希、条目和DOI数量；不是真实性审核。
+
+### [report_bibliography.csv](report_bibliography.csv)
+
+28条参考文献原文、DOI和未重新核验状态的检索表。
+
+### [report_bibliography.md](report_bibliography.md)
+
+完整参考文献阅读版，保留原报告顺序及DOI入口。
+
+
+<!-- generated-file-guide:end -->

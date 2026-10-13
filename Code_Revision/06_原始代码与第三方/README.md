@@ -87,3 +87,11 @@
 **运行条件：**第三方BSD许可随附；不是深圳地方测量坐标转换
 
 路径：`scopes/luohu/data/supplied_gdata_intake/20261011/building_rar/coordinate_hypotheses/implementation.py`
+
+<!-- generated-file-guide:start -->
+## 逐文件中文说明
+
+文件说明以当前跟踪版本为准；代码仅说明用途，不导入或执行。
+
+
+<!-- generated-file-guide:end -->

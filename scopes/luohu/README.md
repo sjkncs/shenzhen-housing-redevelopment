@@ -18,3 +18,18 @@
 罗湖POI行政代码为440303，共66,278条；住宅相关类别候选2,803条含出入口与楼栋。源文件声明EPSG:3857，并不独立证明底层地图坐标口径。名称吻合与较短点对距离不是完成空间归属的证据。
 
 罗湖分析样本、POI候选和GPKG已在[luohu-derived-data.zip](https://github.com/sjkncs/shenzhen-housing-redevelopment/releases/download/data-snapshot-20261012/luohu-derived-data.zip)公开。代码目录保留模型汇总，大数据单独下载。回归数学逻辑保留，公开适配只改目录、输入路径与必要建目录逻辑。
+
+<!-- generated-file-guide:start -->
+## 逐文件中文说明
+
+文件说明以当前跟踪版本为准；代码仅说明用途，不导入或执行。
+
+## 子目录导航
+
+- [data](data/README.md)：空间来源和固定版本第三方实现，大数据从Release下载。
+- [outputs](outputs/README.md)：已运行的罗湖结果，按批次分开，注意正式项目识别仍待完成。
+- [project_registry](project_registry/README.md)：详见子目录中文说明。
+- [scripts](scripts/README.md)：罗湖数据处理、身份诊断、片区估计与样本检查。
+- [tests](tests/README.md)：罗湖名称限定词、住宅类别及门点规则的测试。
+
+<!-- generated-file-guide:end -->

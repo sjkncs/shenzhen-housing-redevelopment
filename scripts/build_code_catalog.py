@@ -14,6 +14,7 @@ GROUPS = {
     '06_原始代码与第三方': '原执行快照和固定版本第三方数学实现。',
 }
 SPECS = {
+    'document_all_folders.py': ('05', '为所有Git跟踪目录补齐中文README及逐文件用途，保留已有说明', 'Git索引、中文代码分类JSON及文件用途映射', '每个目录的README.md和子目录导航', '先更新代码分类，再生成目录说明；未知文件用途会失败'),
     'download_data.py': ('01', '按全市或罗湖下载公开数据，核验SHA-256；不自动解压', 'Release清单；可选已有下载文件', 'data/raw/downloads/中的已核验附件', '可直接运行；默认联网下载'),
     'build_citywide_summary.py': ('01', '清洗全市平台交易，统计行政区覆盖', '--input指定原始成交CSV', 'scopes/shenzhen/summary/区级CSV和JSON', '需先下载交易包并解压；不会输出逐套记录'),
     'build_luohu_residential_poi_20261012.py': ('02', '按行政代码440303筛选POI，区分住宅主体、楼栋与出入口并连接同名小区', '原成交CSV、POI ZIP、解压SHP组件及既有回归摘要', '20261012_luohu_residential_poi/CSV、GPKG和摘要', '需配置环境变量与原组件目录；不接受坐标系'),

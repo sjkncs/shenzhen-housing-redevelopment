@@ -13,3 +13,15 @@ python scopes/shenzhen/scripts/build_citywide_summary.py --input /path/to/author
 筛选普通住宅、商品房、有效成交日期和小区ID、正面积与价格、0—120年房龄、有效电梯标签、无挂牌晚于成交情况，以及总价与单价乘面积差异不超过2%。缺失挂牌日期不因该项单独剔除；此规则与封存片区代码一致，不能解释为全部信息无缺失。
 
 全市原始交易、POI与建筑源压缩包已在[公开Release](https://github.com/sjkncs/shenzhen-housing-redevelopment/releases/tag/data-snapshot-20261012)提供。来源、字段与校验值见[下载说明](../../docs/DATA_ACCESS.md)。文件覆盖不意味着已接受坐标、年份或建筑身份。
+
+<!-- generated-file-guide:start -->
+## 逐文件中文说明
+
+文件说明以当前跟踪版本为准；代码仅说明用途，不导入或执行。
+
+## 子目录导航
+
+- [scripts](scripts/README.md)：全市清洗与区级覆盖汇总代码。
+- [summary](summary/README.md)：真实来源清洗汇总，不是全市政策效应。
+
+<!-- generated-file-guide:end -->

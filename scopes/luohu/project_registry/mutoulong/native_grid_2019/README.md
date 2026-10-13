@@ -13,3 +13,27 @@
 下一步可将该轮廓与整体拆除原图进行独立图形比对，并核对官方旧新宗地关系。最终仍需坐标依据、足够分布的同名控制点和独立检查点，才能生成与住宅定位相容的地理边界。不能把J1—J45直接用作经纬度或整项目处理边界。
 
 文件：`coordinates.csv`为45点转录；`source_grid_rings.csv`为两个未配准环的WKT和拓扑统计；`source_grid_preview.png`为检查图；`coordinate_table_crop.png`为原图核对截取；`audit.json`为来源、校验和未决状态。
+
+<!-- generated-file-guide:start -->
+## 逐文件中文说明
+
+文件说明以当前跟踪版本为准；代码仅说明用途，不导入或执行。
+
+### [audit.json](audit.json)
+
+原坐标转录哈希、拓扑检查与未确认坐标状态。
+
+### [coordinates.csv](coordinates.csv)
+
+官方J1—J45原表数值转录，不是经纬度。
+
+### [source_grid_preview.png](source_grid_preview.png)
+
+未配准原坐标网图形预览，不代表现实地图朝向。
+
+### [source_grid_rings.csv](source_grid_rings.csv)
+
+两个原坐标网工作环的WKT、面积数值和拓扑统计。
+
+
+<!-- generated-file-guide:end -->

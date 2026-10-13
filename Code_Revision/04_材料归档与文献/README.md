@@ -39,3 +39,11 @@
 **运行条件：**维护者归档工具；需要完整输入；会重写指定输出包和清单
 
 路径：`scripts/prepare_authorized_data_release.py`
+
+<!-- generated-file-guide:start -->
+## 逐文件中文说明
+
+文件说明以当前跟踪版本为准；代码仅说明用途，不导入或执行。
+
+
+<!-- generated-file-guide:end -->

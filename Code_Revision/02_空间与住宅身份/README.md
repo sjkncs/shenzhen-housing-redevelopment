@@ -63,3 +63,11 @@
 **运行条件：**先完成地址支持核查；不是官方竣工认证
 
 路径：`scopes/luohu/scripts/review_residential_baseline.py`
+
+<!-- generated-file-guide:start -->
+## 逐文件中文说明
+
+文件说明以当前跟踪版本为准；代码仅说明用途，不导入或执行。
+
+
+<!-- generated-file-guide:end -->

@@ -27,3 +27,11 @@
 **运行条件：**可直接运行；默认联网下载
 
 路径：`scripts/download_data.py`
+
+<!-- generated-file-guide:start -->
+## 逐文件中文说明
+
+文件说明以当前跟踪版本为准；代码仅说明用途，不导入或执行。
+
+
+<!-- generated-file-guide:end -->

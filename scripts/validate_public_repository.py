@@ -11,6 +11,12 @@ import pandas as pd
 ROOT = Path(__file__).resolve().parents[1]
 files = subprocess.check_output(['git', 'ls-files', '-z'], cwd=ROOT).decode('utf-8').split('\0')
 files = list(filter(None, files))
+folders = {str(parent) for name in files for parent in Path(name).parents if str(parent) != '.'}
+for folder in folders:
+    readme = (Path(folder) / 'README.md').as_posix()
+    assert readme in files, 'Directory README missing from Git index: ' + folder
+    text = (ROOT / readme).read_text(encoding='utf-8')
+    assert re.search(r'[\u4e00-\u9fff]', text), 'Chinese directory explanation missing: ' + folder
 catalog_path = ROOT / 'Code_Revision/code_catalog.json'
 if catalog_path.exists():
     catalog = json.loads(catalog_path.read_text(encoding='utf-8'))['files']
