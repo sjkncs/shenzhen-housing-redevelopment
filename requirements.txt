@@ -8,3 +8,4 @@ pyogrio
 pyproj
 pyarrow
 beautifulsoup4
+PyMuPDF==1.26.7

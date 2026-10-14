@@ -74,6 +74,14 @@
     },
     {
       "category": "02_空间与住宅身份",
+      "path": "scopes/luohu/scripts/audit_official_residential_names.py",
+      "purpose_zh": "从封存官方参考价格PDF提取表格，精确核对20个罗湖住宅名称并检查新增地址附件",
+      "inputs_zh": "--roster、--queue、--huandao、--yangguang四份本地原件",
+      "outputs_zh": "--output新目录的名称旁证、地址证据CSV和摘要",
+      "run_status_zh": "需要PyMuPDF；参考价格不是成交价，名录旁证不接受楼栋坐标"
+    },
+    {
+      "category": "02_空间与住宅身份",
       "path": "scopes/luohu/scripts/build_luohu_residential_poi_20261012.py",
       "purpose_zh": "按行政代码440303筛选POI，区分住宅主体、楼栋与出入口并连接同名小区",
       "inputs_zh": "原成交CSV、POI ZIP、解压SHP组件及既有回归摘要",
@@ -407,6 +415,14 @@
       "inputs_zh": "已归档原坐标网CSV/JSON",
       "outputs_zh": "unittest结果",
       "run_status_zh": "不确认CRS、轴序或真实单位"
+    },
+    {
+      "category": "05_测试与核验",
+      "path": "tests/test_official_residential_names.py",
+      "purpose_zh": "测试名称精确匹配、行政区限制及重复官方条目拒绝",
+      "inputs_zh": "程序内名录样例",
+      "outputs_zh": "unittest结果",
+      "run_status_zh": "不认证楼栋和住宅用途"
     },
     {
       "category": "05_测试与核验",

@@ -1,0 +1,22 @@
+{
+  "checked_on": "2026-10-14",
+  "candidate_n": 20,
+  "official_roster_row_n": 3595,
+  "luohu_roster_row_n": 710,
+  "exact_name_matches_n": 14,
+  "unmatched_platform_names": [
+    "京基东方华都",
+    "中山花园大厦",
+    "华丽小区",
+    "广东基础楼",
+    "华深公寓",
+    "传麒东湖名苑"
+  ],
+  "supplemental_address_n": 2,
+  "residential_building_verified_n": 0,
+  "reference_prices_used_as_transactions": false,
+  "roster_source_sha256": "3f4f2146590f69bdbb92d22742606f0b7a64384ba7d7666c0877a79ec3b2a918",
+  "queue_source_sha256": "f4f1060a86651b106e718cc68f79e234ec2068eb62fda89279cef4b3c6bb19a1",
+  "raw_documents_publicly_republished": false,
+  "roster_publication_date": "not independently verified in this audit"
+}

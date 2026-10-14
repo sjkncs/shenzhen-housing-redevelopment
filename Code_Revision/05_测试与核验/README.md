@@ -196,6 +196,18 @@
 
 路径：`tests/test_mutoulong_native_grid.py`
 
+## [test_official_residential_names.py](../../tests/test_official_residential_names.py)
+
+**用途：**测试名称精确匹配、行政区限制及重复官方条目拒绝
+
+**输入：**程序内名录样例
+
+**输出：**unittest结果
+
+**运行条件：**不认证楼栋和住宅用途
+
+路径：`tests/test_official_residential_names.py`
+
 ## [test_project_readiness.py](../../tests/test_project_readiness.py)
 
 **用途：**测试事件晚于截止、区间跨截止及日期缺失等情况

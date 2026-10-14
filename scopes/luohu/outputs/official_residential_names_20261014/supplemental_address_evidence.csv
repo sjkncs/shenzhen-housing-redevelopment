@@ -1,0 +1,3 @@
+﻿community_id,candidate_name,address_to_check,building_label_lead,pdf_pages,source_url,source_sha256,source_bytes,checked_on,evidence_scope,official_address_corroborated,residential_building_identity_verified,coordinate_verified,project_treatment_assigned
+246924005290632,环岛丽园,华丽路1099号,丽来阁,5,https://www.szlh.gov.cn/attachment/1/1306/1306081/10645642.pdf,4d2be6254f060ce9233ef5769991588cf26c21fe1051e9dcfdf1c60c3e254c4a,169385,2026-10-14,公共场所检查机构地址，不认证住宅楼栋、竣工或历史用途,True,False,False,False
+2411048928212,阳光绿地家园,爱国路3003号,1座2A,3,https://www.szlh.gov.cn/lhqwsjkj/attachment/1/1620/1620939/12354733.pdf,4746e45da3d8802b2bf9fd96037a7f2de25e07abb6c5182ca1d014e43b99f8d1,156062,2026-10-14,公共场所检查机构地址，不认证住宅楼栋、竣工或历史用途,True,False,False,False

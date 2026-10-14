@@ -8,6 +8,8 @@ ROOT = Path(__file__).resolve().parents[1]
 START = '<!-- generated-file-guide:start -->'
 END = '<!-- generated-file-guide:end -->'
 PURPOSE = {
+    'official_roster_name_matches.csv': '20小区与官方参考价格表完整同名罗湖条目的比对及原PDF页码，不接受住宅坐标。',
+    'supplemental_address_evidence.csv': '环岛丽园、阳光绿地家园的官方机构门牌楼栋线索与原件哈希，不认证整栋住宅用途。',
     'residential_review_queue.csv': '20个住宅线索的核查顺序、地址旁证、年代冲突及三坐标假设计数；全部待确认。',
     'review_atlas_index.csv': '住宅审查图册的小区名称、成交支持、文件名与图像哈希索引。',
     'coordinate_hypothesis_footprint_support.csv': '住宅原坐标三种假设的落入建筑与50米候选计数，不选楼栋。',

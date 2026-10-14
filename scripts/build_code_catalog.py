@@ -14,6 +14,8 @@ GROUPS = {
     '06_原始代码与第三方': '原执行快照和固定版本第三方数学实现。',
 }
 SPECS = {
+    'audit_official_residential_names.py': ('02', '从封存官方参考价格PDF提取表格，精确核对20个罗湖住宅名称并检查新增地址附件', '--roster、--queue、--huandao、--yangguang四份本地原件', '--output新目录的名称旁证、地址证据CSV和摘要', '需要PyMuPDF；参考价格不是成交价，名录旁证不接受楼栋坐标'),
+    'test_official_residential_names.py': ('05', '测试名称精确匹配、行政区限制及重复官方条目拒绝', '程序内名录样例', 'unittest结果', '不认证楼栋和住宅用途'),
     'build_residential_review_queue.py': ('02', '连接20个小区的地址、年代、成交支持和建筑假设，生成待人工核查清单', '--leads、--baseline、--support、--addresses、--atlas五份CSV', '--output新目录的逐小区CSV、摘要和中文README', '核对图像哈希；按成交笔数排序但不纳入样本、不接受住宅或坐标'),
     'test_residential_review_queue.py': ('05', '验证20个线索完整保留、待确认状态及不完整或重复证据拒绝', '已归档五份证据CSV', 'unittest结果', '不验证真实地理身份'),
     'render_footprint_review_atlas.py': ('02', '渲染20个住宅线索的三坐标假设审查图并核对既有候选计数', '--transactions原CSV、--footprints候选GPKG、--leads线索、--support既有60条诊断', '--output PNG图册、中文README和索引哈希', '每面板独立中心，图中编号为源行；无影像、无已接受楼栋或项目距离'),

@@ -27,6 +27,16 @@
 
 运行条件：所有参数显式传入；拒绝覆盖已有输出；不定义项目处理组
 
+### [audit_official_residential_names.py](audit_official_residential_names.py)
+
+用途：从封存官方参考价格PDF提取表格，精确核对20个罗湖住宅名称并检查新增地址附件
+
+输入：--roster、--queue、--huandao、--yangguang四份本地原件
+
+输出：--output新目录的名称旁证、地址证据CSV和摘要
+
+运行条件：需要PyMuPDF；参考价格不是成交价，名录旁证不接受楼栋坐标
+
 ### [build_luohu_residential_poi_20261012.py](build_luohu_residential_poi_20261012.py)
 
 用途：按行政代码440303筛选POI，区分住宅主体、楼栋与出入口并连接同名小区

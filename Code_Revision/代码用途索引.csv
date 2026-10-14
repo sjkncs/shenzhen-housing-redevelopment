@@ -8,6 +8,7 @@
 06_原始代码与第三方,scopes/luohu/data/supplied_gdata_intake/20261011/building_rar/coordinate_hypotheses/implementation.py,固定版本eviltransform地图坐标数学实现,经纬度测试点；注意函数纬度/经度参数顺序,转换候选点,第三方BSD许可随附；不是深圳地方测量坐标转换
 03_价格回归与诊断,scopes/luohu/scripts/audit_candidate_composition.py,按候选小区和时期检查面积、电梯、建成年代及楼层成交构成,--sample、--transactions、--baseline输入；原成交哈希校验,--output新目录的四份构成CSV与摘要,不估计政策效应，不自动判定楼栋或剔除样本
 02_空间与住宅身份,scopes/luohu/scripts/audit_mutoulong_candidate_support.py,统计三条道路地址线索小区的事件前后成交支持,--sample、--coverage、--matches、--supplement四个CSV,--output指定的新目录；621小区表及道路线索支持,所有参数显式传入；拒绝覆盖已有输出；不定义项目处理组
+02_空间与住宅身份,scopes/luohu/scripts/audit_official_residential_names.py,从封存官方参考价格PDF提取表格，精确核对20个罗湖住宅名称并检查新增地址附件,--roster、--queue、--huandao、--yangguang四份本地原件,--output新目录的名称旁证、地址证据CSV和摘要,需要PyMuPDF；参考价格不是成交价，名录旁证不接受楼栋坐标
 02_空间与住宅身份,scopes/luohu/scripts/build_luohu_residential_poi_20261012.py,按行政代码440303筛选POI，区分住宅主体、楼栋与出入口并连接同名小区,原成交CSV、POI ZIP、解压SHP组件及既有回归摘要,20261012_luohu_residential_poi/CSV、GPKG和摘要,需配置环境变量与原组件目录；不接受坐标系
 02_空间与住宅身份,scopes/luohu/scripts/build_project_readiness.py,将已核定事件区间与交易截止日比较，整理17个项目准备状态,项目线索、事件证据CSV与全市覆盖摘要,--output新目录的准备表及摘要,不补日期、不接受项目处理组，区分年度区间与具体事件
 02_空间与住宅身份,scopes/luohu/scripts/build_residential_review_queue.py,连接20个小区的地址、年代、成交支持和建筑假设，生成待人工核查清单,--leads、--baseline、--support、--addresses、--atlas五份CSV,--output新目录的逐小区CSV、摘要和中文README,核对图像哈希；按成交笔数排序但不纳入样本、不接受住宅或坐标
@@ -50,6 +51,7 @@
 05_测试与核验,tests/test_monthly_alias_sensitivity.py,验证缺月为空、重复来源拒绝和相加记录的观测日计数,月度聚合样例,unittest结果,无需真实数据
 05_测试与核验,tests/test_mutoulong_image_comparison.py,核对图像拟合与留出点分离、保存的像素误差,已归档图纸比对CSV/JSON,unittest结果,不验证地理配准
 05_测试与核验,tests/test_mutoulong_native_grid.py,校验45点编号、哈希、鞋带面积与未配准状态,已归档原坐标网CSV/JSON,unittest结果,不确认CRS、轴序或真实单位
+05_测试与核验,tests/test_official_residential_names.py,测试名称精确匹配、行政区限制及重复官方条目拒绝,程序内名录样例,unittest结果,不认证楼栋和住宅用途
 05_测试与核验,tests/test_project_readiness.py,测试事件晚于截止、区间跨截止及日期缺失等情况,日期区间样例,unittest结果,无需真实数据
 05_测试与核验,tests/test_residential_baseline.py,测试平台成交与建成年代的证据分流逻辑,程序内日期与年份样例,unittest结果,不证明住宅身份
 05_测试与核验,tests/test_residential_review_queue.py,验证20个线索完整保留、待确认状态及不完整或重复证据拒绝,已归档五份证据CSV,unittest结果,不验证真实地理身份
