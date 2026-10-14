@@ -7,6 +7,16 @@
 
 文件说明以当前跟踪版本为准；代码仅说明用途，不导入或执行。
 
+### [audit_alias_use_totals.py](audit_alias_use_totals.py)
+
+用途：按原始区名检查全部与住宅商业办公等分用途合计，不合并不同区名
+
+输入：--source历史接口合并CSV、--output新目录
+
+输出：原区名用途对账表、类别汇总和摘要
+
+运行条件：缺全部或明细记录保留不可检查；内部吻合不确认口径
+
 ### [audit_daily_market_coverage.py](audit_daily_market_coverage.py)
 
 用途：检查日汇总重复键、缺失日期、月度覆盖与全市区级合计一致性

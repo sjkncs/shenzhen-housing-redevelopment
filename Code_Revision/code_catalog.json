@@ -170,6 +170,14 @@
     },
     {
       "category": "01_数据获取与清洗",
+      "path": "scopes/shenzhen/scripts/audit_alias_use_totals.py",
+      "purpose_zh": "按原始区名检查全部与住宅商业办公等分用途合计，不合并不同区名",
+      "inputs_zh": "--source历史接口合并CSV、--output新目录",
+      "outputs_zh": "原区名用途对账表、类别汇总和摘要",
+      "run_status_zh": "缺全部或明细记录保留不可检查；内部吻合不确认口径"
+    },
+    {
+      "category": "01_数据获取与清洗",
       "path": "scopes/shenzhen/scripts/audit_daily_market_coverage.py",
       "purpose_zh": "检查日汇总重复键、缺失日期、月度覆盖与全市区级合计一致性",
       "inputs_zh": "--zip日成交ZIP、--output新目录",
@@ -287,6 +295,14 @@
       "inputs_zh": "程序内行政区总量样例",
       "outputs_zh": "unittest结果",
       "run_status_zh": "内部对账不证明来源口径"
+    },
+    {
+      "category": "05_测试与核验",
+      "path": "tests/test_alias_use_totals.py",
+      "purpose_zh": "测试分用途合计、总计缺失和重复类别拒绝",
+      "inputs_zh": "程序内用途示例",
+      "outputs_zh": "unittest结果",
+      "run_status_zh": "无需真实数据"
     },
     {
       "category": "05_测试与核验",

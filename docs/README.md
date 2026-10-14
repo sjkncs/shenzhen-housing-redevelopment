@@ -19,6 +19,10 @@
 
 公开数据附件与罗湖包内文件的大小、哈希和下载URL。
 
+### [MARKET_STATISTICS_QUERY_DRAFT.md](MARKET_STATISTICS_QUERY_DRAFT.md)
+
+研究说明或分类导航文档；打开查看该主题用途和执行条件。
+
 ### [PUBLICATION.md](PUBLICATION.md)
 
 公开范围、授权记录、版本历史和第三方许可说明。

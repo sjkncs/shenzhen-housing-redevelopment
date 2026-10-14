@@ -1,0 +1,25 @@
+{
+  "source_sha256": "748bec589cad904ad3582aa3478580e2b646aba65ea79d92a2d1ec643dfbced5",
+  "suffix_source_rows": 107,
+  "suffix_districts_n": 7,
+  "suffix_first_date": "2022-05-10",
+  "suffix_last_date": "2022-08-09",
+  "category_checks": [
+    {
+      "label_type": "short",
+      "groups": 53,
+      "checkable_groups": 53,
+      "matching_groups": 53
+    },
+    {
+      "label_type": "suffix",
+      "groups": 53,
+      "checkable_groups": 53,
+      "matching_groups": 53
+    }
+  ],
+  "area_tolerance_m2": 0.05,
+  "merge_rule_accepted": false,
+  "source_definition_confirmed": false,
+  "existing_monthly_tables_modified": false
+}

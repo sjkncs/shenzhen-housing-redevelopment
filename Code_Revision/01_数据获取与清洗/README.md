@@ -4,6 +4,18 @@
 
 这里按用途导航到真实代码，不复制或移动当前执行文件。
 
+## [audit_alias_use_totals.py](../../scopes/shenzhen/scripts/audit_alias_use_totals.py)
+
+**用途：**按原始区名检查全部与住宅商业办公等分用途合计，不合并不同区名
+
+**输入：**--source历史接口合并CSV、--output新目录
+
+**输出：**原区名用途对账表、类别汇总和摘要
+
+**运行条件：**缺全部或明细记录保留不可检查；内部吻合不确认口径
+
+路径：`scopes/shenzhen/scripts/audit_alias_use_totals.py`
+
 ## [audit_daily_market_coverage.py](../../scopes/shenzhen/scripts/audit_daily_market_coverage.py)
 
 **用途：**检查日汇总重复键、缺失日期、月度覆盖与全市区级合计一致性

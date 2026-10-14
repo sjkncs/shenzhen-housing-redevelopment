@@ -17,6 +17,16 @@
 
 运行条件：内部对账不证明来源口径
 
+### [test_alias_use_totals.py](test_alias_use_totals.py)
+
+用途：测试分用途合计、总计缺失和重复类别拒绝
+
+输入：程序内用途示例
+
+输出：unittest结果
+
+运行条件：无需真实数据
+
 ### [test_candidate_composition.py](test_candidate_composition.py)
 
 用途：验证前段、过渡和后段正确分离
