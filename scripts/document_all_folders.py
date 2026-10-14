@@ -8,6 +8,7 @@ ROOT = Path(__file__).resolve().parents[1]
 START = '<!-- generated-file-guide:start -->'
 END = '<!-- generated-file-guide:end -->'
 PURPOSE = {
+    'mutoulong_0101_2024_audit.json': '01-01地块官方总平图PDF的下载哈希、栅格结构与人工读图结果，明确未取得CAD或历史拆除红线。',
     'jingji_name_bridge_evidence.csv': '京基东方华都的官方名录、带前缀和不带前缀门牌名称关联来源及哈希，不接受楼栋。',
     'jingji_source_field_counts.csv': '按指定小区ID汇总原149条成交的用途、年代、建筑类型与商圈字段频数，非官方认定。',
     'jingji_existing_period_composition.csv': '从既有构成表摘录该小区118笔窗口成交的前段、过渡与后段构成，不重估效应。',
