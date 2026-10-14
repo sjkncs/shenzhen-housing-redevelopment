@@ -47,6 +47,16 @@
 
 运行条件：不补日期、不接受项目处理组，区分年度区间与具体事件
 
+### [build_residential_review_queue.py](build_residential_review_queue.py)
+
+用途：连接20个小区的地址、年代、成交支持和建筑假设，生成待人工核查清单
+
+输入：--leads、--baseline、--support、--addresses、--atlas五份CSV
+
+输出：--output新目录的逐小区CSV、摘要和中文README
+
+运行条件：核对图像哈希；按成交笔数排序但不纳入样本、不接受住宅或坐标
+
 ### [check_price_did_influence_20261003.py](check_price_did_influence_20261003.py)
 
 用途：逐小区、逐比较商圈留出及差异线性趋势敏感性

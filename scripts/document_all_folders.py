@@ -8,6 +8,7 @@ ROOT = Path(__file__).resolve().parents[1]
 START = '<!-- generated-file-guide:start -->'
 END = '<!-- generated-file-guide:end -->'
 PURPOSE = {
+    'residential_review_queue.csv': '20个住宅线索的核查顺序、地址旁证、年代冲突及三坐标假设计数；全部待确认。',
     'review_atlas_index.csv': '住宅审查图册的小区名称、成交支持、文件名与图像哈希索引。',
     'coordinate_hypothesis_footprint_support.csv': '住宅原坐标三种假设的落入建筑与50米候选计数，不选楼栋。',
     'all_50m_footprint_candidates.csv': '三种地图坐标假设下全部50米候选轮廓，不按最近点接受身份。',

@@ -1,0 +1,16 @@
+{
+  "community_n": 20,
+  "window_transactions": 366,
+  "official_address_corroborated_n": 3,
+  "reported_year_conflict_n": 7,
+  "accepted_building_n": 0,
+  "coordinate_verified_n": 0,
+  "project_treatment_assigned_n": 0,
+  "source_sha256": {
+    "leads": "bfafd5335236acfc314171c75cac1e2b94790ae7341e516f52dbb28d4b682681",
+    "baseline": "272232f8e6951fb165d5024cb0bdc10a7b21e85863cf9e56868454320e1c59a9",
+    "support": "a27f5db03d018d196d389cee20b5ca24040df7229b198e9f1c416bc15ac09842",
+    "addresses": "a8d0e2fa7e504e022db5fd98643ac2188a8cdbb5f4beb3144d0129d9f659ce27",
+    "atlas": "610bcfbbcc1b533c4cc9877ea957333b88dff459b4e8ab440b2ee250e05f08e8"
+  }
+}

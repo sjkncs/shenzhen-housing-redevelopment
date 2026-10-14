@@ -14,6 +14,8 @@ GROUPS = {
     '06_原始代码与第三方': '原执行快照和固定版本第三方数学实现。',
 }
 SPECS = {
+    'build_residential_review_queue.py': ('02', '连接20个小区的地址、年代、成交支持和建筑假设，生成待人工核查清单', '--leads、--baseline、--support、--addresses、--atlas五份CSV', '--output新目录的逐小区CSV、摘要和中文README', '核对图像哈希；按成交笔数排序但不纳入样本、不接受住宅或坐标'),
+    'test_residential_review_queue.py': ('05', '验证20个线索完整保留、待确认状态及不完整或重复证据拒绝', '已归档五份证据CSV', 'unittest结果', '不验证真实地理身份'),
     'render_footprint_review_atlas.py': ('02', '渲染20个住宅线索的三坐标假设审查图并核对既有候选计数', '--transactions原CSV、--footprints候选GPKG、--leads线索、--support既有60条诊断', '--output PNG图册、中文README和索引哈希', '每面板独立中心，图中编号为源行；无影像、无已接受楼栋或项目距离'),
     'diagnose_candidate_footprints.py': ('02', '将20个住宅线索的三种坐标假设与供应建筑候选比较，保留所有50米候选', '--transactions封存成交CSV、--footprints候选GPKG、--leads地址线索表', '--output三种定位假设计数、全部50米候选及摘要', '不选最近建筑，不确认底层坐标、不计算项目距离'),
     'test_candidate_footprints.py': ('05', '验证重叠轮廓全部保留和缓冲范围外对象排除', '测试多边形与点', 'unittest结果', '不是实际地理精度测试'),

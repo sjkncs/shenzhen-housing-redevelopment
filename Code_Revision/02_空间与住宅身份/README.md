@@ -40,6 +40,18 @@
 
 路径：`scopes/luohu/scripts/build_project_readiness.py`
 
+## [build_residential_review_queue.py](../../scopes/luohu/scripts/build_residential_review_queue.py)
+
+**用途：**连接20个小区的地址、年代、成交支持和建筑假设，生成待人工核查清单
+
+**输入：**--leads、--baseline、--support、--addresses、--atlas五份CSV
+
+**输出：**--output新目录的逐小区CSV、摘要和中文README
+
+**运行条件：**核对图像哈希；按成交笔数排序但不纳入样本、不接受住宅或坐标
+
+路径：`scopes/luohu/scripts/build_residential_review_queue.py`
+
 ## [collect_building_identity_evidence.py](../../scopes/luohu/scripts/collect_building_identity_evidence.py)
 
 **用途：**取得官方楼栋标识线索并记录来源哈希，不推断楼栋与年代对应

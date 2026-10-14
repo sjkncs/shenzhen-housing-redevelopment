@@ -89,6 +89,14 @@
       "run_status_zh": "不补日期、不接受项目处理组，区分年度区间与具体事件"
     },
     {
+      "category": "02_空间与住宅身份",
+      "path": "scopes/luohu/scripts/build_residential_review_queue.py",
+      "purpose_zh": "连接20个小区的地址、年代、成交支持和建筑假设，生成待人工核查清单",
+      "inputs_zh": "--leads、--baseline、--support、--addresses、--atlas五份CSV",
+      "outputs_zh": "--output新目录的逐小区CSV、摘要和中文README",
+      "run_status_zh": "核对图像哈希；按成交笔数排序但不纳入样本、不接受住宅或坐标"
+    },
+    {
       "category": "03_价格回归与诊断",
       "path": "scopes/luohu/scripts/check_price_did_influence_20261003.py",
       "purpose_zh": "逐小区、逐比较商圈留出及差异线性趋势敏感性",
@@ -415,6 +423,14 @@
       "inputs_zh": "程序内日期与年份样例",
       "outputs_zh": "unittest结果",
       "run_status_zh": "不证明住宅身份"
+    },
+    {
+      "category": "05_测试与核验",
+      "path": "tests/test_residential_review_queue.py",
+      "purpose_zh": "验证20个线索完整保留、待确认状态及不完整或重复证据拒绝",
+      "inputs_zh": "已归档五份证据CSV",
+      "outputs_zh": "unittest结果",
+      "run_status_zh": "不验证真实地理身份"
     }
   ]
 }

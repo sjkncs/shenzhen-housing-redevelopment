@@ -137,5 +137,15 @@
 
 运行条件：不证明住宅身份
 
+### [test_residential_review_queue.py](test_residential_review_queue.py)
+
+用途：验证20个线索完整保留、待确认状态及不完整或重复证据拒绝
+
+输入：已归档五份证据CSV
+
+输出：unittest结果
+
+运行条件：不验证真实地理身份
+
 
 <!-- generated-file-guide:end -->
