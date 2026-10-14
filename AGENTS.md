@@ -13,3 +13,5 @@ Archive raw data as Release assets with hashes and source notes. No credentials,
 Before pushing, run scripts/validate_public_repository.py and the test suites described in README_replication.md. Preserve uncommitted work. Never send requests to officials or collaborators without explicit instruction.
 
 README visuals live in docs/assets/. Keep them self-contained and align numeric cards with the public coverage and readiness summaries. Preserve the original event-study figure and estimates; do not convert area-proxy diagnostics into project-level causal claims. Validate image links and desktop/mobile rendering after visual changes.
+
+GitHub prioritizes .github/README.md over the root README for the repository homepage. Keep .github/README.md as a mirror of root README.md, with local links expanded to this repository's main-branch blob URLs. The public validator rejects stale mirrors. Directory-documentation tools must preserve this homepage content.

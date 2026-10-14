@@ -5,11 +5,21 @@ import re
 import subprocess
 import zipfile
 import xml.etree.ElementTree as ET
+from urllib.parse import quote
 from pathlib import Path
 
 import pandas as pd
 
 ROOT = Path(__file__).resolve().parents[1]
+root_readme = (ROOT / 'README.md').read_text(encoding='utf-8')
+blob_prefix = 'https://github.com/sjkncs/shenzhen-housing-redevelopment/blob/main/'
+expected_mirror = re.sub(r'\]\(([^)]+)\)',
+                         lambda m: m.group(0) if re.match(r'https?://|#', m.group(1)) else '](' + blob_prefix + quote(m.group(1), safe='/#') + ')',
+                         root_readme)
+expected_mirror = re.sub(r'href="(?!https?://|#)([^"]+)"',
+                         lambda m: 'href="' + blob_prefix + quote(m.group(1), safe='/#') + '"', expected_mirror)
+mirror = (ROOT / '.github/README.md').read_text(encoding='utf-8').split('<!-- generated-file-guide:start -->')[0].strip()
+assert mirror == ('<!-- project-readme-mirror: root README.md is the source of truth -->\n' + expected_mirror).strip(), 'GitHub homepage mirror is out of sync with root README'
 files = subprocess.check_output(['git', 'ls-files', '-z'], cwd=ROOT).decode('utf-8').split('\0')
 files = list(filter(None, files))
 folders = {str(parent) for name in files for parent in Path(name).parents if str(parent) != '.'}
