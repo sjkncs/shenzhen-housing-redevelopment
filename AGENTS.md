@@ -11,3 +11,5 @@ Keep Shenzhen source coverage distinct from Luohu area-proxy DID and pending pro
 Archive raw data as Release assets with hashes and source notes. No credentials, executables or unrelated files. Academic artifacts specifically requested by the owner may include their original author metadata; do not broaden publication to feedback transcripts, taskbooks or other personal documents.
 
 Before pushing, run scripts/validate_public_repository.py and the test suites described in README_replication.md. Preserve uncommitted work. Never send requests to officials or collaborators without explicit instruction.
+
+README visuals live in docs/assets/. Keep them self-contained and align numeric cards with the public coverage and readiness summaries. Preserve the original event-study figure and estimates; do not convert area-proxy diagnostics into project-level causal claims. Validate image links and desktop/mobile rendering after visual changes.

@@ -8,4 +8,6 @@
 
 README结构参考[PyWhy EconML](https://github.com/py-why/EconML/blob/main/README.md)的项目定位、结果、使用方式及文档入口；Stars入口参考[Star History官方项目](https://github.com/star-history/star-history)。只借鉴组织方式，不复制其研究结论或展示统计。
 
-Stars、Forks与提交徽章读取实时GitHub元数据。不存在学术背书、引用量或测试覆盖率的虚构徽章；测试徽章指向实际工作流。
+首页保留实际CI工作流徽章；Python、GIS和进行中状态使用仓库自包含SVG。没有学术背书、引用量、模型表现或测试覆盖率的虚构徽章。Stars与Star History保留为真实仓库入口，不制作无来源的增长曲线。
+
+2026-10-14首页进一步参考[PyFixest](https://github.com/py-econometrics/pyfixest)的文档与使用入口组织，前置真实诊断图和研究状态，补充最新审计入口。页头、三张范围卡片和识别路径仅为导航，不是地理配准图、正式项目名录或完成的因果证据。数量逐项对照来源JSON/CSV，由公开仓库检查核验；封存结果、报告和PPT原件未因展示优化而改变。

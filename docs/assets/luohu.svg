@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="280" height="180" viewBox="0 0 280 180" role="img" aria-labelledby="title desc">
+<title id="title">Luohu area diagnostics</title><desc id="desc">16,199 cleaned transactions in 621 communities. Area-proxy diagnosis, not a project causal estimate.</desc>
+<style>.bg{fill:#fff;stroke:#d8e1e4}.ink{fill:#233d45}.muted{fill:#526a73}@media(prefers-color-scheme:dark){.bg{fill:#161b22;stroke:#30363d}.ink{fill:#edf3f4}.muted{fill:#b6c6ce}}</style>
+<rect class="bg" x="1" y="1" width="278" height="178" rx="8"/><path d="M8 2H272" stroke="#28685c" stroke-width="3"/>
+<g font-family="Verdana,Microsoft YaHei,sans-serif"><text x="18" y="28" font-size="10" fill="#28685c">02 / AREA DIAGNOSTICS</text><text class="ink" x="18" y="61" font-size="21" font-weight="600">Luohu / 罗湖</text><text class="ink" x="18" y="104" font-family="Georgia,serif" font-size="34">16,199</text><text class="muted" x="18" y="128" font-size="11">621 个小区 / 清洗后交易样本</text><text class="muted" x="18" y="154" font-size="10">Area-proxy DID, not project ATT</text></g>
+</svg>

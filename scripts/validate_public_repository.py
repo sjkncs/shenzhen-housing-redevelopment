@@ -4,6 +4,7 @@ import json
 import re
 import subprocess
 import zipfile
+import xml.etree.ElementTree as ET
 from pathlib import Path
 
 import pandas as pd
@@ -51,12 +52,35 @@ for name in files:
             for link in re.findall(r'\]\(([^)]+)\)', text):
                 if not re.match(r'https?://|#', link):
                     assert (path.parent / link.split('#')[0]).exists(), 'Broken local link: ' + link
+            for image in re.findall(r'<(?:img|source)\b[^>]*(?:src|srcset)="([^"]+)"', text):
+                owned = 'https://raw.githubusercontent.com/sjkncs/shenzhen-housing-redevelopment/main/'
+                if image.startswith(owned):
+                    target = ROOT / image.removeprefix(owned)
+                    assert target.resolve().is_relative_to(ROOT), 'Image escapes repository'
+                    assert target.is_file(), 'Broken owned README image: ' + image
+                elif not re.match(r'https?://', image):
+                    assert (path.parent / image).is_file(), 'Broken README image: ' + image
+    if name.startswith('docs/assets/') and path.suffix == '.svg':
+        svg = ET.fromstring(path.read_text(encoding='utf-8'))
+        assert svg.tag == '{http://www.w3.org/2000/svg}svg' and 'viewBox' in svg.attrib
+        for node in svg.iter():
+            assert node.tag.rsplit('}', 1)[-1] not in {'script', 'foreignObject', 'image'}, 'Non-self-contained SVG: ' + name
+            assert not any(k.lower().startswith('on') or 'http:' in v or 'https:' in v for k, v in node.attrib.items()), name
 summary = json.loads((ROOT / 'scopes/shenzhen/summary/coverage.json').read_text())
 table = pd.read_csv(ROOT / 'scopes/shenzhen/summary/district_coverage.csv')
 assert len(table) == 10 and table.transaction_n.sum() == summary['clean_n'] == 132774
 assert summary['raw_n'] == summary['clean_n'] + summary['excluded_n']
 luohu = table[table.district.eq('罗湖区')].iloc[0]
 assert luohu.transaction_n == 16199 and luohu.community_n == 621
+asset_dir = ROOT / 'docs/assets'
+if asset_dir.exists():
+    assert f"{summary['clean_n']:,}" in (asset_dir / 'shenzhen.svg').read_text(encoding='utf-8')
+    luohu_asset = (asset_dir / 'luohu.svg').read_text(encoding='utf-8')
+    assert f'{int(luohu.transaction_n):,}' in luohu_asset and str(int(luohu.community_n)) in luohu_asset
+    readiness = json.loads((ROOT / 'scopes/luohu/outputs/project_readiness_20261013/summary.json').read_text(encoding='utf-8'))
+    readiness_asset = (asset_dir / 'readiness.svg').read_text(encoding='utf-8')
+    assert f"{readiness['accepted_project_samples']} accepted" in readiness_asset
+    assert f"{readiness['candidate_n']} 个补充" in readiness_asset
 audit = json.loads((ROOT / 'scopes/luohu/outputs/price_did_audit_20261003/run_summary.json').read_text())
 assert audit['luohu_clean_n'] == luohu.transaction_n
 assert audit['status'] == 'AREA_PROXY_DID_EXECUTED_PROJECT_BOUNDARY_DID_PENDING'

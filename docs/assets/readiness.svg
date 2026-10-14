@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="280" height="180" viewBox="0 0 280 180" role="img" aria-labelledby="title desc">
+<title id="title">Project identification pending</title><desc id="desc">17 supplementary candidate leads and zero accepted project spatial treatment samples. Not a complete project census.</desc>
+<style>.bg{fill:#fff;stroke:#d8e1e4}.ink{fill:#233d45}.muted{fill:#526a73}@media(prefers-color-scheme:dark){.bg{fill:#161b22;stroke:#30363d}.ink{fill:#edf3f4}.muted{fill:#b6c6ce}}</style>
+<rect class="bg" x="1" y="1" width="278" height="178" rx="8"/><path d="M8 2H272" stroke="#996b23" stroke-width="3"/>
+<g font-family="Verdana,Microsoft YaHei,sans-serif"><text x="18" y="28" font-size="10" fill="#996b23">03 / IDENTIFICATION GATE</text><text class="ink" x="18" y="61" font-size="21" font-weight="600">Project / 项目</text><text class="ink" x="18" y="104" font-family="Georgia,serif" font-size="34">0 accepted</text><text class="muted" x="18" y="128" font-size="11">17 个补充线索 / 空间归属待核</text><text class="muted" x="18" y="154" font-size="10">Coordinates + boundaries pending</text></g>
+</svg>
