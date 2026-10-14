@@ -7,6 +7,16 @@
 
 文件说明以当前跟踪版本为准；代码仅说明用途，不导入或执行。
 
+### [test_alias_scenarios.py](test_alias_scenarios.py)
+
+用途：测试相加型冲突与缺失全市合计拒绝
+
+输入：程序内行政区总量样例
+
+输出：unittest结果
+
+运行条件：内部对账不证明来源口径
+
 ### [test_candidate_composition.py](test_candidate_composition.py)
 
 用途：验证前段、过渡和后段正确分离

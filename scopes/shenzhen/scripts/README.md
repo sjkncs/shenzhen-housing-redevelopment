@@ -47,6 +47,16 @@
 
 运行条件：不选择版本、不合并原行、不更新原月度统计
 
+### [reconcile_district_alias_scenarios.py](reconcile_district_alias_scenarios.py)
+
+用途：比较短区名、带区后缀区名及两类相加三种假设与同日全市套数面积合计
+
+输入：--source历史接口合并CSV、--collisions冲突行表
+
+输出：--output三种对账场景及摘要
+
+运行条件：仅诊断不选择合并规则，不修改月度统计
+
 ### [summarize_daily_market.py](summarize_daily_market.py)
 
 用途：从按日行政区汇总中提取罗湖住宅成交套数和面积，补足市场背景截止日后的总量走势

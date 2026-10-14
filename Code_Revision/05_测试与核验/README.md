@@ -64,6 +64,18 @@
 
 路径：`scripts/validate_public_repository.py`
 
+## [test_alias_scenarios.py](../../tests/test_alias_scenarios.py)
+
+**用途：**测试相加型冲突与缺失全市合计拒绝
+
+**输入：**程序内行政区总量样例
+
+**输出：**unittest结果
+
+**运行条件：**内部对账不证明来源口径
+
+路径：`tests/test_alias_scenarios.py`
+
 ## [test_candidate_composition.py](../../tests/test_candidate_composition.py)
 
 **用途：**验证前段、过渡和后段正确分离

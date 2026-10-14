@@ -8,6 +8,8 @@ ROOT = Path(__file__).resolve().parents[1]
 START = '<!-- generated-file-guide:start -->'
 END = '<!-- generated-file-guide:end -->'
 PURPOSE = {
+    'alias_scenario_city_checks.csv': '同日同用途区名三种候选合并方式与全市总量的差异，不是已接受规则。',
+    'alias_scenario_summary.csv': '短名优先、后缀优先及两类相加的内部对账汇总。',
     'collision_group_classification.csv': '同日同用途区名冲突逐组数值分类与来源ID，不决定合并版本。',
     'collision_district_summary.csv': '区名冲突按行政区和类别汇总的数量与日期范围。',
     'normalized_name_collision_rows.csv': '行政区名称标准化后同日同用途发生冲突的原行，隔离不择一或重复加总。',

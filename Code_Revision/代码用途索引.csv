@@ -24,6 +24,7 @@
 01_数据获取与清洗,scopes/shenzhen/scripts/audit_paged_open_data.py,核验政府开放平台分页JSON哈希，合并并标准化行政区，生成深圳/罗湖月度住宅市场总量,--pages分页JSON目录、--audit原分页哈希审计,--output罗湖日度与区月度CSV及摘要,只处理行政区总量，不含价格/小区/坐标，不用于项目DID
 01_数据获取与清洗,scopes/shenzhen/scripts/build_citywide_summary.py,清洗全市平台交易，统计行政区覆盖,--input指定原始成交CSV,scopes/shenzhen/summary/区级CSV和JSON,需先下载交易包并解压；不会输出逐套记录
 01_数据获取与清洗,scopes/shenzhen/scripts/classify_district_collisions.py,逐组比较标准化区名冲突的套数、面积与来源ID,--input区名冲突CSV、--output新目录,逐组分类、区级汇总与摘要,不选择版本、不合并原行、不更新原月度统计
+01_数据获取与清洗,scopes/shenzhen/scripts/reconcile_district_alias_scenarios.py,比较短区名、带区后缀区名及两类相加三种假设与同日全市套数面积合计,--source历史接口合并CSV、--collisions冲突行表,--output三种对账场景及摘要,仅诊断不选择合并规则，不修改月度统计
 01_数据获取与清洗,scopes/shenzhen/scripts/summarize_daily_market.py,从按日行政区汇总中提取罗湖住宅成交套数和面积，补足市场背景截止日后的总量走势,--zip用户提供的日汇总ZIP，必须含所属区/用途/日期/套数/面积字段,罗湖日汇总、区—用途覆盖和摘要,不含小区ID、价格、坐标，不能用于项目DID或价格回归
 04_材料归档与文献,scripts/archive_report_references.py,存档指定报告，提取28条参考文献和DOI入口,--report DOCX与--ppt PPTX,Draft原件、References Markdown/CSV和来源JSON,维护者工具；当前期待28条，不是文献真实性核验
 05_测试与核验,scripts/build_code_catalog.py,为全部Git跟踪Python文件生成中文分类说明与完整索引,Git索引及本脚本用途映射,Code_Revision六类README、CSV和JSON,在git add之后运行；新脚本未登记会明确失败
@@ -32,6 +33,7 @@
 04_材料归档与文献,scripts/organize_research_archive.py,复制PPT、历史报告及六份原执行代码，生成归档清单与复现HTML,--private-archive指定已有私有整理目录,Draft、PPT、Code_Original及归档JSON、HTML,维护者工具；保留已有副本字节；会重建初始归档清单，新增版本后不能盲目重跑
 04_材料归档与文献,scripts/prepare_authorized_data_release.py,打包全市来源与14份罗湖派生文件并校验包内哈希,--private-tree及三份源附件、--output,罗湖ZIP及docs/DATA_RELEASE_MANIFEST.json,维护者归档工具；需要完整输入；会重写指定输出包和清单
 05_测试与核验,scripts/validate_public_repository.py,检查Git跟踪文件、原件哈希、链接、聚合数值和代码分类覆盖,当前Git索引、来源清单与封存结果,终端PASS或异常,在git add之后运行；不重估模型
+05_测试与核验,tests/test_alias_scenarios.py,测试相加型冲突与缺失全市合计拒绝,程序内行政区总量样例,unittest结果,内部对账不证明来源口径
 05_测试与核验,tests/test_candidate_composition.py,验证前段、过渡和后段正确分离,季度样例,unittest结果,无需真实数据
 05_测试与核验,tests/test_candidate_support.py,测试过渡季度分离、无成交小区保留和重复交易拒绝,程序内小型测试表,unittest结果,数据无关测试
 05_测试与核验,tests/test_daily_market_coverage.py,测试缺月保留为空与重复日期拒绝,临时日汇总样例,unittest结果,不读取真实数据
