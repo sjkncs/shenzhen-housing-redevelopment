@@ -160,6 +160,18 @@
 
 路径：`tests/test_download_data.py`
 
+## [test_jingji_name_bridge.py](../../tests/test_jingji_name_bridge.py)
+
+**用途：**测试名称与门牌不能跨记录拼接，以及按小区ID而非名称子串选择交易
+
+**输入：**临时HTML和交易样例
+
+**输出：**unittest结果
+
+**运行条件：**无需真实地理数据
+
+路径：`tests/test_jingji_name_bridge.py`
+
 ## [test_monthly_alias_sensitivity.py](../../tests/test_monthly_alias_sensitivity.py)
 
 **用途：**验证缺月为空、重复来源拒绝和相加记录的观测日计数

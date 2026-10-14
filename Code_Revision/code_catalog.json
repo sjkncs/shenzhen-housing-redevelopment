@@ -170,6 +170,14 @@
     },
     {
       "category": "02_空间与住宅身份",
+      "path": "scopes/luohu/scripts/review_jingji_name_bridge.py",
+      "purpose_zh": "核查京基东方华都与东方华都大厦的同门牌名称关联，汇总原成交字段及既有时期构成",
+      "inputs_zh": "--transactions、--roster、--full、--short、--composition五份原件或既有证据",
+      "outputs_zh": "--output新目录的名称证据、字段频数、时期构成和中文说明",
+      "run_status_zh": "同门牌旁证不接受楼栋身份，保留街道差异，不重估效应"
+    },
+    {
+      "category": "02_空间与住宅身份",
       "path": "scopes/luohu/scripts/review_luohu_poi_ambiguity_20261012.py",
       "purpose_zh": "复核同名位置歧义、地址限定词、门点与主体线索",
       "inputs_zh": "--base指定公开派生POI目录，--transactions指定原成交CSV；按封存哈希校验并重建坐标登记",
@@ -391,6 +399,14 @@
       "inputs_zh": "临时测试文件",
       "outputs_zh": "unittest结果",
       "run_status_zh": "无需真实数据或网络"
+    },
+    {
+      "category": "05_测试与核验",
+      "path": "tests/test_jingji_name_bridge.py",
+      "purpose_zh": "测试名称与门牌不能跨记录拼接，以及按小区ID而非名称子串选择交易",
+      "inputs_zh": "临时HTML和交易样例",
+      "outputs_zh": "unittest结果",
+      "run_status_zh": "无需真实地理数据"
     },
     {
       "category": "05_测试与核验",

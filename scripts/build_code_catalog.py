@@ -14,6 +14,8 @@ GROUPS = {
     '06_原始代码与第三方': '原执行快照和固定版本第三方数学实现。',
 }
 SPECS = {
+    'review_jingji_name_bridge.py': ('02', '核查京基东方华都与东方华都大厦的同门牌名称关联，汇总原成交字段及既有时期构成', '--transactions、--roster、--full、--short、--composition五份原件或既有证据', '--output新目录的名称证据、字段频数、时期构成和中文说明', '同门牌旁证不接受楼栋身份，保留街道差异，不重估效应'),
+    'test_jingji_name_bridge.py': ('05', '测试名称与门牌不能跨记录拼接，以及按小区ID而非名称子串选择交易', '临时HTML和交易样例', 'unittest结果', '无需真实地理数据'),
     'audit_official_residential_names.py': ('02', '从封存官方参考价格PDF提取表格，精确核对20个罗湖住宅名称并检查新增地址附件', '--roster、--queue、--huandao、--yangguang四份本地原件', '--output新目录的名称旁证、地址证据CSV和摘要', '需要PyMuPDF；参考价格不是成交价，名录旁证不接受楼栋坐标'),
     'test_official_residential_names.py': ('05', '测试名称精确匹配、行政区限制及重复官方条目拒绝', '程序内名录样例', 'unittest结果', '不认证楼栋和住宅用途'),
     'build_residential_review_queue.py': ('02', '连接20个小区的地址、年代、成交支持和建筑假设，生成待人工核查清单', '--leads、--baseline、--support、--addresses、--atlas五份CSV', '--output新目录的逐小区CSV、摘要和中文README', '核对图像哈希；按成交笔数排序但不纳入样本、不接受住宅或坐标'),

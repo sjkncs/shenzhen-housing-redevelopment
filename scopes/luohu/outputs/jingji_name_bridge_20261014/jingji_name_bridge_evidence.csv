@@ -1,0 +1,4 @@
+﻿source_id,url,sha256,name,address_scope,street_reported,record_locator,supports
+official_roster,https://www.sz.gov.cn/attachment/0/749/749839/8545776.pdf,3f4f2146590f69bdbb92d22742606f0b7a64384ba7d7666c0877a79ec3b2a918,东方华都大厦,名录不含门牌,东门,PDF第7页，序号291,官方住宅参考价格名录名称旁证
+full_name_address,https://www.szlh.gov.cn/lhjyjdds/gkmlpt/content/11/11008/post_11008298.html,05cacbf054fda65822c5bf36fe77096ccff2de5ff6b632155d07676c2d5d85ce,京基东方华都大厦,文锦中路2063号，裙楼三层,未明确,2023-11-28设立公告的办学地址段,带京基名称与门牌的机构地址关联
+short_name_address,https://www.szlh.gov.cn/zwgk/ssjygkzl/content/post_9931859.html,a7f6b1821827d7553f8d42b96bece1ab9c60dbd976f6f97afd04fc20fc0ae7d0,东方华都,文锦中路2063号，负一层地下室,东门,2022-07-05物业检查页，同一表格行,不带京基名称与门牌的物业机构地址关联

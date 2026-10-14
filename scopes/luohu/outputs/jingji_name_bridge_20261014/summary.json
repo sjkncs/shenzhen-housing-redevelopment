@@ -1,0 +1,28 @@
+{
+  "community_id": "2411048934069",
+  "platform_name": "京基东方华都",
+  "official_roster_name": "东方华都大厦",
+  "name_relation_status": "same_doorplate_corroboration_not_building_identity",
+  "raw_record_n": 149,
+  "raw_first_date": "2011-01-20",
+  "raw_last_date": "2024-03-21",
+  "existing_clean_window_n": 118,
+  "existing_period_counts": {
+    "post": 35,
+    "pre": 76,
+    "transition": 7
+  },
+  "residential_building_identity_verified": false,
+  "coordinate_verified": false,
+  "official_street_conflict_resolved": false,
+  "project_treatment_assigned": false,
+  "exact_name_roster_matches_unchanged": true,
+  "raw_pages_publicly_republished": false,
+  "source_sha256": {
+    "transactions": "b56310294f8b0288eba66c9852353c0339d4e9ba10fc0dadbcfa17ffad63bd22",
+    "roster": "3f4f2146590f69bdbb92d22742606f0b7a64384ba7d7666c0877a79ec3b2a918",
+    "full": "05cacbf054fda65822c5bf36fe77096ccff2de5ff6b632155d07676c2d5d85ce",
+    "short": "a7f6b1821827d7553f8d42b96bece1ab9c60dbd976f6f97afd04fc20fc0ae7d0",
+    "composition": "9e03f8cb811d2a2d0c7ed17ce5fa3e03c71c8c7b2505b55875582ba0fd5e633d"
+  }
+}

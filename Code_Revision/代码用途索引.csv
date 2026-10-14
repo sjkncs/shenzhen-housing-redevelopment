@@ -20,6 +20,7 @@
 02_空间与住宅身份,scopes/luohu/scripts/diagnose_poi_coordinate_frames_20261012.py,比较住宅与POI的九种坐标口径组合,成交CSV、同名候选连接、固定版本坐标实现,双端诊断CSV及摘要,先运行POI筛选；一致性不是测量精度
 02_空间与住宅身份,scopes/luohu/scripts/extract_luohu_building_candidates.py,用供应罗湖区界按声明CRS筛选建筑轮廓，保留原几何和属性，不认证住宅,--buildings全市建筑SHP、--districts区界SHP、--output新目录,候选GPKG、属性CSV、层数频数和来源哈希摘要,跳过无效源几何并记录数量；边界和坐标均待独立验证
 02_空间与住宅身份,scopes/luohu/scripts/render_footprint_review_atlas.py,渲染20个住宅线索的三坐标假设审查图并核对既有候选计数,--transactions原CSV、--footprints候选GPKG、--leads线索、--support既有60条诊断,--output PNG图册、中文README和索引哈希,每面板独立中心，图中编号为源行；无影像、无已接受楼栋或项目距离
+02_空间与住宅身份,scopes/luohu/scripts/review_jingji_name_bridge.py,核查京基东方华都与东方华都大厦的同门牌名称关联，汇总原成交字段及既有时期构成,--transactions、--roster、--full、--short、--composition五份原件或既有证据,--output新目录的名称证据、字段频数、时期构成和中文说明,同门牌旁证不接受楼栋身份，保留街道差异，不重估效应
 02_空间与住宅身份,scopes/luohu/scripts/review_luohu_poi_ambiguity_20261012.py,复核同名位置歧义、地址限定词、门点与主体线索,--base指定公开派生POI目录，--transactions指定原成交CSV；按封存哈希校验并重建坐标登记,--output指定新目录；身份候选、分流与摘要,拒绝覆盖既有目录；--skip-official-fetch可离线复现，官方来源另行核验；不接受住宅位置
 02_空间与住宅身份,scopes/luohu/scripts/review_residential_baseline.py,按最早成交及平台建成年代分流基期存在证据,--sample、--coverage、--leads三个CSV,--output指定的新目录；基期证据CSV与摘要,先完成地址支持核查；不是官方竣工认证
 03_价格回归与诊断,scopes/luohu/scripts/run_price_did_audit_20261003.py,运行罗湖商圈代理双向固定效应DID和季度动态模型,SHENZHEN_TRANSACTION_CSV环境变量指定成交CSV,outputs/price_did_audit_20261003/样本、回归、图和摘要,需原交易数据；写入既有结果目录，先备份或用独立克隆运行
@@ -48,6 +49,7 @@
 05_测试与核验,tests/test_daily_market_coverage.py,测试缺月保留为空与重复日期拒绝,临时日汇总样例,unittest结果,不读取真实数据
 05_测试与核验,tests/test_district_collisions.py,测试相同数值、面积不同和双字段不同的冲突分类,两行数值样例,unittest结果,无需真实数据
 05_测试与核验,tests/test_download_data.py,测试下载哈希、已有文件保护、路径限制与包内核验,临时测试文件,unittest结果,无需真实数据或网络
+05_测试与核验,tests/test_jingji_name_bridge.py,测试名称与门牌不能跨记录拼接，以及按小区ID而非名称子串选择交易,临时HTML和交易样例,unittest结果,无需真实地理数据
 05_测试与核验,tests/test_monthly_alias_sensitivity.py,验证缺月为空、重复来源拒绝和相加记录的观测日计数,月度聚合样例,unittest结果,无需真实数据
 05_测试与核验,tests/test_mutoulong_image_comparison.py,核对图像拟合与留出点分离、保存的像素误差,已归档图纸比对CSV/JSON,unittest结果,不验证地理配准
 05_测试与核验,tests/test_mutoulong_native_grid.py,校验45点编号、哈希、鞋带面积与未配准状态,已归档原坐标网CSV/JSON,unittest结果,不确认CRS、轴序或真实单位

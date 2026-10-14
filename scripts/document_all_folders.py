@@ -8,6 +8,9 @@ ROOT = Path(__file__).resolve().parents[1]
 START = '<!-- generated-file-guide:start -->'
 END = '<!-- generated-file-guide:end -->'
 PURPOSE = {
+    'jingji_name_bridge_evidence.csv': '京基东方华都的官方名录、带前缀和不带前缀门牌名称关联来源及哈希，不接受楼栋。',
+    'jingji_source_field_counts.csv': '按指定小区ID汇总原149条成交的用途、年代、建筑类型与商圈字段频数，非官方认定。',
+    'jingji_existing_period_composition.csv': '从既有构成表摘录该小区118笔窗口成交的前段、过渡与后段构成，不重估效应。',
     'official_roster_name_matches.csv': '20小区与官方参考价格表完整同名罗湖条目的比对及原PDF页码，不接受住宅坐标。',
     'supplemental_address_evidence.csv': '环岛丽园、阳光绿地家园的官方机构门牌楼栋线索与原件哈希，不认证整栋住宅用途。',
     'residential_review_queue.csv': '20个住宅线索的核查顺序、地址旁证、年代冲突及三坐标假设计数；全部待确认。',

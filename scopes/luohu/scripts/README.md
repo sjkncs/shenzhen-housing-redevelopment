@@ -147,6 +147,16 @@
 
 运行条件：每面板独立中心，图中编号为源行；无影像、无已接受楼栋或项目距离
 
+### [review_jingji_name_bridge.py](review_jingji_name_bridge.py)
+
+用途：核查京基东方华都与东方华都大厦的同门牌名称关联，汇总原成交字段及既有时期构成
+
+输入：--transactions、--roster、--full、--short、--composition五份原件或既有证据
+
+输出：--output新目录的名称证据、字段频数、时期构成和中文说明
+
+运行条件：同门牌旁证不接受楼栋身份，保留街道差异，不重估效应
+
 ### [review_luohu_poi_ambiguity_20261012.py](review_luohu_poi_ambiguity_20261012.py)
 
 用途：复核同名位置歧义、地址限定词、门点与主体线索
