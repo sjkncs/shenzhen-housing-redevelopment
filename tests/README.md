@@ -37,6 +37,16 @@
 
 运行条件：无需真实数据
 
+### [test_candidate_footprints.py](test_candidate_footprints.py)
+
+用途：验证重叠轮廓全部保留和缓冲范围外对象排除
+
+输入：测试多边形与点
+
+输出：unittest结果
+
+运行条件：不是实际地理精度测试
+
 ### [test_candidate_support.py](test_candidate_support.py)
 
 用途：测试过渡季度分离、无成交小区保留和重复交易拒绝

@@ -12,6 +12,7 @@
 - [building_candidates_20261014](building_candidates_20261014/README.md)：详见子目录中文说明。
 - [building_label_review_20261013](building_label_review_20261013/README.md)：详见子目录中文说明。
 - [candidate_composition_20261013](candidate_composition_20261013/README.md)：详见子目录中文说明。
+- [footprint_hypothesis_review_20261014](footprint_hypothesis_review_20261014/README.md)：详见子目录中文说明。
 - [mutoulong_address_support_20261013](mutoulong_address_support_20261013/README.md)：详见子目录中文说明。
 - [mutoulong_baseline_review_20261013](mutoulong_baseline_review_20261013/README.md)：详见子目录中文说明。
 - [official_address_review_20261013](official_address_review_20261013/README.md)：详见子目录中文说明。

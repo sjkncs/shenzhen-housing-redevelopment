@@ -8,6 +8,8 @@ ROOT = Path(__file__).resolve().parents[1]
 START = '<!-- generated-file-guide:start -->'
 END = '<!-- generated-file-guide:end -->'
 PURPOSE = {
+    'coordinate_hypothesis_footprint_support.csv': '住宅原坐标三种假设的落入建筑与50米候选计数，不选楼栋。',
+    'all_50m_footprint_candidates.csv': '三种地图坐标假设下全部50米候选轮廓，不按最近点接受身份。',
     'reported_floor_counts.csv': '供应建筑候选的原Floor频数，不解释为已核实层数或高度。',
     'original_label_use_reconciliation.csv': '各原始区名按日的全部与分用途对账，不合并区名或推断渠道。',
     'label_type_check_summary.csv': '短名称和带区后缀名称各自用途合计检查汇总。',

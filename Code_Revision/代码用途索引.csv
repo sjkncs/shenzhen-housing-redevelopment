@@ -14,6 +14,7 @@
 03_价格回归与诊断,scopes/luohu/scripts/check_price_did_support_20261003.py,检查前后交易支持，重估支持样本和伪事件诊断,主回归生成的analysis_sample.csv及估计函数,支持表、敏感性表、季度协方差及诊断摘要,在主回归之后运行；会更新结果目录
 02_空间与住宅身份,scopes/luohu/scripts/collect_building_identity_evidence.py,取得官方楼栋标识线索并记录来源哈希，不推断楼栋与年代对应,--archive本地原页目录、--output新的公开摘要目录,楼栋线索CSV及JSON；原HTML仅存本地,需联网curl；记录失败；不认证住宅、不拆样本
 02_空间与住宅身份,scopes/luohu/scripts/collect_redevelopment_plan_sources.py,获取拆除重建项目官方计划与进展原件，三九计划附件单独归档,--archive本地原件目录、--manifest公开来源清单,六份正文与两附件下载记录、哈希和失败状态,需联网curl；不自动认定开工或未来回迁
+02_空间与住宅身份,scopes/luohu/scripts/diagnose_candidate_footprints.py,将20个住宅线索的三种坐标假设与供应建筑候选比较，保留所有50米候选,--transactions封存成交CSV、--footprints候选GPKG、--leads地址线索表,--output三种定位假设计数、全部50米候选及摘要,不选最近建筑，不确认底层坐标、不计算项目距离
 02_空间与住宅身份,scopes/luohu/scripts/diagnose_poi_coordinate_frames_20261012.py,比较住宅与POI的九种坐标口径组合,成交CSV、同名候选连接、固定版本坐标实现,双端诊断CSV及摘要,先运行POI筛选；一致性不是测量精度
 02_空间与住宅身份,scopes/luohu/scripts/extract_luohu_building_candidates.py,用供应罗湖区界按声明CRS筛选建筑轮廓，保留原几何和属性，不认证住宅,--buildings全市建筑SHP、--districts区界SHP、--output新目录,候选GPKG、属性CSV、层数频数和来源哈希摘要,跳过无效源几何并记录数量；边界和坐标均待独立验证
 02_空间与住宅身份,scopes/luohu/scripts/review_luohu_poi_ambiguity_20261012.py,复核同名位置歧义、地址限定词、门点与主体线索,--base指定公开派生POI目录，--transactions指定原成交CSV；按封存哈希校验并重建坐标登记,--output指定新目录；身份候选、分流与摘要,拒绝覆盖既有目录；--skip-official-fetch可离线复现，官方来源另行核验；不接受住宅位置
@@ -39,6 +40,7 @@
 05_测试与核验,tests/test_alias_scenarios.py,测试相加型冲突与缺失全市合计拒绝,程序内行政区总量样例,unittest结果,内部对账不证明来源口径
 05_测试与核验,tests/test_alias_use_totals.py,测试分用途合计、总计缺失和重复类别拒绝,程序内用途示例,unittest结果,无需真实数据
 05_测试与核验,tests/test_candidate_composition.py,验证前段、过渡和后段正确分离,季度样例,unittest结果,无需真实数据
+05_测试与核验,tests/test_candidate_footprints.py,验证重叠轮廓全部保留和缓冲范围外对象排除,测试多边形与点,unittest结果,不是实际地理精度测试
 05_测试与核验,tests/test_candidate_support.py,测试过渡季度分离、无成交小区保留和重复交易拒绝,程序内小型测试表,unittest结果,数据无关测试
 05_测试与核验,tests/test_daily_market_coverage.py,测试缺月保留为空与重复日期拒绝,临时日汇总样例,unittest结果,不读取真实数据
 05_测试与核验,tests/test_district_collisions.py,测试相同数值、面积不同和双字段不同的冲突分类,两行数值样例,unittest结果,无需真实数据

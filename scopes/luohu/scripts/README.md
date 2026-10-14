@@ -87,6 +87,16 @@
 
 运行条件：需联网curl；不自动认定开工或未来回迁
 
+### [diagnose_candidate_footprints.py](diagnose_candidate_footprints.py)
+
+用途：将20个住宅线索的三种坐标假设与供应建筑候选比较，保留所有50米候选
+
+输入：--transactions封存成交CSV、--footprints候选GPKG、--leads地址线索表
+
+输出：--output三种定位假设计数、全部50米候选及摘要
+
+运行条件：不选最近建筑，不确认底层坐标、不计算项目距离
+
 ### [diagnose_poi_coordinate_frames_20261012.py](diagnose_poi_coordinate_frames_20261012.py)
 
 用途：比较住宅与POI的九种坐标口径组合

@@ -1,0 +1,35 @@
+{
+  "scope": "HYPOTHETICAL_POINT_FOOTPRINT_RELATION_NOT_BUILDING_IDENTITY",
+  "community_n": 20,
+  "diagnostic_rows": 60,
+  "candidate_pair_rows": 356,
+  "hypothesis_stats": [
+    {
+      "hypothesis": "raw_as_bd09",
+      "diagnostic_points": 20,
+      "points_with_covering_polygon": 10,
+      "points_with_50m_candidates": 20
+    },
+    {
+      "hypothesis": "raw_as_gcj02",
+      "diagnostic_points": 20,
+      "points_with_covering_polygon": 6,
+      "points_with_50m_candidates": 16
+    },
+    {
+      "hypothesis": "raw_as_wgs84",
+      "diagnostic_points": 20,
+      "points_with_covering_polygon": 1,
+      "points_with_50m_candidates": 11
+    }
+  ],
+  "building_source_assumed_wgs84_for_diagnostic_only": true,
+  "accepted_coordinate_frame": false,
+  "accepted_building_identity_n": 0,
+  "project_distance_computed": false,
+  "input_sha256": {
+    "transactions": "b56310294f8b0288eba66c9852353c0339d4e9ba10fc0dadbcfa17ffad63bd22",
+    "footprints": "5cc5bab582b11d6bd6147c8d113f4e599f4e4bc5790c4ca77fb70b772670e3e6",
+    "leads": "bfafd5335236acfc314171c75cac1e2b94790ae7341e516f52dbb28d4b682681"
+  }
+}

@@ -122,6 +122,14 @@
     },
     {
       "category": "02_空间与住宅身份",
+      "path": "scopes/luohu/scripts/diagnose_candidate_footprints.py",
+      "purpose_zh": "将20个住宅线索的三种坐标假设与供应建筑候选比较，保留所有50米候选",
+      "inputs_zh": "--transactions封存成交CSV、--footprints候选GPKG、--leads地址线索表",
+      "outputs_zh": "--output三种定位假设计数、全部50米候选及摘要",
+      "run_status_zh": "不选最近建筑，不确认底层坐标、不计算项目距离"
+    },
+    {
+      "category": "02_空间与住宅身份",
       "path": "scopes/luohu/scripts/diagnose_poi_coordinate_frames_20261012.py",
       "purpose_zh": "比较住宅与POI的九种坐标口径组合",
       "inputs_zh": "成交CSV、同名候选连接、固定版本坐标实现",
@@ -319,6 +327,14 @@
       "inputs_zh": "季度样例",
       "outputs_zh": "unittest结果",
       "run_status_zh": "无需真实数据"
+    },
+    {
+      "category": "05_测试与核验",
+      "path": "tests/test_candidate_footprints.py",
+      "purpose_zh": "验证重叠轮廓全部保留和缓冲范围外对象排除",
+      "inputs_zh": "测试多边形与点",
+      "outputs_zh": "unittest结果",
+      "run_status_zh": "不是实际地理精度测试"
     },
     {
       "category": "05_测试与核验",
