@@ -8,6 +8,7 @@ ROOT = Path(__file__).resolve().parents[1]
 START = '<!-- generated-file-guide:start -->'
 END = '<!-- generated-file-guide:end -->'
 PURPOSE = {
+    'review_atlas_index.csv': '住宅审查图册的小区名称、成交支持、文件名与图像哈希索引。',
     'coordinate_hypothesis_footprint_support.csv': '住宅原坐标三种假设的落入建筑与50米候选计数，不选楼栋。',
     'all_50m_footprint_candidates.csv': '三种地图坐标假设下全部50米候选轮廓，不按最近点接受身份。',
     'reported_floor_counts.csv': '供应建筑候选的原Floor频数，不解释为已核实层数或高度。',
@@ -133,6 +134,8 @@ def main():
                 lines += [PURPOSE[filename], '']
             elif Path(filename).suffix in {'.docx', '.pdf', '.pptx'}:
                 lines += ['用户指定的开题阶段原件，保留署名及版本；查看本目录原有版本说明，不作为最终论文。', '']
+            elif filename.startswith('review_') and filename.endswith('.png'):
+                lines += ['三种坐标假设的候选轮廓人工核查图，各面板独立中心，不认证住宅或地图位置；编号为源行序号。', '']
             elif filename.endswith('.svg'):
                 lines += ['仓库首页的自包含SVG视觉资源，用于标题、范围或研究流程展示；不是新增实证图表或空间数据。', '']
             elif filename.endswith('.md'):

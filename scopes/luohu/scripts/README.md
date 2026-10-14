@@ -117,6 +117,16 @@
 
 运行条件：跳过无效源几何并记录数量；边界和坐标均待独立验证
 
+### [render_footprint_review_atlas.py](render_footprint_review_atlas.py)
+
+用途：渲染20个住宅线索的三坐标假设审查图并核对既有候选计数
+
+输入：--transactions原CSV、--footprints候选GPKG、--leads线索、--support既有60条诊断
+
+输出：--output PNG图册、中文README和索引哈希
+
+运行条件：每面板独立中心，图中编号为源行；无影像、无已接受楼栋或项目距离
+
 ### [review_luohu_poi_ambiguity_20261012.py](review_luohu_poi_ambiguity_20261012.py)
 
 用途：复核同名位置歧义、地址限定词、门点与主体线索
