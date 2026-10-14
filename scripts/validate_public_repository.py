@@ -66,7 +66,7 @@ for name in files:
         for node in svg.iter():
             assert node.tag.rsplit('}', 1)[-1] not in {'script', 'foreignObject', 'image'}, 'Non-self-contained SVG: ' + name
             assert not any(k.lower().startswith('on') or 'http:' in v or 'https:' in v for k, v in node.attrib.items()), name
-summary = json.loads((ROOT / 'scopes/shenzhen/summary/coverage.json').read_text())
+summary = json.loads((ROOT / 'scopes/shenzhen/summary/coverage.json').read_text(encoding='utf-8'))
 table = pd.read_csv(ROOT / 'scopes/shenzhen/summary/district_coverage.csv')
 assert len(table) == 10 and table.transaction_n.sum() == summary['clean_n'] == 132774
 assert summary['raw_n'] == summary['clean_n'] + summary['excluded_n']
@@ -81,7 +81,7 @@ if asset_dir.exists():
     readiness_asset = (asset_dir / 'readiness.svg').read_text(encoding='utf-8')
     assert f"{readiness['accepted_project_samples']} accepted" in readiness_asset
     assert f"{readiness['candidate_n']} 个补充" in readiness_asset
-audit = json.loads((ROOT / 'scopes/luohu/outputs/price_did_audit_20261003/run_summary.json').read_text())
+audit = json.loads((ROOT / 'scopes/luohu/outputs/price_did_audit_20261003/run_summary.json').read_text(encoding='utf-8'))
 assert audit['luohu_clean_n'] == luohu.transaction_n
 assert audit['status'] == 'AREA_PROXY_DID_EXECUTED_PROJECT_BOUNDARY_DID_PENDING'
 assert audit['pretrend_joint_test']['p'] < .05

@@ -74,12 +74,11 @@
 
 ## Research Path / 识别路径
 
-<p>
-  <picture>
-    <source media="(max-width: 600px)" srcset="https://raw.githubusercontent.com/sjkncs/shenzhen-housing-redevelopment/main/docs/assets/workflow-mobile.svg" />
-    <img src="https://raw.githubusercontent.com/sjkncs/shenzhen-housing-redevelopment/main/docs/assets/workflow.svg" width="100%" alt="Executed: source coverage, Luohu diagnostic and support audits. Pending: verified coordinates and boundaries, existing-home spatial assignment, then project effects and mechanisms." />
-  </picture>
+<p align="center">
+  <img src="https://raw.githubusercontent.com/sjkncs/shenzhen-housing-redevelopment/main/docs/assets/workflow-mobile.svg" width="360" alt="Executed: source coverage, Luohu diagnostic and support audits. Pending: verified coordinates and boundaries, existing-home spatial assignment, then project effects and mechanisms." />
 </p>
+
+[横向识别路径图](docs/assets/workflow.svg) · [详细研究设计](docs/RESEARCH_DESIGN.md)
 
 木头龙是当前主案例。最初六个指定候选包括木头龙、金钻豪园、三九花园、广场北、红岗花园与第一幼儿园宿舍楼；它们不同于后续登记的 17 个补充项目线索，两者均不是全区完整名录或已接受的处理组。
 
