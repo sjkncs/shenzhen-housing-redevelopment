@@ -7,6 +7,10 @@
 
 文件说明以当前跟踪版本为准；代码仅说明用途，不导入或执行。
 
+### [COMMUNITY_TRANSACTION_ACQUISITION.md](COMMUNITY_TRANSACTION_ACQUISITION.md)
+
+研究说明或分类导航文档；打开查看该主题用途和执行条件。
+
 ### [COORDINATE_CONVERTER_REVIEW.md](COORDINATE_CONVERTER_REVIEW.md)
 
 桌面坐标程序静态检查，区分互联网地图坐标与地方测量坐标。
@@ -35,5 +39,8 @@
 
 研究问题、片区模型、事件设定和正式项目识别计划。
 
+## 子目录导航
+
+- [assets](assets/README.md)：详见子目录中文说明。
 
 <!-- generated-file-guide:end -->

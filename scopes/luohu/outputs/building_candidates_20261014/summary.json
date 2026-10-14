@@ -1,0 +1,31 @@
+{
+  "scope": "SUPPLIED_BOUNDARY_DECLARED_CRS_BUILDING_CANDIDATES_NOT_VERIFIED_RESIDENTIAL_DATASET",
+  "building_source_n": 144781,
+  "source_invalid_or_empty_n": 564,
+  "invalid_source_bbox_candidates_n": 0,
+  "candidate_n": 12837,
+  "fully_within_n": 12703,
+  "crosses_or_touches_n": 134,
+  "building_declared_crs": "EPSG:4326",
+  "boundary_declared_crs": "EPSG:3857",
+  "source_id_unique_within_candidates": false,
+  "input_component_sha256": {
+    "buildings": {
+      ".shp": "ebca9aae5a6baec8e7a2236ac297dc4b04b6d30ca5c1d467c9731a8e8af82c67",
+      ".shx": "08454ad272ce8e423fe5b3f8aba87dc395ed60073d9ac2ded67629cc332af16a",
+      ".dbf": "69b50d968c11dc9beac090f2cbd7079d396404b92b0d3ebbf4b70aeab59cb62a",
+      ".prj": "a02a27b1d1982c8516d83398e85a3c8b1aef1713c13ef4d84d7bde17430c07c4"
+    },
+    "districts": {
+      ".shp": "35ee41fb5fea96610df321f958f68a981691dd8fd8d7542dd71859367ff1ffcf",
+      ".shx": "582d094cbae1403502b41ea2780422311361c70d3e440dceb4e340f96525e468",
+      ".dbf": "71b30eaf12da7d689887348a311f266b2a952b9745081d0276ac95ef7dbec7d7",
+      ".prj": "f2e7fb14d55bdd8d6a3bc2c272a48729d8f9d0ad72936e20eae6a9a81c2fccd0"
+    }
+  },
+  "accepted_coordinate_frame": false,
+  "collection_date_verified": false,
+  "historical_baseline_verified": false,
+  "residential_building_n_verified": null,
+  "transaction_join_performed": false
+}

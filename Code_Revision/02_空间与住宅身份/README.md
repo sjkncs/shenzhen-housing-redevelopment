@@ -76,6 +76,18 @@
 
 路径：`scopes/luohu/scripts/diagnose_poi_coordinate_frames_20261012.py`
 
+## [extract_luohu_building_candidates.py](../../scopes/luohu/scripts/extract_luohu_building_candidates.py)
+
+**用途：**用供应罗湖区界按声明CRS筛选建筑轮廓，保留原几何和属性，不认证住宅
+
+**输入：**--buildings全市建筑SHP、--districts区界SHP、--output新目录
+
+**输出：**候选GPKG、属性CSV、层数频数和来源哈希摘要
+
+**运行条件：**跳过无效源几何并记录数量；边界和坐标均待独立验证
+
+路径：`scopes/luohu/scripts/extract_luohu_building_candidates.py`
+
 ## [review_luohu_poi_ambiguity_20261012.py](../../scopes/luohu/scripts/review_luohu_poi_ambiguity_20261012.py)
 
 **用途：**复核同名位置歧义、地址限定词、门点与主体线索

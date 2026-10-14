@@ -97,6 +97,16 @@
 
 运行条件：先运行POI筛选；一致性不是测量精度
 
+### [extract_luohu_building_candidates.py](extract_luohu_building_candidates.py)
+
+用途：用供应罗湖区界按声明CRS筛选建筑轮廓，保留原几何和属性，不认证住宅
+
+输入：--buildings全市建筑SHP、--districts区界SHP、--output新目录
+
+输出：候选GPKG、属性CSV、层数频数和来源哈希摘要
+
+运行条件：跳过无效源几何并记录数量；边界和坐标均待独立验证
+
 ### [review_luohu_poi_ambiguity_20261012.py](review_luohu_poi_ambiguity_20261012.py)
 
 用途：复核同名位置歧义、地址限定词、门点与主体线索

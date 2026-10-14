@@ -14,6 +14,7 @@ GROUPS = {
     '06_原始代码与第三方': '原执行快照和固定版本第三方数学实现。',
 }
 SPECS = {
+    'extract_luohu_building_candidates.py': ('02', '用供应罗湖区界按声明CRS筛选建筑轮廓，保留原几何和属性，不认证住宅', '--buildings全市建筑SHP、--districts区界SHP、--output新目录', '候选GPKG、属性CSV、层数频数和来源哈希摘要', '跳过无效源几何并记录数量；边界和坐标均待独立验证'),
     'audit_alias_use_totals.py': ('01', '按原始区名检查全部与住宅商业办公等分用途合计，不合并不同区名', '--source历史接口合并CSV、--output新目录', '原区名用途对账表、类别汇总和摘要', '缺全部或明细记录保留不可检查；内部吻合不确认口径'),
     'test_alias_use_totals.py': ('05', '测试分用途合计、总计缺失和重复类别拒绝', '程序内用途示例', 'unittest结果', '无需真实数据'),
     'compare_luohu_monthly_aliases.py': ('01', '比较罗湖隔离与相加两种区名口径的月度成交套数和面积', '--clean无冲突罗湖住宅日表、--collisions冲突原行、--output新目录', '所有月度敏感性表、受影响月份及摘要', '来源含义未确认，缺月不补零，不覆盖既有月表'),

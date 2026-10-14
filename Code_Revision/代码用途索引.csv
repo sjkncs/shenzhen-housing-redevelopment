@@ -15,6 +15,7 @@
 02_空间与住宅身份,scopes/luohu/scripts/collect_building_identity_evidence.py,取得官方楼栋标识线索并记录来源哈希，不推断楼栋与年代对应,--archive本地原页目录、--output新的公开摘要目录,楼栋线索CSV及JSON；原HTML仅存本地,需联网curl；记录失败；不认证住宅、不拆样本
 02_空间与住宅身份,scopes/luohu/scripts/collect_redevelopment_plan_sources.py,获取拆除重建项目官方计划与进展原件，三九计划附件单独归档,--archive本地原件目录、--manifest公开来源清单,六份正文与两附件下载记录、哈希和失败状态,需联网curl；不自动认定开工或未来回迁
 02_空间与住宅身份,scopes/luohu/scripts/diagnose_poi_coordinate_frames_20261012.py,比较住宅与POI的九种坐标口径组合,成交CSV、同名候选连接、固定版本坐标实现,双端诊断CSV及摘要,先运行POI筛选；一致性不是测量精度
+02_空间与住宅身份,scopes/luohu/scripts/extract_luohu_building_candidates.py,用供应罗湖区界按声明CRS筛选建筑轮廓，保留原几何和属性，不认证住宅,--buildings全市建筑SHP、--districts区界SHP、--output新目录,候选GPKG、属性CSV、层数频数和来源哈希摘要,跳过无效源几何并记录数量；边界和坐标均待独立验证
 02_空间与住宅身份,scopes/luohu/scripts/review_luohu_poi_ambiguity_20261012.py,复核同名位置歧义、地址限定词、门点与主体线索,--base指定公开派生POI目录，--transactions指定原成交CSV；按封存哈希校验并重建坐标登记,--output指定新目录；身份候选、分流与摘要,拒绝覆盖既有目录；--skip-official-fetch可离线复现，官方来源另行核验；不接受住宅位置
 02_空间与住宅身份,scopes/luohu/scripts/review_residential_baseline.py,按最早成交及平台建成年代分流基期存在证据,--sample、--coverage、--leads三个CSV,--output指定的新目录；基期证据CSV与摘要,先完成地址支持核查；不是官方竣工认证
 03_价格回归与诊断,scopes/luohu/scripts/run_price_did_audit_20261003.py,运行罗湖商圈代理双向固定效应DID和季度动态模型,SHENZHEN_TRANSACTION_CSV环境变量指定成交CSV,outputs/price_did_audit_20261003/样本、回归、图和摘要,需原交易数据；写入既有结果目录，先备份或用独立克隆运行
