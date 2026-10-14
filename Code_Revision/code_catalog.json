@@ -202,6 +202,14 @@
     },
     {
       "category": "01_数据获取与清洗",
+      "path": "scopes/shenzhen/scripts/compare_luohu_monthly_aliases.py",
+      "purpose_zh": "比较罗湖隔离与相加两种区名口径的月度成交套数和面积",
+      "inputs_zh": "--clean无冲突罗湖住宅日表、--collisions冲突原行、--output新目录",
+      "outputs_zh": "所有月度敏感性表、受影响月份及摘要",
+      "run_status_zh": "来源含义未确认，缺月不补零，不覆盖既有月表"
+    },
+    {
+      "category": "01_数据获取与清洗",
       "path": "scopes/shenzhen/scripts/reconcile_district_alias_scenarios.py",
       "purpose_zh": "比较短区名、带区后缀区名及两类相加三种假设与同日全市套数面积合计",
       "inputs_zh": "--source历史接口合并CSV、--collisions冲突行表",
@@ -319,6 +327,14 @@
       "inputs_zh": "临时测试文件",
       "outputs_zh": "unittest结果",
       "run_status_zh": "无需真实数据或网络"
+    },
+    {
+      "category": "05_测试与核验",
+      "path": "tests/test_monthly_alias_sensitivity.py",
+      "purpose_zh": "验证缺月为空、重复来源拒绝和相加记录的观测日计数",
+      "inputs_zh": "月度聚合样例",
+      "outputs_zh": "unittest结果",
+      "run_status_zh": "无需真实数据"
     },
     {
       "category": "05_测试与核验",

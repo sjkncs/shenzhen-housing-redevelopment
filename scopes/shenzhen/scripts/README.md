@@ -47,6 +47,16 @@
 
 运行条件：不选择版本、不合并原行、不更新原月度统计
 
+### [compare_luohu_monthly_aliases.py](compare_luohu_monthly_aliases.py)
+
+用途：比较罗湖隔离与相加两种区名口径的月度成交套数和面积
+
+输入：--clean无冲突罗湖住宅日表、--collisions冲突原行、--output新目录
+
+输出：所有月度敏感性表、受影响月份及摘要
+
+运行条件：来源含义未确认，缺月不补零，不覆盖既有月表
+
 ### [reconcile_district_alias_scenarios.py](reconcile_district_alias_scenarios.py)
 
 用途：比较短区名、带区后缀区名及两类相加三种假设与同日全市套数面积合计

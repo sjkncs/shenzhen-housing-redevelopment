@@ -67,6 +67,16 @@
 
 运行条件：无需真实数据或网络
 
+### [test_monthly_alias_sensitivity.py](test_monthly_alias_sensitivity.py)
+
+用途：验证缺月为空、重复来源拒绝和相加记录的观测日计数
+
+输入：月度聚合样例
+
+输出：unittest结果
+
+运行条件：无需真实数据
+
 ### [test_mutoulong_image_comparison.py](test_mutoulong_image_comparison.py)
 
 用途：核对图像拟合与留出点分离、保存的像素误差

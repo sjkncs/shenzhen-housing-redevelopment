@@ -1,0 +1,4 @@
+﻿month,calendar_days,isolated_observed_days,additive_observed_days,isolated_reported_count,additive_reported_count,isolated_reported_area_m2,additive_reported_area_m2,additional_reported_count,additional_reported_area_m2,count_change_percent_vs_isolated,additive_rule_source_confirmed,missing_days_filled_with_zero
+2022-05,31,22,25,295.0,351.0,25031.21,29495.219999999998,56.0,4464.009999999998,18.983050847457626,False,False
+2022-06,30,25,29,287.0,355.0,23338.29,28474.53,68.0,5136.239999999998,23.693379790940767,False,False
+2022-07,31,23,25,288.0,315.0,23940.620000000003,26191.83,27.0,2251.209999999999,9.375,False,False

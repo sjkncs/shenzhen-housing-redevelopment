@@ -14,6 +14,8 @@ GROUPS = {
     '06_原始代码与第三方': '原执行快照和固定版本第三方数学实现。',
 }
 SPECS = {
+    'compare_luohu_monthly_aliases.py': ('01', '比较罗湖隔离与相加两种区名口径的月度成交套数和面积', '--clean无冲突罗湖住宅日表、--collisions冲突原行、--output新目录', '所有月度敏感性表、受影响月份及摘要', '来源含义未确认，缺月不补零，不覆盖既有月表'),
+    'test_monthly_alias_sensitivity.py': ('05', '验证缺月为空、重复来源拒绝和相加记录的观测日计数', '月度聚合样例', 'unittest结果', '无需真实数据'),
     'reconcile_district_alias_scenarios.py': ('01', '比较短区名、带区后缀区名及两类相加三种假设与同日全市套数面积合计', '--source历史接口合并CSV、--collisions冲突行表', '--output三种对账场景及摘要', '仅诊断不选择合并规则，不修改月度统计'),
     'test_alias_scenarios.py': ('05', '测试相加型冲突与缺失全市合计拒绝', '程序内行政区总量样例', 'unittest结果', '内部对账不证明来源口径'),
     'classify_district_collisions.py': ('01', '逐组比较标准化区名冲突的套数、面积与来源ID', '--input区名冲突CSV、--output新目录', '逐组分类、区级汇总与摘要', '不选择版本、不合并原行、不更新原月度统计'),

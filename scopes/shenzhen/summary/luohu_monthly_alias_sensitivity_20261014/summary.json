@@ -1,0 +1,18 @@
+{
+  "scope": "MONTHLY_REPORTED_VOLUME_ALIAS_SENSITIVITY_NOT_PRICE_EFFECT",
+  "isolated_source_rows": 2833,
+  "collision_source_rows": 18,
+  "affected_months": [
+    "2022-05",
+    "2022-06",
+    "2022-07"
+  ],
+  "additional_reported_count": 151,
+  "additional_reported_area_m2": 11851.460000000001,
+  "existing_monthly_results_modified": false,
+  "official_merge_rule_accepted": false,
+  "inputs_sha256": {
+    "clean": "3215c816ca37aabd0ec0dc1358ecdfb75696f3c69a7a4831b116c57a94cd4ddb",
+    "collisions": "16e0437113613aa4fbac91f5c0731bb287a10cbe4f664dd4e6d6c6ecd960f1ab"
+  }
+}

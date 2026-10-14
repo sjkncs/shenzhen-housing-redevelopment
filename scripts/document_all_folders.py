@@ -8,6 +8,8 @@ ROOT = Path(__file__).resolve().parents[1]
 START = '<!-- generated-file-guide:start -->'
 END = '<!-- generated-file-guide:end -->'
 PURPOSE = {
+    'luohu_monthly_alias_sensitivity.csv': '罗湖月度隔离与相加口径对照，显示套数面积及观测日差异。',
+    'affected_months.csv': '区名口径改变已报告套数或面积的月份，非政策效应。',
     'alias_scenario_city_checks.csv': '同日同用途区名三种候选合并方式与全市总量的差异，不是已接受规则。',
     'alias_scenario_summary.csv': '短名优先、后缀优先及两类相加的内部对账汇总。',
     'collision_group_classification.csv': '同日同用途区名冲突逐组数值分类与来源ID，不决定合并版本。',
