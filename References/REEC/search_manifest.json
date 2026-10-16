@@ -1,0 +1,68 @@
+{
+  "assumed_venue": "Real Estate Economics",
+  "abbreviation_confirmed_by_user": false,
+  "issn": "1540-6229",
+  "provider": "Crossref journal works",
+  "reported_total": 1915,
+  "unique_records": 1915,
+  "metadata_pagination_complete": true,
+  "title_keyword_candidates": 103,
+  "relevance_screen_complete": false,
+  "full_text_deep_read_complete": false,
+  "keyword_groups": {
+    "redevelopment": [
+      "redevelop",
+      "renewal",
+      "demoli",
+      "revital",
+      "regener",
+      "teardown",
+      "tear-down",
+      "gentrif",
+      "brownfield"
+    ],
+    "externalities": [
+      "spillover",
+      "externalit",
+      "neighborhood",
+      "neighbourhood",
+      "amenit",
+      "disamenit",
+      "capitaliz",
+      "capitalis",
+      "proximity"
+    ],
+    "measurement_ml": [
+      "machine learning",
+      "deep learning",
+      "computer vision",
+      "street view",
+      "street-view",
+      "image",
+      "interpretab",
+      "graph-laplacian"
+    ],
+    "housing_supply": [
+      "housing supply",
+      "new construction",
+      "new housing",
+      "infill",
+      "zoning",
+      "densif"
+    ]
+  },
+  "pages": [
+    {
+      "url": "https://api.crossref.org/journals/1540-6229/works?rows=1000&cursor=%2A&select=DOI%2Ctitle%2Cauthor%2Ccontainer-title%2Cpublished%2Cissued%2Cpublished-online%2Cpublished-print%2Ctype%2CURL%2CISSN",
+      "retrieved_at": "2026-10-16T14:20:01.076517+00:00",
+      "sha256": "30d6fc74f60272ed54dee4417feb77ffc7b0cd15eca1666e247c2dc7916a0c13",
+      "count": 1000
+    },
+    {
+      "url": "https://api.crossref.org/journals/1540-6229/works?rows=1000&cursor=MTI1MzA1MTE1NzAwMCwxMC4xMTExJTJGMTU0MC02MjI5LjAwNTE5LTE3NA%3D%3D&select=DOI%2Ctitle%2Cauthor%2Ccontainer-title%2Cpublished%2Cissued%2Cpublished-online%2Cpublished-print%2Ctype%2CURL%2CISSN",
+      "retrieved_at": "2026-10-16T14:20:29.476252+00:00",
+      "sha256": "2a7c4699cc6d21ea6e4b3328084f05cebdf0092c8e3635f4af39a8fd5797b547",
+      "count": 915
+    }
+  ]
+}

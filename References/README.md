@@ -6,6 +6,7 @@
 
 | 用途 | 来源入口 |
 | --- | --- |
+| REE 首批论文拆解与深圳项目迁移；全刊元数据已抓取，相关文献精读未完成 | [REE 文献库](REEC/README.md) |
 | 木头龙官方范围图、宗地与阶段线索 | [项目索引](../scopes/luohu/project_registry/README.md) |
 | 官方坐标政策及成果申请 | [检索记录](../scopes/luohu/project_registry/mutoulong/coordinate_evidence_followup.md) |
 | 地图转换工具的静态审查 | [转换工具说明](../docs/COORDINATE_CONVERTER_REVIEW.md) |
