@@ -25,7 +25,7 @@ doi,title,groups,screen_status,evidence_level,note_path
 10.1111/1540-6229.12449,Emergence of subprime lending in minority neighborhoods,externalities,awaiting_manual_relevance_review,metadata_only,
 10.1111/1540-6229.12527,Enhancing real estate investment trust return forecasts using machine learning,measurement_ml,awaiting_manual_relevance_review,metadata_only,
 10.1111/1540-6229.12352,Environmental hazards: The microgeography of land‐use negative externalities,externalities,priority_reviewed,publisher_abstract_verified,papers/somerville-wetzel-2022-microgeography.md
-10.1111/1540-6229.12249,Estimating the Gains from New Rail Transit Investment: A Machine Learning Tree Approach,measurement_ml,awaiting_manual_relevance_review,metadata_only,
+10.1111/1540-6229.12249,Estimating the Gains from New Rail Transit Investment: A Machine Learning Tree Approach,measurement_ml,priority_reviewed,publisher_abstract_verified,papers/chin-kahn-moon-2020-rail-ml.md
 10.1111/1540-6229.12143,"Estimating the Value of Proximity to Water, When Ceteris Really Is Paribus",externalities,awaiting_manual_relevance_review,metadata_only,
 10.1111/1540-6229.70030,Explainable spatial machine learning for hedonic real estate modeling,measurement_ml,priority_reviewed,selected_full_text_sections_verified,papers/gyger-2026-spatial-ml.md
 10.1111/1540-6229.12413,Externalities of residential property flipping,externalities,awaiting_manual_relevance_review,metadata_only,
@@ -42,7 +42,7 @@ doi,title,groups,screen_status,evidence_level,note_path
 10.1111/1540-6229.12479,Homebuyers’ geographic proximity as a predictor of future housing price growth,externalities,awaiting_manual_relevance_review,metadata_only,
 10.1111/j.1540-6229.2006.00178.x,"Housing Density and the Effect of Proximity to Public Open Space in Aberdeen, Scotland",externalities,awaiting_manual_relevance_review,metadata_only,
 10.1111/1540-6229.12026,"Housing Regulation, Externalities and Residential Property Prices",externalities,awaiting_manual_relevance_review,metadata_only,
-10.1111/j.1540-6229.2010.00269.x,"Housing Supply, Land Costs and Price Adjustment",housing_supply,awaiting_manual_relevance_review,metadata_only,
+10.1111/j.1540-6229.2010.00269.x,"Housing Supply, Land Costs and Price Adjustment",housing_supply,priority_reviewed,publisher_abstract_verified,papers/grimes-aitken-2010-supply-price-adjustment.md
 10.1111/reec.12018,Housing Tenure Transitions of Older Households: What is the Role of Child Proximity?,externalities,awaiting_manual_relevance_review,metadata_only,
 10.1111/1540-6229.12491,"Housing prices, costs, and policy: The housing supply equation in Ireland since 1970",housing_supply,awaiting_manual_relevance_review,metadata_only,
 10.1111/1540-6229.12490,"Houston, you have a problem: How large cities accommodate more housing",,priority_reviewed,selected_full_text_sections_verified,papers/orlando-2024-housing-provision.md
@@ -97,7 +97,7 @@ doi,title,groups,screen_status,evidence_level,note_path
 10.1111/1540-6229.12526,The scarring of the Great Recession on construction labor and housing supply,housing_supply,awaiting_manual_relevance_review,metadata_only,
 10.1111/j.1540-6229.2011.00311.x,Thy Neighbor’s Mortgage: Does Living in a Subprime Neighborhood Affect One’s Probability of Default?,externalities,awaiting_manual_relevance_review,metadata_only,
 10.1111/1540-6229.00651,Urban Land Development and its Prices: The Effects of Conversion Costs with Redevelopment,redevelopment,awaiting_manual_relevance_review,metadata_only,
-10.1111/1540-6229.12192,Valuing the Redevelopment Option Component of Urban Land Values,redevelopment,awaiting_manual_relevance_review,metadata_only,
+10.1111/1540-6229.12192,Valuing the Redevelopment Option Component of Urban Land Values,redevelopment,priority_reviewed,publisher_abstract_verified,papers/munneke-womack-2020-redevelopment-option.md
 10.1111/1540-6229.00830,What A National Commission on Neighborhoods Could Do,externalities,awaiting_manual_relevance_review,metadata_only,
 10.1111/1540-6229.70040,Why we still don't know much about housing supply elasticity,housing_supply,awaiting_manual_relevance_review,metadata_only,
 10.1111/1540-6229.00647,Zoning Policy Changes and the Urban Fringe Land Market,housing_supply,awaiting_manual_relevance_review,metadata_only,

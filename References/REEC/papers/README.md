@@ -21,3 +21,6 @@
 | [Does Government Investment in Local Public Goods Spur Gentrification? Evidence from Beijing](zheng-kahn-2013-beijing-public-goods.md) | 出版社摘要核对 | 新增空间与结果拆分约束。 |
 | [The capitalization of metro rail access in urban housing markets](keeler-stephens-2023-metro-rail.md) | 出版社摘要核对 | 新增空间与结果拆分约束。 |
 | [On the Relation between Local Amenities and House Price Dynamics](beracha-gilbert-kjorstad-2018-amenity-dynamics.md) | 出版社摘要核对 | 新增空间与结果拆分约束。 |
+| [Estimating the Gains from New Rail Transit Investment: A Machine Learning Tree Approach](chin-kahn-moon-2020-rail-ml.md) | 出版社摘要核对 | 新增异质效应、重建期权或供给调整约束。 |
+| [Valuing the Redevelopment Option Component of Urban Land Values](munneke-womack-2020-redevelopment-option.md) | 出版社摘要核对 | 新增异质效应、重建期权或供给调整约束。 |
+| [Housing Supply, Land Costs and Price Adjustment](grimes-aitken-2010-supply-price-adjustment.md) | 出版社摘要核对 | 新增异质效应、重建期权或供给调整约束。 |
