@@ -18,3 +18,6 @@
 | [The price effects of greening vacant lots: How neighborhood attributes matter](lin-jensen-wachter-2023-greening.md) | 正文关键章节核对 | 先输出处理前协变量平衡、共同支持和权重分布，再评价事件时间路径。所有环境特征记录采集时间；… |
 | [Environmental hazards: The microgeography of land‐use negative externalities](somerville-wetzel-2022-microgeography.md) | 出版社摘要核对 | 建立同一住房周边的并行项目、道路和既有设施暴露表；区分公告日期和实物变化日期。空间测度同时… |
 | [Searching for Goldilocks: The Distance‐Based Capitalization Effects of Local Public Services](dronyk-trosper-2017-goldilocks.md) | 出版社摘要核对 | 不强制设定更新越近越利好。预先规定若干空间表达和敏感性窗口，分别提出近距离施工扰动与较远服… |
+| [Does Government Investment in Local Public Goods Spur Gentrification? Evidence from Beijing](zheng-kahn-2013-beijing-public-goods.md) | 出版社摘要核对 | 新增空间与结果拆分约束。 |
+| [The capitalization of metro rail access in urban housing markets](keeler-stephens-2023-metro-rail.md) | 出版社摘要核对 | 新增空间与结果拆分约束。 |
+| [On the Relation between Local Amenities and House Price Dynamics](beracha-gilbert-kjorstad-2018-amenity-dynamics.md) | 出版社摘要核对 | 新增空间与结果拆分约束。 |

@@ -20,7 +20,7 @@ doi,title,groups,screen_status,evidence_level,note_path
 10.1111/j.1540-6229.2007.00182.x,Comovement After Joining an Index: Spillovers of Nonfundamental Effects,externalities,awaiting_manual_relevance_review,metadata_only,
 10.1111/1540-6229.00331,Creative Financing and House Prices: A Theoretical Inquiry into the Capitalization Issue,externalities,awaiting_manual_relevance_review,metadata_only,
 10.1111/1540-6229.00374,Creative Financing and Housing Prices: On a Theoretical Inquiry Into the Capitalization Issue,externalities,awaiting_manual_relevance_review,metadata_only,
-10.1111/j.1540-6229.2012.00339.x,Does Government Investment in Local Public Goods Spur Gentrification? Evidence from Beijing,redevelopment,awaiting_manual_relevance_review,metadata_only,
+10.1111/j.1540-6229.2012.00339.x,Does Government Investment in Local Public Goods Spur Gentrification? Evidence from Beijing,redevelopment,priority_reviewed,publisher_abstract_verified,papers/zheng-kahn-2013-beijing-public-goods.md
 10.1111/1540-6229.00740,Dynamics of the Greenbelt Amenity Effect on the Land Market—The Case of Seoul's Greenbelt,externalities,awaiting_manual_relevance_review,metadata_only,
 10.1111/1540-6229.12449,Emergence of subprime lending in minority neighborhoods,externalities,awaiting_manual_relevance_review,metadata_only,
 10.1111/1540-6229.12527,Enhancing real estate investment trust return forecasts using machine learning,measurement_ml,awaiting_manual_relevance_review,metadata_only,
@@ -66,7 +66,7 @@ doi,title,groups,screen_status,evidence_level,note_path
 10.1111/1540-6229.00123,Neighborhood Dynamics and Government Policy,externalities,awaiting_manual_relevance_review,metadata_only,
 10.1111/1540-6229.70003,Neighborhood effects on educational outcomes: New evidence from public rental housing in Hong Kong,externalities,awaiting_manual_relevance_review,metadata_only,
 10.1111/1540-6229.12481,"Neighborhoods in the 21st century: What do we know, and what do we still have to learn?",externalities,awaiting_manual_relevance_review,metadata_only,
-10.1111/1540-6229.12170,On the Relation between Local Amenities and House Price Dynamics,externalities,awaiting_manual_relevance_review,metadata_only,
+10.1111/1540-6229.12170,On the Relation between Local Amenities and House Price Dynamics,externalities,priority_reviewed,publisher_abstract_verified,papers/beracha-gilbert-kjorstad-2018-amenity-dynamics.md
 10.1111/j.1540-6229.2010.00265.x,Parking Externalities in Commercial Real Estate,externalities,awaiting_manual_relevance_review,metadata_only,
 10.1111/reec.12017,Pricing Relocation–Redevelopment Projects for City Expansion: The Case in China,redevelopment,priority_reviewed,publisher_abstract_verified,papers/chen-lai-2013-relocation.md
 10.1111/1540-6229.12407,Redevelopment along arterial streets: The effects of light rail on land use change,redevelopment,priority_reviewed,selected_full_text_sections_verified,papers/agustini-west-2023-arterial.md
@@ -90,7 +90,7 @@ doi,title,groups,screen_status,evidence_level,note_path
 10.1111/1540-6229.12060,The Sources of Risk Spillovers among U.S. REITs: Financial Characteristics and Regional Proximity,externalities,awaiting_manual_relevance_review,metadata_only,
 10.1111/j.1540-6229.2007.00188.x,The Spatial Proximity of Metropolitan Area Housing Submarkets,externalities,awaiting_manual_relevance_review,metadata_only,
 10.1111/1540-6229.12451,The amenity value of natural views,externalities,awaiting_manual_relevance_review,metadata_only,
-10.1111/1540-6229.12411,The capitalization of metro rail access in urban housing markets,externalities,awaiting_manual_relevance_review,metadata_only,
+10.1111/1540-6229.12411,The capitalization of metro rail access in urban housing markets,externalities,priority_reviewed,publisher_abstract_verified,papers/keeler-stephens-2023-metro-rail.md
 10.1111/1540-6229.12480,The color of water: Racial and income differences in exposure to floods across US neighborhoods,externalities,awaiting_manual_relevance_review,metadata_only,
 10.1111/1540-6229.12525,The effects of community land trusts on neighborhood outcomes,externalities,awaiting_manual_relevance_review,metadata_only,
 10.1111/1540-6229.12401,The price effects of greening vacant lots: How neighborhood attributes matter,externalities,priority_reviewed,selected_full_text_sections_verified,papers/lin-jensen-wachter-2023-greening.md
