@@ -15,3 +15,6 @@
 | [Hedonic Models with Redevelopment Options under Uncertainty](clapp-jou-lee-2012-options.md) | 出版社摘要核对 | 项目迁移提案：样本先限于项目外既有住宅；核查是否同时存在自身拆迁预期，并在有独立资料支持时… |
 | [Houston, you have a problem: How large cities accommodate more housing](orlando-2024-housing-provision.md) | 正文关键章节核对 | 项目迁移提案：供给通道登记拆旧套数、新增商品房、安置房、保障房及交付阶段，再对既有住宅价格… |
 | [Combining machine learning and econometrics: Application to commercial real estate prices](francke-minne-2024-hybrid.md) | 出版社摘要核对 | 项目迁移提案：分开报告未来已见小区与未来未见小区；所有随机效应、目标编码和残差场仅由训练数… |
+| [The price effects of greening vacant lots: How neighborhood attributes matter](lin-jensen-wachter-2023-greening.md) | 正文关键章节核对 | 先输出处理前协变量平衡、共同支持和权重分布，再评价事件时间路径。所有环境特征记录采集时间；… |
+| [Environmental hazards: The microgeography of land‐use negative externalities](somerville-wetzel-2022-microgeography.md) | 出版社摘要核对 | 建立同一住房周边的并行项目、道路和既有设施暴露表；区分公告日期和实物变化日期。空间测度同时… |
+| [Searching for Goldilocks: The Distance‐Based Capitalization Effects of Local Public Services](dronyk-trosper-2017-goldilocks.md) | 出版社摘要核对 | 不强制设定更新越近越利好。预先规定若干空间表达和敏感性窗口，分别提出近距离施工扰动与较远服… |
